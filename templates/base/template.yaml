@@ -19,8 +19,9 @@
 #       - id: tool
 #         label: Tool
 #         # Optional icon: a Font Awesome name, with an optional color, like { name: list-check, color: purple }.
-#         # Use the brand icon when there is one (github, notion), else a generic one.
-#         icon: list-check
+#         # Use the brand icon when there is one (github, notion). A tool with no brand icon
+#         # gets none: an empty option reads better than a generic one.
+#         icon: github
 #         files:
 #           # Patterns apply in order. The last match wins, and a leading ! keeps a file.
 #           exclude:

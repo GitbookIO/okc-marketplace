@@ -10,7 +10,6 @@ questions:
     options:
       - id: granola
         label: Granola
-        icon: microphone-lines
         files:
           exclude:
             - 'workflows/ingest-meetings-fireflies.md'

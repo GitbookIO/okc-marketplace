@@ -11,7 +11,6 @@ questions:
     options:
       - id: granola
         label: Granola
-        icon: microphone-lines
         files:
           exclude:
             - 'workflows/ingest-meetings-fireflies.md'
@@ -78,7 +77,6 @@ questions:
     options:
       - id: linear
         label: Linear
-        icon: list-check
         files:
           exclude:
             - 'issues/mock-*.md'

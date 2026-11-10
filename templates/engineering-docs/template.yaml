@@ -39,7 +39,6 @@ questions:
     options:
       - id: linear
         label: Linear
-        icon: list-check
         files:
           exclude:
             - 'workflows/ingest-issues-jira.md'
@@ -69,7 +68,6 @@ questions:
     options:
       - id: sentry
         label: Sentry
-        icon: bug
         files:
           exclude:
             - 'incidents/mock-*.md'
