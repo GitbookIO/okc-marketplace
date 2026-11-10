@@ -1,0 +1,14 @@
+{
+  "name": "miro",
+  "description": "Read and update Miro boards, create diagrams, and work with comments and shared visual content.",
+  "author": {
+    "name": "Miro",
+    "url": "https://miro.com/"
+  },
+  "homepage": "https://miro.com/",
+  "interface": {
+    "displayName": "Miro",
+    "shortDescription": "Read and create content on shared boards",
+    "logo": "./assets/logo.png"
+  }
+}

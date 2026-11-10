@@ -1,0 +1,15 @@
+{
+  "name": "sourcegraph",
+  "version": "1.0.0",
+  "description": "Search and navigate repositories on a Sourcegraph Enterprise instance.",
+  "author": {
+    "name": "Sourcegraph",
+    "url": "https://sourcegraph.com"
+  },
+  "homepage": "https://sourcegraph.com",
+  "interface": {
+    "displayName": "Sourcegraph",
+    "shortDescription": "Search and understand enterprise codebases",
+    "logo": "./assets/logo.png"
+  }
+}

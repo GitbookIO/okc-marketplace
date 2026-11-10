@@ -1,0 +1,15 @@
+{
+  "name": "resend",
+  "version": "1.0.0",
+  "description": "Send and receive email and manage Resend domains, contacts, and broadcasts.",
+  "author": {
+    "name": "Resend",
+    "url": "https://resend.com"
+  },
+  "homepage": "https://resend.com",
+  "interface": {
+    "displayName": "Resend",
+    "shortDescription": "Send email and manage contacts and domains",
+    "logo": "./assets/logo.svg"
+  }
+}

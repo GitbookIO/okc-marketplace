@@ -1,0 +1,14 @@
+{
+  "name": "activecampaign",
+  "description": "Manage ActiveCampaign contacts, campaigns, automations, and CRM deals.",
+  "author": {
+    "name": "ActiveCampaign",
+    "url": "https://www.activecampaign.com/"
+  },
+  "homepage": "https://www.activecampaign.com/",
+  "interface": {
+    "displayName": "ActiveCampaign",
+    "shortDescription": "Manage marketing campaigns and CRM",
+    "logo": "./assets/logo.webp"
+  }
+}

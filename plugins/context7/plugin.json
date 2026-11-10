@@ -1,0 +1,14 @@
+{
+  "name": "context7",
+  "description": "Retrieve current, version-specific library documentation and code examples.",
+  "author": {
+    "name": "Upstash",
+    "url": "https://context7.com"
+  },
+  "homepage": "https://context7.com",
+  "interface": {
+    "displayName": "Context7",
+    "shortDescription": "Look up library documentation and examples",
+    "logo": "./assets/logo.png"
+  }
+}

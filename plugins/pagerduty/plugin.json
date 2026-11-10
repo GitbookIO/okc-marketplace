@@ -1,0 +1,15 @@
+{
+  "name": "pagerduty",
+  "version": "1.0.0",
+  "description": "Investigate PagerDuty incidents and correlate service and deployment risks.",
+  "author": {
+    "name": "PagerDuty",
+    "url": "https://www.pagerduty.com"
+  },
+  "homepage": "https://www.pagerduty.com",
+  "interface": {
+    "displayName": "PagerDuty",
+    "shortDescription": "Investigate incidents and service risk",
+    "logo": "./assets/logo.png"
+  }
+}

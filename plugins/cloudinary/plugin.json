@@ -1,0 +1,15 @@
+{
+  "name": "cloudinary",
+  "version": "1.0.0",
+  "description": "Upload, search, organize, and transform images and videos in Cloudinary.",
+  "author": {
+    "name": "Cloudinary",
+    "url": "https://cloudinary.com"
+  },
+  "homepage": "https://cloudinary.com",
+  "interface": {
+    "displayName": "Cloudinary",
+    "shortDescription": "Manage and transform media assets",
+    "logo": "./assets/logo.svg"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "sanity",
+  "version": "1.0.0",
+  "description": "Query and author Sanity content, manage schemas, and organize content releases.",
+  "author": {
+    "name": "Sanity",
+    "url": "https://www.sanity.io"
+  },
+  "homepage": "https://www.sanity.io",
+  "interface": {
+    "displayName": "Sanity",
+    "shortDescription": "Query and manage structured content",
+    "logo": "./assets/logo.svg"
+  }
+}

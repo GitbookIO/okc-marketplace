@@ -1,0 +1,15 @@
+{
+  "name": "railway",
+  "version": "1.0.0",
+  "description": "Manage Railway projects, deployments, services, and environment configuration.",
+  "author": {
+    "name": "Railway",
+    "url": "https://railway.com"
+  },
+  "homepage": "https://railway.com",
+  "interface": {
+    "displayName": "Railway",
+    "shortDescription": "Manage projects and cloud infrastructure",
+    "logo": "./assets/logo.png"
+  }
+}

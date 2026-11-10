@@ -1,0 +1,15 @@
+{
+  "name": "postman",
+  "version": "1.0.0",
+  "description": "Search Postman workspaces, manage API collections, and interact with API workflows.",
+  "author": {
+    "name": "Postman",
+    "url": "https://www.postman.com"
+  },
+  "homepage": "https://www.postman.com",
+  "interface": {
+    "displayName": "Postman",
+    "shortDescription": "Manage API collections and workspaces",
+    "logo": "./assets/logo.svg"
+  }
+}

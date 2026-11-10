@@ -139,6 +139,326 @@
         "path": "./plugins/higgsfield"
       },
       "category": "Creativity"
+    },
+    {
+      "name": "activecampaign",
+      "source": {
+        "source": "local",
+        "path": "./plugins/activecampaign"
+      },
+      "category": "Business & Operations"
+    },
+    {
+      "name": "aiven",
+      "source": {
+        "source": "local",
+        "path": "./plugins/aiven"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "amplitude",
+      "source": {
+        "source": "local",
+        "path": "./plugins/amplitude"
+      },
+      "category": "Data & Analytics"
+    },
+    {
+      "name": "apollo",
+      "source": {
+        "source": "local",
+        "path": "./plugins/apollo"
+      },
+      "category": "Business & Operations"
+    },
+    {
+      "name": "clickhouse",
+      "source": {
+        "source": "local",
+        "path": "./plugins/clickhouse"
+      },
+      "category": "Data & Analytics"
+    },
+    {
+      "name": "cloudinary",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cloudinary"
+      },
+      "category": "Creativity"
+    },
+    {
+      "name": "cockroachdb",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cockroachdb"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "context7",
+      "source": {
+        "source": "local",
+        "path": "./plugins/context7"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "exa",
+      "source": {
+        "source": "local",
+        "path": "./plugins/exa"
+      },
+      "category": "Education & Research"
+    },
+    {
+      "name": "firecrawl",
+      "source": {
+        "source": "local",
+        "path": "./plugins/firecrawl"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "gitlab",
+      "source": {
+        "source": "local",
+        "path": "./plugins/gitlab"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "grafana-cloud",
+      "source": {
+        "source": "local",
+        "path": "./plugins/grafana-cloud"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "greptile",
+      "source": {
+        "source": "local",
+        "path": "./plugins/greptile"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "honeycomb",
+      "source": {
+        "source": "local",
+        "path": "./plugins/honeycomb"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "huggingface",
+      "source": {
+        "source": "local",
+        "path": "./plugins/huggingface"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "hunter",
+      "source": {
+        "source": "local",
+        "path": "./plugins/hunter"
+      },
+      "category": "Business & Operations"
+    },
+    {
+      "name": "incident-io",
+      "source": {
+        "source": "local",
+        "path": "./plugins/incident-io"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "logfire",
+      "source": {
+        "source": "local",
+        "path": "./plugins/logfire"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "mapbox",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mapbox"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "microsoft-docs",
+      "source": {
+        "source": "local",
+        "path": "./plugins/microsoft-docs"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "mintlify",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mintlify"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "miro",
+      "source": {
+        "source": "local",
+        "path": "./plugins/miro"
+      },
+      "category": "Creativity"
+    },
+    {
+      "name": "neon",
+      "source": {
+        "source": "local",
+        "path": "./plugins/neon"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "netlify",
+      "source": {
+        "source": "local",
+        "path": "./plugins/netlify"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "newrelic",
+      "source": {
+        "source": "local",
+        "path": "./plugins/newrelic"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "pagerduty",
+      "source": {
+        "source": "local",
+        "path": "./plugins/pagerduty"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "paypal",
+      "source": {
+        "source": "local",
+        "path": "./plugins/paypal"
+      },
+      "category": "Finance"
+    },
+    {
+      "name": "pinecone",
+      "source": {
+        "source": "local",
+        "path": "./plugins/pinecone"
+      },
+      "category": "Data & Analytics"
+    },
+    {
+      "name": "planetscale",
+      "source": {
+        "source": "local",
+        "path": "./plugins/planetscale"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "postman",
+      "source": {
+        "source": "local",
+        "path": "./plugins/postman"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "prisma",
+      "source": {
+        "source": "local",
+        "path": "./plugins/prisma"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "railway",
+      "source": {
+        "source": "local",
+        "path": "./plugins/railway"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "render",
+      "source": {
+        "source": "local",
+        "path": "./plugins/render"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "resend",
+      "source": {
+        "source": "local",
+        "path": "./plugins/resend"
+      },
+      "category": "Communication"
+    },
+    {
+      "name": "revenuecat",
+      "source": {
+        "source": "local",
+        "path": "./plugins/revenuecat"
+      },
+      "category": "Finance"
+    },
+    {
+      "name": "rootly",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rootly"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "sanity",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sanity"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "sourcegraph",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sourcegraph"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "tavily",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tavily"
+      },
+      "category": "Education & Research"
+    },
+    {
+      "name": "zapier",
+      "source": {
+        "source": "local",
+        "path": "./plugins/zapier"
+      },
+      "category": "Productivity"
     }
   ]
 }

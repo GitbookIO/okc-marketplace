@@ -1,0 +1,15 @@
+{
+  "name": "newrelic",
+  "version": "1.0.0",
+  "description": "Query New Relic telemetry and investigate application performance in the US region.",
+  "author": {
+    "name": "New Relic",
+    "url": "https://newrelic.com"
+  },
+  "homepage": "https://newrelic.com",
+  "interface": {
+    "displayName": "New Relic",
+    "shortDescription": "Investigate telemetry and application performance (US)",
+    "logo": "./assets/logo.png"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "exa",
+  "description": "Search the web and retrieve content for research and company discovery.",
+  "author": {
+    "name": "Exa",
+    "url": "https://exa.ai"
+  },
+  "homepage": "https://exa.ai",
+  "interface": {
+    "displayName": "Exa",
+    "shortDescription": "Search the web and retrieve source content",
+    "logo": "./assets/logo.png"
+  }
+}

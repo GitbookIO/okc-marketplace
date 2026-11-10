@@ -1,0 +1,15 @@
+{
+  "name": "honeycomb",
+  "version": "1.0.0",
+  "description": "Query Honeycomb telemetry, explore traces, and investigate production issues.",
+  "author": {
+    "name": "Honeycomb",
+    "url": "https://www.honeycomb.io"
+  },
+  "homepage": "https://www.honeycomb.io",
+  "interface": {
+    "displayName": "Honeycomb",
+    "shortDescription": "Query telemetry and investigate production issues",
+    "logo": "./assets/logo.png"
+  }
+}

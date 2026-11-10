@@ -1,0 +1,15 @@
+{
+  "name": "rootly",
+  "version": "1.0.0",
+  "description": "Manage incidents, on-call schedules, retrospectives, and incident response in Rootly.",
+  "author": {
+    "name": "Rootly",
+    "url": "https://rootly.com"
+  },
+  "homepage": "https://rootly.com",
+  "interface": {
+    "displayName": "Rootly",
+    "shortDescription": "Manage incidents and on-call response",
+    "logo": "./assets/logo.svg"
+  }
+}

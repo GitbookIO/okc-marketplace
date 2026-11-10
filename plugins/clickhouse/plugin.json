@@ -1,0 +1,14 @@
+{
+  "name": "clickhouse",
+  "description": "Explore ClickHouse Cloud services and database schemas, run read-only SQL queries, and inspect backups and billing.",
+  "author": {
+    "name": "ClickHouse",
+    "url": "https://clickhouse.com"
+  },
+  "homepage": "https://clickhouse.com",
+  "interface": {
+    "displayName": "ClickHouse",
+    "shortDescription": "Query and inspect ClickHouse Cloud databases",
+    "logo": "./assets/logo.png"
+  }
+}

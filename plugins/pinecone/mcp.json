@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "pinecone": {
+      "type": "streamable-http",
+      "url": "https://${PINECONE_ASSISTANT_HOST}/mcp/assistants/${PINECONE_ASSISTANT_NAME}",
+      "headers": {
+        "Authorization": "Bearer ${PINECONE_API_KEY}"
+      }
+    }
+  }
+}

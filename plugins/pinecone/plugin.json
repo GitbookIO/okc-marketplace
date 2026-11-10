@@ -1,0 +1,14 @@
+{
+  "name": "pinecone",
+  "description": "Retrieve relevant context and source snippets from files uploaded to a Pinecone Assistant.",
+  "author": {
+    "name": "Pinecone",
+    "url": "https://www.pinecone.io"
+  },
+  "homepage": "https://www.pinecone.io",
+  "interface": {
+    "displayName": "Pinecone Assistant",
+    "shortDescription": "Retrieve context from a Pinecone Assistant",
+    "logo": "./assets/logo.png"
+  }
+}

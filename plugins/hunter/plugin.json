@@ -1,0 +1,14 @@
+{
+  "name": "hunter",
+  "description": "Find and verify professional email addresses, search contacts by domain, and enrich company data with Hunter.",
+  "author": {
+    "name": "Hunter",
+    "url": "https://hunter.io/"
+  },
+  "homepage": "https://hunter.io/",
+  "interface": {
+    "displayName": "Hunter",
+    "shortDescription": "Find and verify professional email addresses",
+    "logo": "./assets/logo.png"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "render",
+  "version": "1.0.0",
+  "description": "Manage Render services, deployments, logs, metrics, and databases.",
+  "author": {
+    "name": "Render",
+    "url": "https://render.com"
+  },
+  "homepage": "https://render.com",
+  "interface": {
+    "displayName": "Render",
+    "shortDescription": "Manage cloud services and deployments",
+    "logo": "./assets/logo.svg"
+  }
+}

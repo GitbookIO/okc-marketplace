@@ -1,0 +1,14 @@
+{
+  "name": "zapier",
+  "description": "Discover and run Zapier actions across connected business applications.",
+  "author": {
+    "name": "Zapier",
+    "url": "https://zapier.com/"
+  },
+  "homepage": "https://zapier.com/",
+  "interface": {
+    "displayName": "Zapier",
+    "shortDescription": "Automate work across connected applications",
+    "logo": "./assets/logo.svg"
+  }
+}

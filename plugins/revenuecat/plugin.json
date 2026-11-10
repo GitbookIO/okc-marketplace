@@ -1,0 +1,15 @@
+{
+  "name": "revenuecat",
+  "version": "1.0.0",
+  "description": "Manage RevenueCat projects, apps, products, entitlements, and subscription offerings.",
+  "author": {
+    "name": "RevenueCat",
+    "url": "https://www.revenuecat.com"
+  },
+  "homepage": "https://www.revenuecat.com",
+  "interface": {
+    "displayName": "RevenueCat",
+    "shortDescription": "Manage in-app purchases and subscriptions",
+    "logo": "./assets/logo.png"
+  }
+}

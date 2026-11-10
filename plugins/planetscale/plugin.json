@@ -1,0 +1,14 @@
+{
+  "name": "planetscale",
+  "description": "Explore PlanetScale organizations, databases, branches, schemas, and query performance, and run SQL queries.",
+  "author": {
+    "name": "PlanetScale",
+    "url": "https://planetscale.com"
+  },
+  "homepage": "https://planetscale.com",
+  "interface": {
+    "displayName": "PlanetScale",
+    "shortDescription": "Manage databases and inspect query performance",
+    "logo": "./assets/logo.png"
+  }
+}

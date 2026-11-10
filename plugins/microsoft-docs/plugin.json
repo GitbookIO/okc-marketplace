@@ -1,0 +1,15 @@
+{
+  "name": "microsoft-docs",
+  "version": "1.0.0",
+  "description": "Search official Microsoft documentation, API references, and code samples.",
+  "author": {
+    "name": "Microsoft",
+    "url": "https://learn.microsoft.com"
+  },
+  "homepage": "https://learn.microsoft.com",
+  "interface": {
+    "displayName": "Microsoft Learn",
+    "shortDescription": "Search Microsoft documentation and code samples",
+    "logo": "./assets/logo.png"
+  }
+}

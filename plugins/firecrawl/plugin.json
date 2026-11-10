@@ -1,0 +1,14 @@
+{
+  "name": "firecrawl",
+  "description": "Search the web, read source pages, and retrieve structured information and developer documentation.",
+  "author": {
+    "name": "Firecrawl",
+    "url": "https://www.firecrawl.dev"
+  },
+  "homepage": "https://www.firecrawl.dev",
+  "interface": {
+    "displayName": "Firecrawl",
+    "shortDescription": "Search and read web content",
+    "logo": "./assets/logo.png"
+  }
+}

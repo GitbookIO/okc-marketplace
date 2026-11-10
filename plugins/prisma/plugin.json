@@ -1,0 +1,14 @@
+{
+  "name": "prisma",
+  "description": "Inspect Prisma workspaces and provision or manage Prisma Postgres databases.",
+  "author": {
+    "name": "Prisma",
+    "url": "https://www.prisma.io"
+  },
+  "homepage": "https://www.prisma.io",
+  "interface": {
+    "displayName": "Prisma",
+    "shortDescription": "Provision and manage Prisma Postgres databases",
+    "logo": "./assets/logo.png"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "aiven",
+  "description": "Manage Aiven services, PostgreSQL databases, and Kafka resources.",
+  "author": {
+    "name": "Aiven",
+    "url": "https://aiven.io"
+  },
+  "homepage": "https://aiven.io",
+  "interface": {
+    "displayName": "Aiven",
+    "shortDescription": "Manage cloud databases and streaming services",
+    "logo": "./assets/logo.svg"
+  }
+}

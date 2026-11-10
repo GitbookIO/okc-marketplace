@@ -1,0 +1,14 @@
+{
+  "name": "amplitude",
+  "description": "Analyze product data and manage Amplitude charts, dashboards, and experiments for US-region accounts.",
+  "author": {
+    "name": "Amplitude",
+    "url": "https://amplitude.com"
+  },
+  "homepage": "https://amplitude.com",
+  "interface": {
+    "displayName": "Amplitude",
+    "shortDescription": "Analyze product analytics (US)",
+    "logo": "./assets/logo.png"
+  }
+}

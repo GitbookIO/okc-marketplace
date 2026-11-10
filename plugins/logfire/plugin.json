@@ -1,0 +1,15 @@
+{
+  "name": "logfire",
+  "version": "1.0.0",
+  "description": "Query traces, logs, spans, and project links in Logfire's US region.",
+  "author": {
+    "name": "Pydantic",
+    "url": "https://pydantic.dev/logfire"
+  },
+  "homepage": "https://pydantic.dev/logfire",
+  "interface": {
+    "displayName": "Logfire",
+    "shortDescription": "Query traces and logs (US)",
+    "logo": "./assets/logo.svg"
+  }
+}

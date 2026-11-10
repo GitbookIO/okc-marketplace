@@ -1,0 +1,14 @@
+{
+  "name": "cockroachdb",
+  "description": "Explore CockroachDB Cloud clusters and schemas, query databases, and manage database resources.",
+  "author": {
+    "name": "Cockroach Labs",
+    "url": "https://www.cockroachlabs.com"
+  },
+  "homepage": "https://www.cockroachlabs.com",
+  "interface": {
+    "displayName": "CockroachDB",
+    "shortDescription": "Query and manage CockroachDB Cloud databases",
+    "logo": "./assets/logo.svg"
+  }
+}

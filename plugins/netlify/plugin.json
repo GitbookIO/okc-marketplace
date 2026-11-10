@@ -1,0 +1,15 @@
+{
+  "name": "netlify",
+  "version": "1.0.0",
+  "description": "Create and manage Netlify projects, deployments, and environment variables.",
+  "author": {
+    "name": "Netlify",
+    "url": "https://www.netlify.com"
+  },
+  "homepage": "https://www.netlify.com",
+  "interface": {
+    "displayName": "Netlify",
+    "shortDescription": "Manage projects, deployments, and configuration",
+    "logo": "./assets/logo.png"
+  }
+}

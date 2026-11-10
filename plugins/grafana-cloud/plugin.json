@@ -1,0 +1,15 @@
+{
+  "name": "grafana-cloud",
+  "version": "1.0.0",
+  "description": "Query Grafana Cloud metrics, logs, and traces, and manage dashboards and alerts.",
+  "author": {
+    "name": "Grafana Labs",
+    "url": "https://grafana.com"
+  },
+  "homepage": "https://grafana.com",
+  "interface": {
+    "displayName": "Grafana Cloud",
+    "shortDescription": "Query observability data and manage dashboards",
+    "logo": "./assets/logo.svg"
+  }
+}

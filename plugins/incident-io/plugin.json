@@ -1,0 +1,15 @@
+{
+  "name": "incident-io",
+  "version": "1.0.0",
+  "description": "Investigate incidents, review on-call schedules, and manage incident response.",
+  "author": {
+    "name": "incident.io",
+    "url": "https://incident.io"
+  },
+  "homepage": "https://incident.io",
+  "interface": {
+    "displayName": "incident.io",
+    "shortDescription": "Investigate incidents and manage on-call response",
+    "logo": "./assets/logo.png"
+  }
+}

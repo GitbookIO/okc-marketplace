@@ -1,0 +1,15 @@
+{
+  "name": "gitlab",
+  "version": "1.0.0",
+  "description": "Manage GitLab.com repositories, issues, merge requests, and CI/CD pipelines using a fine-grained MCP access token.",
+  "author": {
+    "name": "GitLab",
+    "url": "https://gitlab.com"
+  },
+  "homepage": "https://gitlab.com",
+  "interface": {
+    "displayName": "GitLab",
+    "shortDescription": "Manage repositories, issues, and merge requests",
+    "logo": "./assets/logo.png"
+  }
+}

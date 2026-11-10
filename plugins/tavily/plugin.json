@@ -1,0 +1,14 @@
+{
+  "name": "tavily",
+  "description": "Search the web, extract page content, crawl websites, and perform multi-source research.",
+  "author": {
+    "name": "Tavily",
+    "url": "https://www.tavily.com"
+  },
+  "homepage": "https://www.tavily.com",
+  "interface": {
+    "displayName": "Tavily",
+    "shortDescription": "Search, extract, and research web content",
+    "logo": "./assets/logo.png"
+  }
+}

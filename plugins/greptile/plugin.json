@@ -1,0 +1,15 @@
+{
+  "name": "greptile",
+  "version": "1.0.0",
+  "description": "Read code review feedback, inspect pull requests, and search repository knowledge in Greptile.",
+  "author": {
+    "name": "Greptile",
+    "url": "https://www.greptile.com"
+  },
+  "homepage": "https://www.greptile.com",
+  "interface": {
+    "displayName": "Greptile",
+    "shortDescription": "Review code feedback and repository knowledge",
+    "logo": "./assets/logo.svg"
+  }
+}

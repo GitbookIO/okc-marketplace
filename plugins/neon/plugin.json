@@ -1,0 +1,14 @@
+{
+  "name": "neon",
+  "description": "Manage Neon projects and Postgres databases, inspect schemas, and query data.",
+  "author": {
+    "name": "Neon",
+    "url": "https://neon.com"
+  },
+  "homepage": "https://neon.com",
+  "interface": {
+    "displayName": "Neon",
+    "shortDescription": "Manage and query serverless Postgres databases",
+    "logo": "./assets/logo.svg"
+  }
+}
