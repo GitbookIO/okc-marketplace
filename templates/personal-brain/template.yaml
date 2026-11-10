@@ -1,0 +1,33 @@
+# Questions the app asks when someone creates a repo from this template. Each is optional:
+# skipping it keeps the example, like "Use example data". A tool answer keeps that tool's
+# ingest workflow and drops the other one. Any answer but "Use example data" drops the example
+# meetings and every concept folder built from them. The example sources you keep rebuild those
+# pages when the repo is created. Sources only come in through inbox/, so they get no question.
+questions:
+  - id: meetings
+    title: Where do you take meeting notes?
+    hint: Meetings feed your topic, project and person pages
+    options:
+      - id: granola
+        label: Granola
+        files:
+          exclude:
+            - 'workflows/ingest-meetings-fireflies.md'
+            - 'meetings/mock-*.md'
+            - 'topics/*.md'
+            - 'projects/*.md'
+            - 'people/*.md'
+            - 'digests/*.md'
+      - id: other
+        label: Something else, I'll add them to the inbox
+        files:
+          exclude:
+            - 'workflows/ingest-meetings-fireflies.md'
+            - 'workflows/ingest-meetings-granola.md'
+            - 'meetings/mock-*.md'
+            - 'topics/*.md'
+            - 'projects/*.md'
+            - 'people/*.md'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data
