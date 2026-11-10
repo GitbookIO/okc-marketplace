@@ -1,0 +1,24 @@
+{
+  "name": "supabase",
+  "version": "1.0.0",
+  "description": "Manage Supabase projects, query databases, and deploy edge functions.",
+  "author": {
+    "email": "support@supabase.io",
+    "name": "Supabase",
+    "url": "https://supabase.com"
+  },
+  "homepage": "https://supabase.com",
+  "license": "MIT",
+  "keywords": [
+    "supabase",
+    "postgres",
+    "database",
+    "backend",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Supabase",
+    "shortDescription": "Manage projects and query databases",
+    "brandColor": "#3ECE8E"
+  }
+}

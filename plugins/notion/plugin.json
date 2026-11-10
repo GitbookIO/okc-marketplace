@@ -1,0 +1,29 @@
+{
+  "name": "notion",
+  "version": "0.1.7",
+  "description": "Search, read, create, and update Notion pages and databases.",
+  "author": {
+    "name": "Notion",
+    "url": "https://www.notion.so/"
+  },
+  "homepage": "https://www.notion.so/",
+  "license": "MIT",
+  "keywords": [
+    "notion",
+    "wiki",
+    "notes",
+    "docs",
+    "projects",
+    "databases",
+    "documentation",
+    "research",
+    "meeting-prep",
+    "knowledge-management",
+    "planning"
+  ],
+  "interface": {
+    "displayName": "Notion",
+    "shortDescription": "Search and manage pages and databases",
+    "brandColor": "#111111"
+  }
+}

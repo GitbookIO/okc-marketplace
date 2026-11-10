@@ -1,0 +1,13 @@
+{
+  "name": "stripe",
+  "version": "7.0.0",
+  "description": "Search Stripe documentation and manage payments, customers, subscriptions, and invoices.",
+  "author": {
+    "name": "Stripe"
+  },
+  "homepage": "https://stripe.com",
+  "interface": {
+    "displayName": "Stripe",
+    "shortDescription": "Manage payments and subscriptions"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "sentry",
+  "version": "0.1.2",
+  "description": "Search and investigate Sentry issues, errors, and events.",
+  "author": {
+    "name": "Sentry",
+    "url": "https://sentry.io/"
+  },
+  "homepage": "https://sentry.io/",
+  "license": "MIT",
+  "keywords": [
+    "sentry",
+    "observability",
+    "triage"
+  ],
+  "interface": {
+    "displayName": "Sentry",
+    "shortDescription": "Investigate issues and errors",
+    "brandColor": "#362D59"
+  }
+}

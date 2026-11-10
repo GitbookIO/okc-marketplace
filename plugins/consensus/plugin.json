@@ -1,0 +1,13 @@
+{
+  "name": "consensus",
+  "version": "4.0.0",
+  "description": "Search and synthesize peer-reviewed research with cited evidence.",
+  "author": {
+    "name": "Consensus"
+  },
+  "homepage": "https://consensus.app",
+  "interface": {
+    "displayName": "Consensus",
+    "shortDescription": "Explore scientific research"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "datadog",
+  "version": "10.0.0",
+  "description": "Search and investigate Datadog telemetry for accounts hosted in the US1 region.",
+  "author": {
+    "name": "Datadog"
+  },
+  "homepage": "https://www.datadoghq.com",
+  "interface": {
+    "displayName": "Datadog (Preview)",
+    "shortDescription": "Search and investigate telemetry (US1)"
+  }
+}

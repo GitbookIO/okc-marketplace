@@ -1,0 +1,13 @@
+{
+  "name": "canva",
+  "version": "14.0.0",
+  "description": "Search, create, edit, and review Canva designs.",
+  "author": {
+    "name": "Canva Pty Ltd."
+  },
+  "homepage": "https://www.canva.com",
+  "interface": {
+    "displayName": "Canva",
+    "shortDescription": "Create and edit designs"
+  }
+}

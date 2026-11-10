@@ -1,0 +1,15 @@
+{
+  "name": "granola",
+  "version": "1.0.0",
+  "description": "Search Granola meeting notes and transcripts to retrieve decisions and context.",
+  "author": {
+    "name": "Granola",
+    "url": "https://www.granola.ai"
+  },
+  "homepage": "https://www.granola.ai",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Granola",
+    "shortDescription": "Search meeting notes and transcripts"
+  }
+}

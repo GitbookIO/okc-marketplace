@@ -1,0 +1,144 @@
+{
+  "name": "gitbook-marketplace",
+  "interface": {
+    "displayName": "GitBook official"
+  },
+  "plugins": [
+    {
+      "name": "linear",
+      "source": {
+        "source": "local",
+        "path": "./plugins/linear"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "canva",
+      "source": {
+        "source": "local",
+        "path": "./plugins/canva"
+      },
+      "category": "Creativity"
+    },
+    {
+      "name": "stripe",
+      "source": {
+        "source": "local",
+        "path": "./plugins/stripe"
+      },
+      "category": "Finance"
+    },
+    {
+      "name": "vercel",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vercel"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "github",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "notion",
+      "source": {
+        "source": "local",
+        "path": "./plugins/notion"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cloudflare",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cloudflare"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "sentry",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sentry"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "granola",
+      "source": {
+        "source": "local",
+        "path": "./plugins/granola"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "monday-com",
+      "source": {
+        "source": "local",
+        "path": "./plugins/monday-com"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "supabase",
+      "source": {
+        "source": "local",
+        "path": "./plugins/supabase"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "datadog",
+      "source": {
+        "source": "local",
+        "path": "./plugins/datadog"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "airtable",
+      "source": {
+        "source": "local",
+        "path": "./plugins/airtable"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "posthog",
+      "source": {
+        "source": "local",
+        "path": "./plugins/posthog"
+      },
+      "category": "Data & Analytics"
+    },
+    {
+      "name": "clickup",
+      "source": {
+        "source": "local",
+        "path": "./plugins/clickup"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "consensus",
+      "source": {
+        "source": "local",
+        "path": "./plugins/consensus"
+      },
+      "category": "Education & Research"
+    },
+    {
+      "name": "higgsfield",
+      "source": {
+        "source": "local",
+        "path": "./plugins/higgsfield"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

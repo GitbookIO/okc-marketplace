@@ -1,0 +1,28 @@
+{
+  "name": "cloudflare",
+  "version": "0.1.2",
+  "description": "Search and execute Cloudflare API operations.",
+  "author": {
+    "name": "Cloudflare",
+    "url": "https://workers.cloudflare.com/"
+  },
+  "homepage": "https://workers.cloudflare.com/",
+  "license": "MIT",
+  "keywords": [
+    "cloudflare",
+    "workflow",
+    "deployment",
+    "edge-functions",
+    "edge",
+    "analytics",
+    "wrangler",
+    "agents-sdk",
+    "serverless",
+    "ai-gateway"
+  ],
+  "interface": {
+    "displayName": "Cloudflare",
+    "shortDescription": "Manage Cloudflare services through its API",
+    "brandColor": "#F48120"
+  }
+}

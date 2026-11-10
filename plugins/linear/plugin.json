@@ -1,0 +1,16 @@
+{
+  "name": "linear",
+  "version": "5.0.1",
+  "description": "Search, create, and update Linear issues, projects, and initiatives.",
+  "author": {
+    "name": "Linear Orbit, Inc",
+    "url": "https://linear.app/"
+  },
+  "homepage": "https://linear.app/",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Linear",
+    "shortDescription": "Plan and manage issues and projects",
+    "brandColor": "#5E6AD2"
+  }
+}

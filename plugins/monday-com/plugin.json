@@ -1,0 +1,13 @@
+{
+  "name": "monday-com",
+  "version": "2.0.0",
+  "description": "Search monday.com boards and manage projects, items, timelines, and updates.",
+  "author": {
+    "name": "monday.com"
+  },
+  "homepage": "https://monday.com",
+  "interface": {
+    "displayName": "monday.com",
+    "shortDescription": "Manage projects, tasks, and CRM"
+  }
+}

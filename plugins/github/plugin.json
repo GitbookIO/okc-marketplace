@@ -1,0 +1,31 @@
+{
+  "name": "github",
+  "version": "0.1.12",
+  "description": "Search repositories and manage GitHub issues, pull requests, and workflows.",
+  "author": {
+    "name": "GitHub",
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "microsoft",
+    "git",
+    "repositories",
+    "source control",
+    "pull requests",
+    "github actions",
+    "ci/cd",
+    "pull-request",
+    "code-review",
+    "issues",
+    "ci",
+    "actions"
+  ],
+  "interface": {
+    "displayName": "GitHub",
+    "shortDescription": "Manage repositories, issues, and pull requests",
+    "brandColor": "#24292F"
+  }
+}

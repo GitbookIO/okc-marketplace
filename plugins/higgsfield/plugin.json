@@ -1,0 +1,13 @@
+{
+  "name": "higgsfield",
+  "version": "1.2.1",
+  "description": "Generate images and videos from prompts and reference media.",
+  "author": {
+    "name": "Higgsfield AI, Inc."
+  },
+  "homepage": "https://higgsfield.ai",
+  "interface": {
+    "displayName": "Higgsfield",
+    "shortDescription": "Generate images and videos"
+  }
+}

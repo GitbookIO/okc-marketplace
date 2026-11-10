@@ -1,0 +1,14 @@
+{
+  "name": "clickup",
+  "version": "1.0.3",
+  "description": "Search workspace content and manage ClickUp tasks and projects.",
+  "author": {
+    "name": "ClickUp"
+  },
+  "homepage": "https://clickup.com",
+  "license": "MIT",
+  "interface": {
+    "displayName": "ClickUp",
+    "shortDescription": "Search and manage tasks and projects"
+  }
+}
