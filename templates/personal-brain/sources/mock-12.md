@@ -9,12 +9,12 @@ author: Maya Chen
 
 ## Summary
 
-Chapters 6 to 8: a winter storm cuts the island off for three days and Brandsma's plan for the week falls apart, while the neighbors only ever plan the next tide. Halfway through the year she understands her first joke at the harbor.
+Chapters 6 to 8: a storm cuts the island off and Brandsma's plan for the week falls apart, while the neighbors only ever plan the next tide. She gets her first joke at the harbor. Made me think about our cutover date.
 
 ## Note
 
-Chapters 6 to 8, the winter storm. The island is cut off for three days, the ferry doesn't run, and Brandsma's plan for the week is useless by Monday morning. The neighbors aren't surprised. They never planned the week in the first place, only the next tide.
+Low Tides, ch 6 to 8. The winter storm. Island cut off for three days, no ferry, and her plan for the week is useless by Monday morning. The neighbors aren't even surprised. They never planned the week in the first place, only the next tide.
 
-She's halfway through the year, and says she finally understood a joke at the harbor.
+Halfway through the year she finally gets a joke at the harbor. Months of listening for one joke. I want that.
 
-Made me think of our cutover date. Not sure what to do with that yet.
+Made me think about our cutover date. Not sure what to do with that yet.

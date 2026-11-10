@@ -21,8 +21,9 @@ Don't edit `sources/` or `meetings/` either. They're records of what was capture
    - `digests/`: one weekly review per week, with what was captured and the open threads. Concept folder, written by Weekly review.
    - `sources/`: one record per item that came through the inbox. Record folder.
    - `meetings/`: one record per meeting, from Granola, Fireflies or the inbox. Record folder.
-4. Pages with `status: draft` aren't reviewed yet. Pages past their `stale_after` date may be out of date. When notes disagree, say so and quote both sides from the Contradictions section, rather than picking one.
-5. Check `types/` for the fields a type uses, and `log.md` for what changed recently, newest first.
+4. Notes in `sources/` are in the owner's own words, in the first person. Pages are written to the owner, in the second person: "you" on a page means the owner, never you, the agent. When you answer, speak to the owner the same way.
+5. Pages with `status: draft` aren't reviewed yet. Pages past their `stale_after` date may be out of date. When notes disagree, say so and quote both sides from the Contradictions section, rather than picking one.
+6. Check `types/` for the fields a type uses, and `log.md` for what changed recently, newest first.
 
 ## Save what you discussed
 
@@ -31,7 +32,8 @@ When the person asks you to save or remember something, like a summary of your c
 1. Make a branch, never `main`.
 2. Add one file to `inbox/`, named `inbox/<YYYY-MM-DD>-<slug>.md`, like `inbox/2026-11-09-ledger-backfill-order.md`. One file per item.
 3. Write it as plain Markdown, no frontmatter:
-   - a first line saying what it is, who it was with and the date, like `Conversation with Claude about the ledger backfill, 9 November 2026`
+   - in the person's voice, in the first person, the way they'd write the note themselves: "Dual writes first", "I'll tell Dev", never "Maya decided" or "you decided"
+   - a first line saying what it is, who it was with and the date, like `Talked the ledger backfill through with Claude, 9 November 2026`
    - what was concluded, in the person's words where you can, one point per line
    - what's still open, and anything someone agreed to do, with who and when
    - names and project titles spelled the way `people/` and `projects/` spell them, and nothing you made up

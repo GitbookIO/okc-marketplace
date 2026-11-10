@@ -1,7 +1,7 @@
 ---
 type: Topic
 title: "Language learning"
-description: "Flashcards every day or months of listening: Femke and A Year of Low Tides disagree, and Maya is doing both."
+description: "Flashcards every day, or months of listening? Femke and the book disagree, so you're doing both."
 aliases: ["Flashcards", "Spaced repetition"]
 related: ["/topics/a-year-of-low-tides.md", "/topics/dutch-grammar.md"]
 sources:
@@ -23,17 +23,17 @@ generated:
 stale_after: "2026-11-30T23:40:00Z"
 ---
 
-Two ways of learning a language pull against each other in Maya's notes: Femke's daily flashcards, and the months of listening Ilse Brandsma describes in A Year of Low Tides.[^sources-mock-2][^sources-mock-8] Maya is doing both, with a daily podcast added in late October.[^sources-mock-8][^sources-mock-11]
+Two ways of learning a language keep pulling against each other in your notes: Femke's daily flashcards, and the months of listening in A Year of Low Tides.[^sources-mock-2][^sources-mock-8] You're doing both, and since late October a Dutch podcast on the way to work too.[^sources-mock-8][^sources-mock-11]
 
 ## Current understanding
 
-- Femke sees vocabulary, not grammar, as the bottleneck for the first three months, and wants 20 flashcards a day.[^sources-mock-2]
-- Maya added 15 minutes of a Dutch news podcast a day on the way to work.[^sources-mock-11]
-- In the book, Brandsma listens at the harbor for months before speaking, then starts with phrases she has heard a hundred times.[^sources-mock-8] Halfway through her year, she understands her first joke there.[^sources-mock-12]
+- Femke thinks vocabulary, not grammar, is the bottleneck for the first three months. So: 20 flashcards a day.[^sources-mock-2]
+- 15 minutes of a Dutch news podcast a day, on the way to work.[^sources-mock-11]
+- In the book, Ilse Brandsma listens at the harbor for months before speaking, then starts with phrases she's heard a hundred times.[^sources-mock-8] Halfway through her year she finally gets a joke there.[^sources-mock-12]
 
 ## Contradictions
 
-- **Drills or listening.** Femke says listening is good but doesn't replace the flashcards.[^sources-mock-2][^sources-mock-11] Brandsma says drills teach you the words and the harbor teaches you when to say them, and she deleted her word app in the first month.[^sources-mock-8] Maya is doing both to find out.[^sources-mock-8]
+- **Drills or listening.** Femke's answer is flashcards every day, and listening doesn't replace them.[^sources-mock-2][^sources-mock-11] Brandsma says drills teach you the words and the harbor teaches you when to say them, and deleted her word app in the first month.[^sources-mock-8] You called yourself the experiment.[^sources-mock-8]
 
 ## See also
 

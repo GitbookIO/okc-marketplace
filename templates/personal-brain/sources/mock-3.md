@@ -9,16 +9,16 @@ author: Maya Chen
 
 ## Summary
 
-First design for a usage endpoint: GET /v1/usage by month, cursor pagination like list shipments, amounts as integers in minor units, behind a beta flag per account, with the docs page written before the code. Open: how voided labels show up.
+First pass at a usage endpoint: GET /v1/usage by month, the same cursor pagination as list shipments, integer amounts in minor units, a beta flag per account, docs before code. Still unsure how voided labels show up.
 
 ## Note
 
-Usage API, first pass. Customers need to see labels bought before the invoice arrives.
+Usage API, first pass. Customers want to see labels bought before the invoice shows up.
 
-- `GET /v1/usage`, filtered by month, listing labels bought with the amount for each.
-- Cursor pagination, the same as list shipments, pages of up to 200. Don't invent a second style.
-- Amounts in minor units, as integers, with a currency. Never floats.
-- Behind a beta flag per account until 1 December.
-- Write the docs page before the code. If I can't explain a field in one sentence, it's the wrong field.
+- `GET /v1/usage`, by month: labels bought, amount for each
+- cursor pagination, same as list shipments, max 200 a page. do NOT invent a second style
+- amounts: integers, minor units, with a currency. never floats. never.
+- beta flag per account until 1 Dec
+- docs page first, then code. can't explain a field in one sentence → wrong field
 
-Open: does a voided label show up with a negative amount, or disappear?
+?? voided label: negative amount, or just gone?

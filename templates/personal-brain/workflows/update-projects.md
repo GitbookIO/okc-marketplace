@@ -27,7 +27,7 @@ You keep the pages in `projects/`: one per piece of work with a goal and an end 
    - `target_date`: the date a record agreed on. Keep an existing one unless a later record changed it.
    - `sources`: every record you used, with `resource` as the bundle path, `id` as `<folder>-<filename without .md>` and `title`. `generated`: the workflow signature you were given, with `at` now. `stale_after`: 30 days later. Leave `verified` as it is.
 5. Body:
-   - One paragraph: what the project is for and where it stands.
+   - One paragraph: what the project is for and where it stands, written to the owner in the second person: "You're moving credits and refunds into the Ledger", never the owner's name or "I".
    - `## Where it stands`: what's done and what's under way, with footnotes. When the records describe phases or steps in order, add a Mermaid `flowchart LR` in a `mermaid` code block with one node per phase, and mark the current one.
    - `## Next steps`: open action items, each with who owns it and any date, with footnotes.
    - `## Decisions`: what was agreed, newest first, with the date and a footnote.

@@ -15,9 +15,9 @@ duration_minutes: 60
 
 ## Notes
 
-- Three options: per label bought, per API call, or flat volume tiers like today.
-- Sam: customers think in labels. Nobody knows how many API calls they make.
-- Owen: per call makes revenue hard to predict. A checkout page can quote rates a hundred times for one order.
-- Hana: tiers are what customers complain about most today.
-- Agreed: per label bought, and rate quotes stay free.
-- Owen to bring a free tier to a separate meeting.
+- 3 options: per label bought / per API call / flat volume tiers (today)
+- Sam: customers think in labels, nobody knows their API call count
+- Owen: per call = unpredictable revenue. a checkout page can quote rates 100x for one order
+- Hana: tiers are the top billing complaint right now
+- AGREED: per label bought, quotes stay free
+- Owen to bring a free tier to a separate meeting

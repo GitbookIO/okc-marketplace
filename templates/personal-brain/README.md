@@ -1,6 +1,6 @@
 # Personal brain
 
-This repo is one person's notes, compiled into a wiki by workflows instead of by hand. You drop what you want to keep into `inbox/`: your own notes, links, meeting notes, and summaries of conversations that any agent connected over MCP saves for you. Your meetings come in from Granola. Workflows turn each item into a record, then fold the records into a page per topic with what you currently understand and where your notes disagree, a page per project, and a page per person you keep coming back to. A weekly review sums up what you captured and what's still open, and a gardener merges duplicate topics, fixes links and keeps the page list in `index.md`. Every change lands on a branch for you to review, and any agent can read the result. It starts with example data for Maya Chen, a fictional product engineer at Acme, whose notes mix a migration she's leading, the APIs she's shipping and her one-on-ones with learning Dutch and a book she's reading, so you can see it work first.
+This repo is one person's notes, compiled into a wiki by workflows instead of by hand. You drop what you want to keep into `inbox/`: your own notes, links, meeting notes, and summaries of conversations that any agent connected over MCP saves for you. Your meetings come in from Granola. Workflows turn each item into a record, keeping your notes in your own words, then fold the records into pages written to you: a page per topic with what you currently understand and where your notes disagree, a page per project, and a page per person you keep coming back to. A weekly review sums up what you captured and what's still open, and a gardener merges duplicate topics, fixes links and keeps the page list in `index.md`. Every change lands on a branch for you to review, and any agent can read the result. It starts with example data for Maya Chen, a fictional product engineer at Acme, whose notes mix a migration she's leading, the APIs she's shipping and her one-on-ones with learning Dutch and a book she's reading, so you can see it work first.
 
 ## How it works
 
@@ -40,18 +40,18 @@ Maya hasn't decided whether the ledger migration turns on dual writes before or 
 2. Connect Claude, or any agent, to this repo over MCP, talk something through, and ask it to save what you discussed. Following `AGENTS.md`, it makes a branch and adds one file to `inbox/`. To try it without an agent, make a branch and add `inbox/2026-11-09-ledger-backfill-order.md` yourself:
 
    ```text
-   Conversation with Claude about the ledger backfill, 9 November 2026
+   Talked the ledger backfill through with Claude, 9 November 2026
 
-   - Dual writes go on first, then the backfill. Anything written while the backfill runs lands in both places, so there's no catch-up run.
-   - Dev's worry was the backfill fighting live writes. Idempotency keys answer it: the backfill uses each old credit's or refund's id as its key, so the Ledger refuses an entry dual writes already made and returns the first one.
-   - The same keys make the backfill safe to re-run, batch by batch, after a failure.
+   - Decided: dual writes go on first, then the backfill. Anything written while the backfill runs lands in both places, so no catch-up run.
+   - Dev's worry was the backfill fighting live writes. Idempotency keys answer it: the backfill uses each old credit's or refund's id as its key, so the Ledger refuses anything dual writes already wrote and hands back the first entry.
+   - Same keys make the backfill safe to re-run, batch by batch, if it falls over.
    - Still open: how shadow invoices compare rounding. Ask Owen.
-   - Agree the order with Dev Okafor on 10 November, the day shadow invoices start.
+   - I'll agree the order with Dev Okafor on 10 November, the day shadow invoices start.
    ```
 
    Ingest inbox writes a Source record in `sources/` on that branch and moves the original to `archive/`.
 3. Merge the branch. Update topics opens a branch that changes two topic pages:
-   - `topics/zero-downtime-migrations.md`: the contradiction is settled. Dual writes come first, and the page says what settled it, citing the conversation.
+   - `topics/zero-downtime-migrations.md`: the contradiction is settled. Dual writes come first, and the page tells you what settled it, citing the conversation.
    - `topics/idempotency.md`: the backfill uses the old ids as keys, which makes it safe alongside dual writes and safe to re-run.
 
    Update projects and Update people open branches too, for the decision on `projects/ledger-migration.md` and the commitments on `people/dev-okafor.md` and `people/owen-brandt.md`.

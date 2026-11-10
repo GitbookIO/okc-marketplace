@@ -1,7 +1,7 @@
 ---
 type: Person
 title: "Owen Brandt"
-description: "Finance at Acme, who signs off on the ledger migration's cutover."
+description: "Finance. Signs off on the ledger migration's cutover."
 role: Finance
 organization: Acme
 aliases: ["Owen"]
@@ -24,19 +24,19 @@ generated:
 stale_after: "2027-01-05T17:20:00Z"
 ---
 
-Owen Brandt speaks for finance in Maya's billing work. He signs off on the ledger migration's cutover, and holds the line that invoices already sent never change.[^meetings-mock-2][^meetings-mock-8]
+Owen speaks for finance in your billing work. Owen signs off on the ledger migration's cutover, and won't move on one thing: invoices already sent never change.[^meetings-mock-2][^meetings-mock-8]
 
 ## Recent conversations
 
-- 6 November, in Maya's notes: Owen wants every invoice to close at midnight UTC. Maya told him on 2 November that the beta's first invoices come with a CSV, and he's fine with it.[^sources-mock-13]
+- 6 November, your notes: Owen wants every invoice to close at midnight UTC. You told Owen on 2 November that the beta's first invoices come with a CSV, and that was fine.[^sources-mock-13]
 - 3 November, migration sync: rounding per label is right, but invoices already sent can't change.[^meetings-mock-8]
-- 14 October, pricing review: per call makes revenue hard to predict. He wants a free tier discussed separately.[^meetings-mock-4]
-- 6 October, kickoff: he signs off on the cutover after two weeks of shadow invoices matching for every account.[^meetings-mock-2]
+- 14 October, pricing review: charging per call makes revenue unpredictable. Owen wants a free tier discussed separately.[^meetings-mock-4]
+- 6 October, kickoff: Owen signs off after two weeks of every account matching.[^meetings-mock-2]
 
 ## Open commitments
 
-- Owen signs off on the cutover once shadow invoices have matched for two weeks.[^meetings-mock-2]
-- Owen brings a free tier for usage billing to a separate meeting.[^meetings-mock-4]
+- Owen signs off on the cutover after two weeks of matching shadow invoices.[^meetings-mock-2]
+- Owen brings a free tier to a separate meeting.[^meetings-mock-4]
 
 ## Topics
 

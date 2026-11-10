@@ -9,14 +9,16 @@ author: Maya Chen
 
 ## Summary
 
-Lesson 5: separable verbs split in a main clause and stay together at the end of a subclause. First three minutes with Femke without English. Maya added 15 minutes of a Dutch news podcast a day, which Femke says doesn't replace the flashcards.
+Lesson 5: separable verbs split in a main clause and rejoin at the end of a subclause. My first three minutes with Femke without any English. Added a daily Dutch news podcast, which Femke says doesn't replace the flashcards.
 
 ## Note
 
-Lesson 5.
+Lesson 5. Separable verbs.
+- main clause, they split: opbellen → "Ik bel je morgen op"
+- subclause, back together at the end: "omdat ik je morgen opbel"
 
-- Separable verbs split in a main clause: opbellen becomes "Ik bel je morgen op". In a subclause they stay together at the end: "omdat ik je morgen opbel".
-- First three minutes with Femke without any English. Mostly present tense.
-- I've added 15 minutes of a Dutch news podcast on the way to work. Femke says listening is good, but it doesn't replace the flashcards.
+!! First three minutes with Femke with zero English. Mostly present tense, but still.
 
-Christmas is eight weeks away.
+Started 15 min of a Dutch news podcast on the way to work. Femke: listening is good, doesn't replace the flashcards. (She will not let the flashcards go.)
+
+8 weeks to Christmas.

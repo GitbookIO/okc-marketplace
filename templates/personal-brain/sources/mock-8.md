@@ -9,14 +9,14 @@ author: Maya Chen
 
 ## Summary
 
-Chapters 3 to 5: Brandsma learns Frisian by listening at the harbor for months, not from a course, and dismisses drills. That's the opposite of Femke's flashcards.
+Chapters 3 to 5: Ilse Brandsma learns Frisian by listening at the harbor for months and has no time for drills. That's the opposite of Femke's flashcards, and I'm doing both.
 
 ## Note
 
-Chapters 3 to 5. Ilse Brandsma learns Frisian at the harbor, not from a course. She listens to the fishermen for months before she says anything, then starts with the phrases she has heard a hundred times.
+Low Tides, ch 3 to 5. Ilse Brandsma learns Frisian at the harbor, not from a course. Months of just listening to the fishermen before she says a word, then she starts with the phrases she's heard a hundred times.
 
-She's dismissive of drills: drills teach you the words, the harbor teaches you when to say them. She tried a word app in the first month and deleted it.
+Pretty dismissive of drills: "drills teach you the words, the harbor teaches you when to say them". Tried a word app in month one, deleted it.
 
-That's the opposite of Femke's 20 flashcards a day. I'm doing both, so I'll find out.
+Exact opposite of Femke's 20 flashcards a day. I'm doing both, so I guess I'm the experiment.
 
-Also: the island's ferry runs by the tide, not the clock. Everyone's plans bend around it.
+Also: the ferry runs by the tide, not the clock, and everyone's plans just bend around it. Love that.

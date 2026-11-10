@@ -9,14 +9,14 @@ author: Maya Chen
 
 ## Summary
 
-The Idempotent charges RFC says a failed charge is retried 5 times with exponential backoff, and billing shipped 3 retries 10 seconds apart. With idempotency keys a retry is always safe. Open: which the backfill should use, and why billing shipped with 3.
+The RFC says a failed charge is retried 5 times with backoff, billing shipped 3 retries 10 seconds apart, and the backfill copied billing. With idempotency keys retries are safe either way. I'd go with the RFC, but nobody's said why billing shipped 3.
 
 ## Note
 
-Thinking about retries after Tuesday's sync.
+Retries. Still chewing on Tuesday's sync.
 
-- The Idempotent charges RFC says a failed charge is retried 5 times, with exponential backoff starting at 2 seconds.
-- What shipped in billing, per Dev: 3 retries, 10 seconds apart.
-- With idempotency keys a retry is always safe, so more retries cost nothing but time. Fewer retries means more failed charges for support to chase.
+- Idempotent charges RFC: a failed charge gets retried 5x, exponential backoff from 2s
+- what actually shipped in billing (per Dev): 3x, 10s apart. the backfill copied that.
+- with idempotency keys a retry is always safe. more retries only cost time. fewer = more failed charges for support to chase.
 
-Which one should the backfill use? I'd go with the RFC, but then billing should change too, and nobody has said why it shipped with 3.
+So what should the backfill use? I'd go with the RFC, but then billing should change too, and nobody's said why it shipped with 3. Ask around.

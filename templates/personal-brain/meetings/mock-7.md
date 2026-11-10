@@ -36,4 +36,4 @@ duration_minutes: 30
 
 **Maya Chen:** The dry run, row counts per month and totals per account.
 
-**Nadia Petrov:** Then review that, and let the rest be his.
+**Nadia Petrov:** Then review that, and let the rest be Dev's.

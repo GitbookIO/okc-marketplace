@@ -22,12 +22,13 @@ You keep the topic pages in `topics/`. Each one holds what the person this repo 
    - A new page takes its slug from the title in kebab case, and `status: draft`. People remove `status: draft` once they've reviewed it. Never add it to an existing page or remove it yourself.
    - Frontmatter from `types/Topic.md`: `type: Topic`, `title`, `description` (the current understanding in one sentence), `aliases`, `related` (other topic pages this one leans on, only pages that exist, sorted by path), `sources` (every record you used, with `resource` as the bundle path, `id` as `<folder>-<filename without .md>` and `title`), `generated` (the workflow signature you were given, with `at` now) and `stale_after` (30 days later). Leave `verified` as it is.
    - Body:
-     - One paragraph: the current understanding in plain words, as of the newest record.
+     - One paragraph: what the owner currently understands, in plain words, as of the newest record.
      - `## Current understanding`: one claim per bullet, with footnotes. When a newer record changes an earlier claim, write the newer one and say what it replaced and since when, like "Since 9 November: dual writes start before the backfill, replacing the plan to backfill first."
-     - `## Contradictions`: where records disagree and nothing newer settles it. One bullet each, with what each side says, footnotes on both, and which is newer. Don't pick a side unless a record does. When a newer record settles one, move it to Current understanding and say what settled it. Write `None so far.` when there are none.
+     - `## Contradictions`: where records disagree and nothing newer settles it. One bullet each, with what each side says, footnotes on both, and which is newer. Don't pick a side unless a record does. When a newer record settles one, move it to Current understanding and say what settled it. Leave the section out when there are none.
      - `## Open questions`: questions the records raise and don't answer, with footnotes. Leave the section out if there are none.
+     - For a book, use `## What you're taking from it` in place of Current understanding, organized by chapter, and add `## Lines you kept` with the lines the notes quote.
      - `## See also`: relative links to the related topics, and to the pages in `people/` and `projects/` that exist for the people and projects these records name. Leave it out if it would be empty.
-4. Write notes for the person, not about them. Keep their own phrasing where it's precise. Never add a claim no record makes, and never smooth over a disagreement.
+4. Write to the owner, in the second person: "You handed the backfill to Dev on 21 October", never "<name> handed" or "I handed". Their notes are in the first person, so turn their "I" into "you". Keep their own phrasing where it's precise, and short. Never add a claim no record makes, and never smooth over a disagreement.
 
 Keep what people wrote by hand. Never edit records, or pages in `people/` and `projects/`.
 

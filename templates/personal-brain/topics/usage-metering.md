@@ -1,7 +1,7 @@
 ---
 type: Topic
 title: "Usage metering"
-description: "Metering counts a label when it's bought, minus voids within 24 hours, but the month boundary differs between Acme and Bramble."
+description: "A label counts when it's bought, minus voids within 24 hours. Where a month ends depends on who you ask."
 status: draft
 related: ["/topics/api-design.md"]
 sources:
@@ -17,21 +17,21 @@ generated:
 stale_after: "2026-12-06T17:20:00Z"
 ---
 
-Usage metering counts a label when it's bought, and a label voided within 24 hours isn't billed, so a month's count can go down after the fact.[^sources-mock-13] Where a month ends is not agreed.[^meetings-mock-9][^sources-mock-13]
+Metering counts a label when it's bought, and a label voided within 24 hours isn't billed, so a month's count can go down after the fact.[^sources-mock-13] Where the month ends is the part nobody agrees on.[^meetings-mock-9][^sources-mock-13]
 
 ## Current understanding
 
 - A label counts when it's bought.[^sources-mock-13]
-- A label voided within 24 hours isn't billed, and the usage page has to show the count going down.[^sources-mock-13]
+- Voided within 24 hours means not billed, and the usage page has to show the count going down.[^sources-mock-13]
 - The beta's first invoices come with a CSV of every label bought.[^sources-mock-13]
 
 ## Contradictions
 
-- **Where a month ends.** Owen wants every invoice to close at midnight UTC, the same for every customer.[^sources-mock-13] Bramble's finance team closes the month on Amsterdam time, so a label bought at 00:30 on 1 December in Rotterdam belongs to different months for Acme and for Bramble.[^meetings-mock-9][^sources-mock-13]
+- **Where a month ends.** Owen wants every invoice to close at midnight UTC, the same for everyone.[^sources-mock-13] Bramble's finance team closes the month on Amsterdam time, so a label bought at 00:30 on 1 December in Rotterdam is November for Acme and December for Bramble.[^meetings-mock-9][^sources-mock-13]
 
 ## Open questions
 
-- Show both months, or tell beta customers that invoices follow UTC?[^sources-mock-13]
+- Show both months, or tell beta customers it's UTC?[^sources-mock-13]
 
 ## See also
 

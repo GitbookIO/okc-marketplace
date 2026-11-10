@@ -9,16 +9,16 @@ author: Maya Chen
 
 ## Summary
 
-First lesson with Femke de Vries. The goal is a ten-minute conversation in Dutch with Oma at Christmas. Covered verb-second word order and the verb going last after dat, omdat and als. Femke wants 20 flashcards a day.
+First lesson with Femke de Vries. My goal: ten minutes in Dutch with Oma at Christmas. Verb second in a main clause, verb last after dat, omdat and als. Homework is 20 flashcards a day.
 
 ## Note
 
-First lesson with Femke de Vries. Wednesday evenings, an hour, on video.
+Dutch, lesson 1 with Femke de Vries. Wednesdays, an hour, on video.
 
-Goal I told her: hold a ten-minute conversation with Oma in Leeuwarden at Christmas, without switching to English.
+Told her the goal: ten minutes with Oma in Leeuwarden at Christmas without bailing into English. She didn't laugh, which I appreciated.
 
-Word order:
-- The verb comes second in a main clause. "Morgen ga ik naar Utrecht", not "Morgen ik ga".
-- After dat, omdat and als, the verb goes to the end. "Ik denk dat ik morgen kom."
+Word order
+- verb second in a main clause: "Morgen ga ik naar Utrecht". NOT "Morgen ik ga" (I'll be getting this wrong for months)
+- after dat / omdat / als the verb goes to the end: "Ik denk dat ik morgen kom"
 
-Femke wants 20 flashcards a day, every day. She says vocabulary is the bottleneck for the first three months, not grammar.
+Homework: 20 flashcards a day. Every day. Her line: for the first three months vocabulary is the bottleneck, not grammar.

@@ -1,7 +1,7 @@
 ---
 type: Person
 title: "Nadia Petrov"
-description: "Maya's manager, with a one-on-one every other Thursday."
+description: "Your manager. One-on-ones every other Thursday."
 role: Head of Engineering
 organization: Acme
 aliases: ["Nadia"]
@@ -27,14 +27,14 @@ verified:
     at: "2026-11-02T05:00:00Z"
 ---
 
-Nadia Petrov is Maya's manager. They meet for a one-on-one every other Thursday, where the ledger migration and who works on it have come up every time.[^meetings-mock-1][^meetings-mock-5][^meetings-mock-7]
+Nadia is your manager. You have a one-on-one every other Thursday, and the ledger migration, and who does what on it, has come up every time.[^meetings-mock-1][^meetings-mock-5][^meetings-mock-7]
 
 ## Recent conversations
 
-- 29 October: nobody can join Payments before January, so the beta's first invoices come with a CSV and line items follow in January. On the backfill handover, Nadia's advice was to review what was agreed and let the rest be Dev's.[^meetings-mock-7]
-- 21 October, in Maya's notes: after Nadia's push, Maya handed the backfill to Dev.[^sources-mock-9]
-- 15 October: Nadia approved the migration plan and asked Maya to hand the backfill to Dev, pairing for the first week. Maya agreed to try. Nadia said she'd check whether anyone could join Payments.[^meetings-mock-5]
-- 1 October: Maya walked through the migration's scope. Nadia asked who would watch the whole migration if Maya ran the backfill herself.[^meetings-mock-1]
+- 29 October: nobody can join Payments before January, so the beta's first invoices come with a CSV and line items follow in January. On the backfill, Nadia's advice: review what you and Dev agreed, and let the rest be Dev's.[^meetings-mock-7]
+- 21 October, your notes: after Nadia's push, you handed the backfill to Dev.[^sources-mock-9]
+- 15 October: Nadia approved your migration plan, and asked you to hand the backfill to Dev and pair for the first week. You said you'd try. Nadia would check whether anyone could join Payments.[^meetings-mock-5]
+- 1 October: you walked through the migration's scope. Nadia asked who'd watch the whole migration if you were heads down in the backfill.[^meetings-mock-1]
 
 ## Topics
 

@@ -1,7 +1,7 @@
 ---
 type: Topic
 title: "API design"
-description: "How Maya designs endpoints like the usage API: one pagination style, integer amounts, a beta flag, and the docs page first."
+description: "Your rules for the usage API: one pagination style, integer amounts, a beta flag, docs first."
 aliases: ["Usage API"]
 sources:
   - id: sources-mock-3
@@ -13,22 +13,18 @@ generated:
 stale_after: "2026-10-31T13:10:00Z"
 ---
 
-The first design for a usage endpoint follows the conventions Acme's API already has, and starts from the docs page rather than the code.[^sources-mock-3]
+Your rules of thumb from the first pass at a usage endpoint. Mostly: reuse what Acme's API already does, and write the docs page before the code.[^sources-mock-3]
 
 ## Current understanding
 
-- Reuse what exists: cursor pagination like list shipments, with pages of up to 200. Don't invent a second style.[^sources-mock-3]
+- One pagination style: cursor pagination like list shipments, up to 200 a page. Don't invent a second one.[^sources-mock-3]
 - Amounts are integers in minor units, with a currency. Never floats.[^sources-mock-3]
-- New endpoints ship behind a beta flag per account.[^sources-mock-3]
-- Write the docs page before the code. A field that can't be explained in one sentence is the wrong field.[^sources-mock-3]
-
-## Contradictions
-
-None so far.
+- New endpoints go behind a beta flag per account.[^sources-mock-3]
+- Docs page first. If you can't explain a field in one sentence, it's the wrong field.[^sources-mock-3]
 
 ## Open questions
 
-- Does a voided label show up in usage with a negative amount, or disappear?[^sources-mock-3]
+- Does a voided label show up in usage with a negative amount, or just disappear?[^sources-mock-3]
 
 ## See also
 

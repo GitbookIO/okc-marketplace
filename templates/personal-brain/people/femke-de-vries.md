@@ -1,7 +1,7 @@
 ---
 type: Person
 title: "Femke de Vries"
-description: "Maya's Dutch tutor, with a lesson every Wednesday evening."
+description: "Your Dutch tutor. Wednesday evenings."
 role: Dutch tutor
 aliases: ["Femke"]
 sources:
@@ -26,13 +26,13 @@ verified:
     at: "2026-11-05T08:30:00Z"
 ---
 
-Femke de Vries teaches Maya Dutch, an hour on video every Wednesday evening since 30 September.[^sources-mock-2]
+Femke teaches you Dutch, an hour on video every Wednesday evening since 30 September.[^sources-mock-2]
 
 ## Recent conversations
 
-- 4 November, lesson 6: ten minutes all in Dutch. Her rule for the past tense is zijn for moving somewhere and changes of state, hebben for nearly everything else. On Oma: start with u.[^sources-mock-14]
-- 28 October, lesson 5: separable verbs, and the first three minutes without English. Listening is good, but doesn't replace the flashcards.[^sources-mock-11]
-- 14 October, lesson 3: de and het, and her view that je is the default, even with strangers.[^sources-mock-7]
+- 4 November, lesson 6: ten minutes all in Dutch. Femke's rule for the past tense: zijn for moving somewhere and changes of state, hebben for nearly everything else. On Oma: start with u.[^sources-mock-14]
+- 28 October, lesson 5: separable verbs, and your first three minutes without English. Listening is good, Femke says, but it doesn't replace the flashcards.[^sources-mock-11]
+- 14 October, lesson 3: de and het, and je as the default, even with strangers.[^sources-mock-7]
 - 30 September, lesson 1: word order, and 20 flashcards a day.[^sources-mock-2]
 
 ## Topics

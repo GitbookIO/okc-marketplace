@@ -9,14 +9,18 @@ author: Maya Chen
 
 ## Summary
 
-Lesson 3 with Femke: learn de or het with each noun, but diminutives are always het. The textbook says u with strangers and older people, Femke says je is the default. Open: which to use with Oma.
+Lesson 3: learn de or het with every noun, but diminutives are always het. My textbook says u with strangers and older people, Femke says je is the default. No idea yet which to use with Oma.
 
 ## Note
 
-Lesson 3 with Femke.
+Lesson 3.
 
-- De or het: no rule that works, learn the article with the noun. But every diminutive is het: het huisje, het meisje.
-- U or je. My textbook says u with anyone you don't know and anyone older. Femke says almost nobody under 60 says u anymore, and je is the default even with strangers in shops.
-- So which do I use with Oma? Femke laughed and said that's the one case where the textbook might be right.
+de/het: no rule that works, just learn the article with the noun. One freebie: every diminutive is het. het huisje, het meisje.
 
-Still doing the flashcards. Missed two days.
+u vs je, and this is where the textbook and Femke part ways:
+- textbook: u with anyone you don't know, and anyone older
+- Femke: hardly anyone under 60 says u anymore, je is the default even with strangers in shops
+
+So... Oma? Femke laughed and said that's the one case where the textbook might have a point.
+
+Flashcards: missed two days. Not telling her.

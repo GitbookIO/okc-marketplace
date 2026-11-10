@@ -9,12 +9,17 @@ author: Maya Chen
 
 ## Summary
 
-Lesson 6: ten minutes all in Dutch with Femke, with two freezes on hebben or zijn in the past tense. Femke's answer on Oma: start with u, and switch when she says zeg maar je.
+Lesson 6: ten minutes all in Dutch with Femke. Froze twice on hebben or zijn in the past tense. Femke says start with u with Oma, and switch when she says zeg maar je.
 
 ## Note
 
-Lesson 6. Ten minutes with Femke, all Dutch, about Christmas plans. I froze twice, both times on the past tense: hebben or zijn. "Ik ben naar Utrecht gegaan", but "Ik heb gegeten". Femke's rule of thumb: zijn for moving somewhere and for changes of state, hebben for nearly everything else.
+Lesson 6. TEN MINUTES. All Dutch, about Christmas plans.
 
-Asked again about u or je with Oma. Femke: start with u. Many older people in Friesland expect it, and she'll say "zeg maar je" if she'd rather have je. Then switch.
+Froze twice, both times on the past tense: hebben or zijn?
+- "Ik ben naar Utrecht gegaan"
+- "Ik heb gegeten"
+Femke's rule of thumb: zijn when you move somewhere or something changes state, hebben for nearly everything else.
 
-Seven weeks to go.
+Asked about u or je for Oma again. Femke: start with u. Lots of older people in Friesland expect it, and she'll say "zeg maar je" if she'd rather. Then switch.
+
+7 weeks.

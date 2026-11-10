@@ -20,11 +20,11 @@ You keep the pages in `people/`: one per person the person this repo belongs to 
    - A new page gets `status: draft`. People remove it once they've reviewed the page. Never add it to an existing page or remove it yourself.
    - Frontmatter from `types/Person.md`: `type: Person`, `title` (their full name), `description` (one line: who they are to the owner), `role` and `organization` only as the records state them, `aliases` (the short names the notes use), `sources` (every record you used, with `resource` as the bundle path, `id` as `<folder>-<filename without .md>` and `title`), `generated` (the workflow signature you were given, with `at` now) and `stale_after` (60 days later). Leave `verified` as it is.
    - Body:
-     - One paragraph: who they are and how the owner knows them, from the records.
-     - `## Recent conversations`: up to eight, newest first, each with its date, what was discussed and what was agreed, with a footnote.
+     - One paragraph: who they are to the owner and how the owner knows them, from the records.
+     - `## Recent conversations`: up to eight, newest first, each with its date, what was discussed and what was agreed, with a footnote. For someone the owner only reads, like an author, call it `## What you've read` and list what the notes say about their work.
      - `## Open commitments`: what the owner said they'd do for this person, and what this person said they'd do, from action items and notes that no later record marks done. Name who owes it and since when, with footnotes. Leave the section out if there are none.
      - `## Topics`: relative links to the pages in `topics/` where this person's input shows up. Leave it out if there are none.
-4. Write only what the records state: what was said, agreed, asked and recommended. No opinions about the person, and nothing about their health, family or private life, even when a note mentions it.
+4. Write to the owner, in the second person: "Nadia is your manager", "You told Owen on 2 November", never the owner's name or "I". Write only what the records state: what was said, agreed, asked and recommended. No opinions about the person, and nothing about their health, family or private life, even when a note mentions it.
 
 Keep what people wrote by hand. Never edit records, or pages in `topics/` and `projects/`.
 
