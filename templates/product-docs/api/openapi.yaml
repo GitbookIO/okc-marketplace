@@ -1,0 +1,616 @@
+openapi: 3.1.0
+info:
+  title: Acme Shipping API
+  version: 1.15.0
+  description: |
+    Create shipments, compare carrier rates, buy labels, track parcels and receive
+    webhooks. Every request needs an API key in the Authorization header.
+servers:
+  - url: https://api.acme.example
+security:
+  - apiKey: []
+tags:
+  - name: Shipments
+    description: Create, list and cancel shipments.
+  - name: Rates
+    description: Compare carrier rates for a shipment.
+  - name: Labels
+    description: Buy shipping labels.
+  - name: Tracking
+    description: Follow a parcel from pickup to delivery.
+  - name: Webhooks
+    description: Get events sent to your server.
+
+paths:
+  /v1/shipments:
+    post:
+      operationId: createShipment
+      tags: [Shipments]
+      summary: Create a shipment
+      description: |
+        Creates a shipment from an origin, a destination and one or more parcels. A new
+        shipment has no label yet. Get rates for it, then buy a label with one of them.
+        Destination postal codes are checked against the destination country.
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ShipmentCreate'
+            example:
+              from: { name: Acme Warehouse, street1: 1 Dock Road, city: Rotterdam, postal_code: 3011 AA, country: NL }
+              to: { name: Sam Lee, street1: 20 Canal Street, city: Utrecht, postal_code: 3511 LB, country: NL }
+              parcels: [{ weight_grams: 1200, length_cm: 30, width_cm: 20, height_cm: 10 }]
+              signature_required: true
+              reference: order-4417
+      responses:
+        '201':
+          description: The shipment was created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Shipment'
+              example:
+                id: shp_8Kd2
+                status: created
+                reference: order-4417
+                signature_required: true
+                tracking_number: null
+                label_id: null
+                created_at: '2026-11-09T09:30:00Z'
+        '400':
+          description: The request is missing a field or has one in the wrong format.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: { code: invalid_request, message: to.country is required. } }
+        '409':
+          description: The Idempotency-Key was already used with a different request body.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: { code: idempotency_conflict, message: This key was used with a different body. } }
+        '422':
+          description: The destination postal code doesn't exist in the destination country.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: { code: invalid_postal_code, message: 3511 XX is not a postal code in NL. } }
+    get:
+      operationId: listShipments
+      tags: [Shipments]
+      summary: List shipments
+      description: |
+        Lists your shipments, newest first, one page at a time. Pass the `next_cursor` from
+        a page as `cursor` to get the next one. Filters from the first request apply to every
+        page. `next_cursor` is null on the last page.
+      parameters:
+        - name: limit
+          in: query
+          description: Shipments per page.
+          schema: { type: integer, minimum: 1, maximum: 200, default: 50 }
+        - name: cursor
+          in: query
+          description: The next_cursor from the previous page.
+          schema: { type: string }
+        - name: status
+          in: query
+          description: Only shipments with this status.
+          schema: { $ref: '#/components/schemas/ShipmentStatus' }
+        - name: created_after
+          in: query
+          description: Only shipments created after this time.
+          schema: { type: string, format: date-time }
+        - name: offset
+          in: query
+          deprecated: true
+          description: Deprecated. Use cursor. Skips this many shipments, and only works with limit up to 100.
+          schema: { type: integer, minimum: 0 }
+      responses:
+        '200':
+          description: One page of shipments.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [data, next_cursor]
+                properties:
+                  data:
+                    type: array
+                    items: { $ref: '#/components/schemas/Shipment' }
+                  next_cursor:
+                    type: [string, 'null']
+                    description: Cursor for the next page, or null on the last page.
+              example:
+                data:
+                  - { id: shp_8Kd2, status: in_transit, reference: order-4417, signature_required: true, tracking_number: 'PL4829103756', label_id: lbl_3Rt9, created_at: '2026-11-09T09:30:00Z' }
+                next_cursor: c2hwXzhLZDI
+        '400':
+          description: The cursor is malformed or came from a request with other filters.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: { code: invalid_cursor, message: This cursor belongs to a request with other filters. } }
+
+  /v1/shipments/{id}:
+    get:
+      operationId: getShipment
+      tags: [Shipments]
+      summary: Get a shipment
+      description: Returns one shipment with its current status.
+      parameters:
+        - $ref: '#/components/parameters/ShipmentId'
+      responses:
+        '200':
+          description: The shipment.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Shipment' }
+              example: { id: shp_8Kd2, status: label_purchased, reference: order-4417, signature_required: true, tracking_number: 'PL4829103756', label_id: lbl_3Rt9, created_at: '2026-11-09T09:30:00Z' }
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /v1/shipments/{id}/cancel:
+    post:
+      operationId: cancelShipment
+      tags: [Shipments]
+      summary: Cancel a shipment
+      description: |
+        Cancels a shipment the carrier hasn't picked up yet. If you bought a label, Acme asks
+        the carrier to void it.
+      parameters:
+        - $ref: '#/components/parameters/ShipmentId'
+      responses:
+        '200':
+          description: The cancelled shipment.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Shipment' }
+              example: { id: shp_8Kd2, status: cancelled, reference: order-4417, signature_required: true, tracking_number: 'PL4829103756', label_id: lbl_3Rt9, created_at: '2026-11-09T09:30:00Z' }
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          description: The carrier already has the parcel, or the shipment is already cancelled.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: { code: cannot_cancel, message: The carrier picked up this shipment. } }
+
+  /v1/rates:
+    post:
+      operationId: createRateQuote
+      tags: [Rates]
+      summary: Get rates
+      description: |
+        Quotes every carrier service that can take the shipment, cheapest first. Buy a label
+        with the id of one of the rates.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [shipment_id]
+              properties:
+                shipment_id:
+                  type: string
+                  description: The shipment to quote.
+            example: { shipment_id: shp_8Kd2 }
+      responses:
+        '200':
+          description: The rate quote.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/RateQuote' }
+              example:
+                id: rq_5Gh1
+                shipment_id: shp_8Kd2
+                rates:
+                  - { id: rate_71Pq, carrier: Parcelline, service: Standard, amount: '6.95', currency: EUR, estimated_days: 2 }
+                  - { id: rate_71Pr, carrier: Swiftway, service: Express, amount: '12.40', currency: EUR, estimated_days: 1 }
+                created_at: '2026-11-09T09:31:00Z'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /v1/shipments/{id}/label:
+    post:
+      operationId: buyLabel
+      tags: [Labels]
+      summary: Buy a label
+      description: |
+        Buys a label from the carrier for one of the shipment's rates, and charges it to your
+        balance. Acme waits up to 8 seconds for the carrier. Retry a request that timed out
+        with the same Idempotency-Key: if the first one went through, you get the same label
+        back and aren't charged twice.
+      parameters:
+        - $ref: '#/components/parameters/ShipmentId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [rate_id]
+              properties:
+                rate_id:
+                  type: string
+                  description: A rate from the shipment's rate quote.
+                label_format:
+                  type: string
+                  enum: [pdf_4x6, pdf_a4, zpl]
+                  default: pdf_4x6
+                  description: File format of the label. zpl is for thermal printers.
+            example: { rate_id: rate_71Pq, label_format: zpl }
+      responses:
+        '201':
+          description: The label.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Label' }
+              example:
+                id: lbl_3Rt9
+                shipment_id: shp_8Kd2
+                carrier: Parcelline
+                tracking_number: 'PL4829103756'
+                label_format: zpl
+                label_url: https://files.acme.example/labels/lbl_3Rt9.zpl
+                created_at: '2026-11-09T09:32:00Z'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          description: The shipment already has a label.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: { code: label_exists, message: This shipment already has a label. } }
+        '422':
+          description: The rate is too old to buy. Get rates again and use a new one.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: { code: rate_expired, message: This rate has expired. Get new rates. } }
+        '504':
+          description: The carrier didn't answer within 8 seconds. Retry with the same Idempotency-Key.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: { code: carrier_timeout, message: The carrier didn't answer in time. Retry with the same Idempotency-Key. } }
+
+  /v1/shipments/{id}/tracking:
+    get:
+      operationId: getTracking
+      tags: [Tracking]
+      summary: Get tracking
+      description: |
+        Returns the carrier's tracking events for a shipment, oldest first, and the estimated
+        delivery date. Events appear once the carrier scans the parcel.
+      parameters:
+        - $ref: '#/components/parameters/ShipmentId'
+      responses:
+        '200':
+          description: Tracking details.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Tracking' }
+              example:
+                shipment_id: shp_8Kd2
+                carrier: Parcelline
+                tracking_number: 'PL4829103756'
+                status: in_transit
+                estimated_delivery_date: '2026-11-11'
+                events:
+                  - { occurred_at: '2026-11-09T16:05:00Z', status: in_transit, description: Picked up by the carrier, location: Rotterdam }
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /v1/webhook_endpoints:
+    post:
+      operationId: createWebhookEndpoint
+      tags: [Webhooks]
+      summary: Create a webhook endpoint
+      description: |
+        Registers a URL that Acme sends events to. The response has the endpoint's signing
+        secret, which is shown only once. Every delivery has an Acme-Signature header: the
+        hex HMAC SHA-256 of the raw request body, keyed with that secret. Check it before you
+        trust the body. A delivery fails when your server doesn't answer with a 2xx
+        status within 10 seconds. Failed deliveries are retried 5 times over about 2 hours,
+        with growing gaps, and then marked as failed.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [url, events]
+              properties:
+                url:
+                  type: string
+                  format: uri
+                  description: HTTPS URL to send events to.
+                events:
+                  type: array
+                  description: Event types to send.
+                  items: { $ref: '#/components/schemas/EventType' }
+            example: { url: 'https://example.com/acme/webhooks', events: [tracking.updated, shipment.delivered] }
+      responses:
+        '201':
+          description: The endpoint, with its secret.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/WebhookEndpoint' }
+              example: { id: we_2Lm8, url: 'https://example.com/acme/webhooks', events: [tracking.updated, shipment.delivered], secret: whsec_9f3kQ, created_at: '2026-11-09T09:40:00Z' }
+        '400':
+          description: The URL isn't HTTPS, or an event type doesn't exist.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: { code: invalid_request, message: url must use https. } }
+    get:
+      operationId: listWebhookEndpoints
+      tags: [Webhooks]
+      summary: List webhook endpoints
+      description: Lists your webhook endpoints. Secrets aren't included.
+      responses:
+        '200':
+          description: Every endpoint.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [data]
+                properties:
+                  data:
+                    type: array
+                    items: { $ref: '#/components/schemas/WebhookEndpoint' }
+              example:
+                data:
+                  - { id: we_2Lm8, url: 'https://example.com/acme/webhooks', events: [tracking.updated, shipment.delivered], created_at: '2026-11-09T09:40:00Z' }
+
+  /v1/webhook_endpoints/{id}:
+    delete:
+      operationId: deleteWebhookEndpoint
+      tags: [Webhooks]
+      summary: Delete a webhook endpoint
+      description: Stops sending events to an endpoint and deletes it. Deliveries already queued are dropped.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The endpoint's id.
+          schema: { type: string }
+      responses:
+        '204':
+          description: The endpoint was deleted.
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+webhooks:
+  shipment.created:
+    post:
+      summary: A shipment was created.
+      requestBody:
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Event' }
+      responses:
+        '200': { description: Return any 2xx status within 10 seconds. }
+  label.purchased:
+    post:
+      summary: A label was bought for a shipment.
+      requestBody:
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Event' }
+      responses:
+        '200': { description: Return any 2xx status within 10 seconds. }
+  tracking.updated:
+    post:
+      summary: The carrier scanned the parcel and tracking has a new event.
+      requestBody:
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Event' }
+      responses:
+        '200': { description: Return any 2xx status within 10 seconds. }
+  shipment.delivered:
+    post:
+      summary: The carrier delivered the parcel.
+      requestBody:
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Event' }
+      responses:
+        '200': { description: Return any 2xx status within 10 seconds. }
+  shipment.returned:
+    post:
+      summary: The parcel is on its way back to the sender.
+      requestBody:
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Event' }
+      responses:
+        '200': { description: Return any 2xx status within 10 seconds. }
+
+components:
+  securitySchemes:
+    apiKey:
+      type: http
+      scheme: bearer
+      description: Your API key, from the dashboard. Test keys start with sk_test_.
+
+  parameters:
+    ShipmentId:
+      name: id
+      in: path
+      required: true
+      description: The shipment's id, like shp_8Kd2.
+      schema: { type: string }
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: false
+      description: |
+        A unique value you choose, like a UUID. Sending the same key again within 24 hours
+        returns the first response instead of doing the work twice.
+      schema: { type: string, maxLength: 255 }
+
+  responses:
+    NotFound:
+      description: Nothing with that id exists in your account.
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+          example: { error: { code: not_found, message: No shipment shp_0000. } }
+
+  schemas:
+    Address:
+      type: object
+      required: [name, street1, city, postal_code, country]
+      properties:
+        name: { type: string }
+        street1: { type: string }
+        street2: { type: string }
+        city: { type: string }
+        state: { type: string, description: State or province, where the country has them. }
+        postal_code: { type: string }
+        country: { type: string, description: Two-letter ISO 3166-1 country code. }
+
+    Parcel:
+      type: object
+      required: [weight_grams]
+      properties:
+        weight_grams: { type: integer, minimum: 1 }
+        length_cm: { type: number }
+        width_cm: { type: number }
+        height_cm: { type: number }
+
+    ShipmentStatus:
+      type: string
+      enum: [created, label_purchased, in_transit, delivered, returned, cancelled]
+
+    ShipmentCreate:
+      type: object
+      required: [from, to, parcels]
+      properties:
+        from: { $ref: '#/components/schemas/Address' }
+        to: { $ref: '#/components/schemas/Address' }
+        parcels:
+          type: array
+          minItems: 1
+          items: { $ref: '#/components/schemas/Parcel' }
+        signature_required:
+          type: boolean
+          default: false
+          description: Ask the carrier to get a signature on delivery. Some services cost more with it.
+        reference:
+          type: string
+          maxLength: 64
+          description: Your own id for the shipment, like an order number.
+
+    Shipment:
+      type: object
+      required: [id, status, created_at]
+      properties:
+        id: { type: string }
+        status: { $ref: '#/components/schemas/ShipmentStatus' }
+        reference: { type: [string, 'null'] }
+        signature_required: { type: boolean, description: Whether the carrier gets a signature on delivery. }
+        tracking_number: { type: [string, 'null'], description: Set once a label is bought. }
+        label_id: { type: [string, 'null'], description: Set once a label is bought. }
+        created_at: { type: string, format: date-time }
+
+    RateQuote:
+      type: object
+      required: [id, shipment_id, rates, created_at]
+      properties:
+        id: { type: string }
+        shipment_id: { type: string }
+        rates:
+          type: array
+          description: Every service that can take the shipment, cheapest first.
+          items: { $ref: '#/components/schemas/Rate' }
+        created_at: { type: string, format: date-time }
+
+    Rate:
+      type: object
+      required: [id, carrier, service, amount, currency]
+      properties:
+        id: { type: string }
+        carrier: { type: string }
+        service: { type: string }
+        amount: { type: string, description: Price as a decimal string, like 6.95. }
+        currency: { type: string, description: Three-letter ISO 4217 code. }
+        estimated_days: { type: integer, description: Business days the carrier expects delivery to take. }
+
+    Label:
+      type: object
+      required: [id, shipment_id, carrier, tracking_number, label_format, label_url, created_at]
+      properties:
+        id: { type: string }
+        shipment_id: { type: string }
+        carrier: { type: string }
+        tracking_number: { type: string }
+        label_format: { type: string, enum: [pdf_4x6, pdf_a4, zpl] }
+        label_url: { type: string, format: uri, description: Where to download the label file. }
+        created_at: { type: string, format: date-time }
+
+    Tracking:
+      type: object
+      required: [shipment_id, carrier, tracking_number, status, events]
+      properties:
+        shipment_id: { type: string }
+        carrier: { type: string }
+        tracking_number: { type: string }
+        status: { $ref: '#/components/schemas/ShipmentStatus' }
+        estimated_delivery_date: { type: [string, 'null'], format: date }
+        events:
+          type: array
+          items:
+            type: object
+            required: [occurred_at, status, description]
+            properties:
+              occurred_at: { type: string, format: date-time }
+              status: { $ref: '#/components/schemas/ShipmentStatus' }
+              description: { type: string }
+              location: { type: [string, 'null'] }
+
+    EventType:
+      type: string
+      enum: [shipment.created, label.purchased, tracking.updated, shipment.delivered, shipment.returned]
+
+    Event:
+      type: object
+      required: [id, type, created_at, data]
+      properties:
+        id: { type: string, description: Unique per event. Use it to ignore a delivery you already handled. }
+        type: { $ref: '#/components/schemas/EventType' }
+        created_at: { type: string, format: date-time }
+        data:
+          type: object
+          description: The shipment, label or tracking details the event is about.
+
+    WebhookEndpoint:
+      type: object
+      required: [id, url, events, created_at]
+      properties:
+        id: { type: string }
+        url: { type: string, format: uri }
+        events:
+          type: array
+          items: { $ref: '#/components/schemas/EventType' }
+        secret: { type: string, description: Signing secret. Only returned when the endpoint is created. }
+        created_at: { type: string, format: date-time }
+
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code: { type: string, description: Stable error code to branch on. }
+            message: { type: string, description: What went wrong, for people. }
