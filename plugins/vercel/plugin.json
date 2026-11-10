@@ -27,6 +27,7 @@
   "interface": {
     "displayName": "Vercel",
     "shortDescription": "Manage and deploy applications",
-    "brandColor": "#000000"
+    "brandColor": "#000000",
+    "logo": "./assets/logo.png"
   }
 }

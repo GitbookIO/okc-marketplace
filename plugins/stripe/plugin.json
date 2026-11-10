@@ -8,6 +8,7 @@
   "homepage": "https://stripe.com",
   "interface": {
     "displayName": "Stripe",
-    "shortDescription": "Manage payments and subscriptions"
+    "shortDescription": "Manage payments and subscriptions",
+    "logo": "./assets/logo.png"
   }
 }

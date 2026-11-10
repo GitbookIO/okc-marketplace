@@ -8,6 +8,7 @@
   "homepage": "https://www.datadoghq.com",
   "interface": {
     "displayName": "Datadog (Preview)",
-    "shortDescription": "Search and investigate telemetry (US1)"
+    "shortDescription": "Search and investigate telemetry (US1)",
+    "logo": "./assets/logo.png"
   }
 }

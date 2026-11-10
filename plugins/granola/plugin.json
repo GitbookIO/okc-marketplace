@@ -10,6 +10,7 @@
   "license": "MIT",
   "interface": {
     "displayName": "Granola",
-    "shortDescription": "Search meeting notes and transcripts"
+    "shortDescription": "Search meeting notes and transcripts",
+    "logo": "./assets/logo.png"
   }
 }

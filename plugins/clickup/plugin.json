@@ -9,6 +9,7 @@
   "license": "MIT",
   "interface": {
     "displayName": "ClickUp",
-    "shortDescription": "Search and manage tasks and projects"
+    "shortDescription": "Search and manage tasks and projects",
+    "logo": "./assets/logo.png"
   }
 }

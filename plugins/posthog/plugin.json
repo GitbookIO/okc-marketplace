@@ -24,6 +24,7 @@
   "interface": {
     "displayName": "PostHog",
     "shortDescription": "Analyze product data and manage feature flags",
-    "brandColor": "#1D4AFF"
+    "brandColor": "#1D4AFF",
+    "logo": "./assets/logo.png"
   }
 }

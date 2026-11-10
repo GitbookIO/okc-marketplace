@@ -16,6 +16,7 @@
   "interface": {
     "displayName": "Sentry",
     "shortDescription": "Investigate issues and errors",
-    "brandColor": "#362D59"
+    "brandColor": "#362D59",
+    "logo": "./assets/sentry.png"
   }
 }

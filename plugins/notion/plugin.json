@@ -24,6 +24,7 @@
   "interface": {
     "displayName": "Notion",
     "shortDescription": "Search and manage pages and databases",
-    "brandColor": "#111111"
+    "brandColor": "#111111",
+    "logo": "./assets/notion.png"
   }
 }

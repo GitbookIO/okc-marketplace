@@ -8,6 +8,7 @@
   "homepage": "https://consensus.app",
   "interface": {
     "displayName": "Consensus",
-    "shortDescription": "Explore scientific research"
+    "shortDescription": "Explore scientific research",
+    "logo": "./assets/logo.png"
   }
 }

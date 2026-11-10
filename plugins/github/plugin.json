@@ -26,6 +26,7 @@
   "interface": {
     "displayName": "GitHub",
     "shortDescription": "Manage repositories, issues, and pull requests",
-    "brandColor": "#24292F"
+    "brandColor": "#24292F",
+    "logo": "./assets/github.png"
   }
 }

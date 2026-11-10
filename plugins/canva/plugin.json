@@ -8,6 +8,7 @@
   "homepage": "https://www.canva.com",
   "interface": {
     "displayName": "Canva",
-    "shortDescription": "Create and edit designs"
+    "shortDescription": "Create and edit designs",
+    "logo": "./assets/logo.png"
   }
 }

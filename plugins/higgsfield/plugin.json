@@ -8,6 +8,7 @@
   "homepage": "https://higgsfield.ai",
   "interface": {
     "displayName": "Higgsfield",
-    "shortDescription": "Generate images and videos"
+    "shortDescription": "Generate images and videos",
+    "logo": "./assets/logo.png"
   }
 }

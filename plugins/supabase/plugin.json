@@ -19,6 +19,7 @@
   "interface": {
     "displayName": "Supabase",
     "shortDescription": "Manage projects and query databases",
-    "brandColor": "#3ECE8E"
+    "brandColor": "#3ECE8E",
+    "logo": "./assets/logo.png"
   }
 }

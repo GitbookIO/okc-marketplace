@@ -8,6 +8,7 @@
   "homepage": "https://monday.com",
   "interface": {
     "displayName": "monday.com",
-    "shortDescription": "Manage projects, tasks, and CRM"
+    "shortDescription": "Manage projects, tasks, and CRM",
+    "logo": "./assets/logo.png"
   }
 }

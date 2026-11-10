@@ -11,6 +11,7 @@
   "interface": {
     "displayName": "Linear",
     "shortDescription": "Plan and manage issues and projects",
-    "brandColor": "#5E6AD2"
+    "brandColor": "#5E6AD2",
+    "logo": "./assets/logo.png"
   }
 }

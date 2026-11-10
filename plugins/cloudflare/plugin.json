@@ -23,6 +23,7 @@
   "interface": {
     "displayName": "Cloudflare",
     "shortDescription": "Manage Cloudflare services through its API",
-    "brandColor": "#F48120"
+    "brandColor": "#F48120",
+    "logo": "./assets/cloudflare.png"
   }
 }
