@@ -301,10 +301,10 @@
       "category": "Developer Tools"
     },
     {
-      "name": "mintlify",
+      "name": "gitbook",
       "source": {
         "source": "local",
-        "path": "./plugins/mintlify"
+        "path": "./plugins/gitbook"
       },
       "category": "Productivity"
     },

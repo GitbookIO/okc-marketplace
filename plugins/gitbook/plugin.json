@@ -1,0 +1,15 @@
+{
+  "name": "gitbook",
+  "version": "1.0.0",
+  "description": "Create and configure GitBook sites, open change requests, and edit and restructure documentation pages.",
+  "author": {
+    "name": "GitBook",
+    "url": "https://www.gitbook.com"
+  },
+  "homepage": "https://gitbook.com/docs/docs-as-code/gitbook-mcp",
+  "interface": {
+    "displayName": "GitBook",
+    "shortDescription": "Manage docs sites and change requests",
+    "logo": "./assets/logo.svg"
+  }
+}
