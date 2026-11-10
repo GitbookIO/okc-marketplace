@@ -1,0 +1,47 @@
+# Questions the app asks when someone creates a repo from this template, one at a time.
+# Each answer can leave files out of the new repo. This file itself is never copied.
+#
+# Ask one question per kind of record a tool fills. Replace `questions: []` at the bottom
+# with your questions, using this example as a pattern. A template with nothing from a
+# tool keeps `questions: []`, and the app asks nothing. The app rejects a file with only
+# comments, so keep that line.
+#
+# questions:
+#   # One kind of record. The id is unique in this file.
+#   - id: records
+#     # Ask the way people think about it, like "Which issue tracker do you use?".
+#     title: Which tool holds your records?
+#     # Optional: one line on what these records feed.
+#     hint: Records feed the pages in concepts/
+#     # Every question is optional. Skipping it leaves nothing out, like "Use example data".
+#     options:
+#       # A tool with a plugin in the marketplace. The id is its connection name.
+#       - id: tool
+#         label: Tool
+#         files:
+#           # Patterns apply in order. The last match wins, and a leading ! keeps a file.
+#           exclude:
+#             # The other tools' ingest workflows for this kind. This tool's stays.
+#             - 'workflows/ingest-records-other-tool.md'
+#             # Acme's example records of this kind.
+#             - 'records/mock-*.md'
+#             # The concept folders built from this kind: the ones written by refinements
+#             # that read it, scheduled ones like a digest included, and in turn every
+#             # folder whose refinement reads one of those. One glob per folder. Other
+#             # kinds' records that stay rebuild them when the repo is created.
+#             - 'concepts/*.md'
+#       # No tool from the list. Records of this kind come in through inbox/. When no
+#       # tool has a plugin yet, the question asks about the data instead, like "Where do
+#       # your records come from?", with "Somewhere else, I'll add them to the inbox".
+#       - id: other
+#         label: Something else
+#         files:
+#           exclude:
+#             # Every ingest workflow for this kind.
+#             - 'workflows/ingest-records-*.md'
+#             - 'records/mock-*.md'
+#             - 'concepts/*.md'
+#       # Keeps Acme's example records and pages. Exactly this label, in every question.
+#       - id: example
+#         label: Use example data
+questions: []

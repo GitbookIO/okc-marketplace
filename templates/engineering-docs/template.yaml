@@ -1,0 +1,115 @@
+# Questions the app asks when someone creates a repo from this template, one per kind of
+# record a tool fills. Each is optional: skipping it keeps Acme's example, like "Use example
+# data". A tool answer keeps that tool's ingest workflow and drops the others for that kind.
+# Any answer but "Use example data" drops Acme's example records of that kind, the concept
+# folders built from them, and the folders built from those in turn. The example records you
+# keep rebuild those pages when the repo is created.
+questions:
+  - id: prs
+    title: Where does your code live?
+    hint: Pull requests feed the System pages, the drift check against specs, and the agent skills
+    options:
+      - id: github
+        label: GitHub
+        files:
+          exclude:
+            - 'prs/mock-*.md'
+            - 'systems/*.md'
+            - 'teams/*.md'
+            - 'skills/**'
+            - 'digests/*.md'
+      - id: other
+        label: Something else
+        files:
+          exclude:
+            - 'workflows/ingest-prs-github.md'
+            - 'prs/mock-*.md'
+            - 'systems/*.md'
+            - 'teams/*.md'
+            - 'skills/**'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data
+  - id: issues
+    title: Which issue tracker do you use?
+    hint: Issues feed the open work on each System page
+    options:
+      - id: linear
+        label: Linear
+        files:
+          exclude:
+            - 'workflows/ingest-issues-jira.md'
+            - 'issues/mock-*.md'
+            - 'systems/*.md'
+            - 'teams/*.md'
+            - 'skills/**'
+            - 'digests/*.md'
+      - id: other
+        label: Something else
+        files:
+          exclude:
+            - 'workflows/ingest-issues-jira.md'
+            - 'workflows/ingest-issues-linear.md'
+            - 'issues/mock-*.md'
+            - 'systems/*.md'
+            - 'teams/*.md'
+            - 'skills/**'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data
+  - id: incidents
+    title: Which error tracker do you use?
+    hint: Resolved incidents feed runbooks and the System pages
+    options:
+      - id: sentry
+        label: Sentry
+        files:
+          exclude:
+            - 'incidents/mock-*.md'
+            - 'systems/*.md'
+            - 'teams/*.md'
+            - 'runbooks/*.md'
+            - 'skills/**'
+            - 'digests/*.md'
+      - id: other
+        label: Something else
+        files:
+          exclude:
+            - 'workflows/ingest-incidents-sentry.md'
+            - 'incidents/mock-*.md'
+            - 'systems/*.md'
+            - 'teams/*.md'
+            - 'runbooks/*.md'
+            - 'skills/**'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data
+  - id: specs
+    title: Where do you write specs?
+    hint: Approved specs are what the System pages check shipped code against, and they record decisions
+    options:
+      - id: notion
+        label: Notion
+        files:
+          exclude:
+            - 'workflows/ingest-specs-confluence.md'
+            - 'specs/mock-*.md'
+            - 'systems/*.md'
+            - 'teams/*.md'
+            - 'decisions/*.md'
+            - 'skills/**'
+            - 'digests/*.md'
+      - id: other
+        label: In this repo
+        files:
+          exclude:
+            - 'workflows/ingest-specs-confluence.md'
+            - 'workflows/ingest-specs-notion.md'
+            - 'specs/mock-*.md'
+            - 'systems/*.md'
+            - 'teams/*.md'
+            - 'decisions/*.md'
+            - 'skills/**'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data

@@ -4,11 +4,16 @@ Agent plugins and repository templates for OKC.
 
 ```text
 .agents/plugins/marketplace.json
+.gitbook/templates.json
 plugins/
 └── <name>/
     ├── assets/
     ├── plugin.json
     └── mcp.json
+templates/
+├── base/
+├── blank/
+└── <name>/
 ```
 
 - `.agents/plugins/marketplace.json` lists the plugins, their paths, and categories.
@@ -17,3 +22,9 @@ plugins/
 - `plugins/<name>/assets/` contains the logo referenced by the plugin manifest.
 
 Plugin paths in the catalog are relative to the repository root.
+
+## Templates
+
+- `.gitbook/templates.json` lists the templates people can create a repo from: name, local source path, title, description and icon.
+- `templates/<name>/` is the template itself, copied as it is into a new repo. Its `template.yaml` holds the questions the app asks, and each answer can leave files out. The app never copies `template.yaml` itself.
+- `templates/base/` is the skeleton new templates start from, with placeholders. `templates/blank/` is base filled in for a general-purpose repo. Neither is listed.

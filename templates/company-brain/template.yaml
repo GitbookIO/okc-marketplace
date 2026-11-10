@@ -1,0 +1,106 @@
+# Questions the app asks when someone creates a repo from this template, one per kind of
+# record a tool fills. Each is optional: skipping it keeps Acme's example, like "Use example
+# data". A tool answer keeps that tool's ingest workflow and drops the others for that kind.
+# Any answer but "Use example data" drops Acme's example records of that kind, the concept
+# folders built from them, and the folders built from those in turn. The example records you
+# keep rebuild those pages when the repo is created.
+questions:
+  - id: meetings
+    title: Where do you take meeting notes?
+    hint: Meetings feed the customer, project and decision pages
+    options:
+      - id: granola
+        label: Granola
+        files:
+          exclude:
+            - 'workflows/ingest-meetings-fireflies.md'
+            - 'meetings/mock-*.md'
+            - 'customers/*.md'
+            - 'projects/*.md'
+            - 'teams/*.md'
+            - 'decisions/*.md'
+            - 'digests/*.md'
+      - id: other
+        label: Something else
+        files:
+          exclude:
+            - 'workflows/ingest-meetings-fireflies.md'
+            - 'workflows/ingest-meetings-granola.md'
+            - 'meetings/mock-*.md'
+            - 'customers/*.md'
+            - 'projects/*.md'
+            - 'teams/*.md'
+            - 'decisions/*.md'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data
+  - id: support
+    title: Where do your support conversations come from?
+    hint: Support conversations feed the customer pages
+    options:
+      - id: other
+        label: Somewhere else, I'll add them to the inbox
+        files:
+          exclude:
+            - 'workflows/ingest-support-intercom.md'
+            - 'workflows/ingest-support-pylon.md'
+            - 'support/mock-*.md'
+            - 'customers/*.md'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data
+  - id: crm
+    title: Where do your accounts and deals come from?
+    hint: Accounts and deals feed the customer pages
+    options:
+      - id: other
+        label: Somewhere else, I'll add them to the inbox
+        files:
+          exclude:
+            - 'workflows/ingest-accounts-hubspot.md'
+            - 'workflows/ingest-deals-hubspot.md'
+            - 'accounts/*.md'
+            - 'deals/mock-*.md'
+            - 'customers/*.md'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data
+  - id: issues
+    title: Which issue tracker do you use?
+    hint: Issues feed the project and customer pages
+    options:
+      - id: linear
+        label: Linear
+        files:
+          exclude:
+            - 'issues/mock-*.md'
+            - 'customers/*.md'
+            - 'projects/*.md'
+            - 'teams/*.md'
+            - 'digests/*.md'
+      - id: other
+        label: Something else
+        files:
+          exclude:
+            - 'workflows/ingest-issues-linear.md'
+            - 'issues/mock-*.md'
+            - 'customers/*.md'
+            - 'projects/*.md'
+            - 'teams/*.md'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data
+  - id: discussions
+    title: Where do your chat threads come from?
+    hint: Chat threads where decisions get made feed the decision pages
+    options:
+      - id: other
+        label: Somewhere else, I'll add them to the inbox
+        files:
+          exclude:
+            - 'workflows/ingest-discussions-slack.md'
+            - 'discussions/mock-*.md'
+            - 'decisions/*.md'
+            - 'digests/*.md'
+      - id: example
+        label: Use example data
