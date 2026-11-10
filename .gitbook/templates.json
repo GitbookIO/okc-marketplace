@@ -1,0 +1,25 @@
+{
+  "templates": [
+    {
+      "name": "engineering-docs",
+      "source": "./templates/engineering-docs",
+      "title": "Engineering docs",
+      "description": "One page per system, team, decision and runbook, kept current from pull requests, issues, incidents, specs and chat threads.",
+      "icon": "wrench"
+    },
+    {
+      "name": "product-docs",
+      "source": "./templates/product-docs",
+      "title": "Product docs",
+      "description": "API reference, guides and changelog kept in step with your spec, and docs gaps found in what customers ask support.",
+      "icon": "book-open"
+    },
+    {
+      "name": "company-brain",
+      "source": "./templates/company-brain",
+      "title": "Company brain",
+      "description": "One page per customer, project, decision and team, built from meetings, support, CRM, issues and Slack.",
+      "icon": "building"
+    }
+  ]
+}
