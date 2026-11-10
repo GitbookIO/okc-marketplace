@@ -10,6 +10,7 @@ questions:
     options:
       - id: granola
         label: Granola
+        icon: microphone-lines
         files:
           exclude:
             - 'workflows/ingest-meetings-fireflies.md'
@@ -20,6 +21,7 @@ questions:
             - 'digests/*.md'
       - id: other
         label: Something else, I'll add them to the inbox
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-meetings-fireflies.md'
@@ -31,3 +33,4 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask

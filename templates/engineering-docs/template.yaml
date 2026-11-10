@@ -11,6 +11,7 @@ questions:
     options:
       - id: github
         label: GitHub
+        icon: github
         files:
           exclude:
             - 'prs/mock-*.md'
@@ -20,6 +21,7 @@ questions:
             - 'digests/*.md'
       - id: other
         label: Something else
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-prs-github.md'
@@ -30,12 +32,14 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask
   - id: issues
     title: Which issue tracker do you use?
     hint: Issues feed the open work on each System page
     options:
       - id: linear
         label: Linear
+        icon: list-check
         files:
           exclude:
             - 'workflows/ingest-issues-jira.md'
@@ -46,6 +50,7 @@ questions:
             - 'digests/*.md'
       - id: other
         label: Something else
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-issues-jira.md'
@@ -57,12 +62,14 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask
   - id: incidents
     title: Which error tracker do you use?
     hint: Resolved incidents feed runbooks and the System pages
     options:
       - id: sentry
         label: Sentry
+        icon: bug
         files:
           exclude:
             - 'incidents/mock-*.md'
@@ -73,6 +80,7 @@ questions:
             - 'digests/*.md'
       - id: other
         label: Something else
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-incidents-sentry.md'
@@ -84,12 +92,14 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask
   - id: specs
     title: Where do you write specs?
     hint: Approved specs are what the System pages check shipped code against, and they record decisions
     options:
       - id: notion
         label: Notion
+        icon: notion
         files:
           exclude:
             - 'workflows/ingest-specs-confluence.md'
@@ -101,6 +111,7 @@ questions:
             - 'digests/*.md'
       - id: other
         label: In this repo
+        icon: folder
         files:
           exclude:
             - 'workflows/ingest-specs-confluence.md'
@@ -113,3 +124,4 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask
