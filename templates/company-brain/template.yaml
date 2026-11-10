@@ -22,6 +22,7 @@ questions:
             - 'digests/*.md'
       - id: other
         label: Something else
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-meetings-fireflies.md'
@@ -34,12 +35,14 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask
   - id: support
     title: Where do your support conversations come from?
     hint: Support conversations feed the customer pages
     options:
       - id: other
         label: Somewhere else, I'll add them to the inbox
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-support-intercom.md'
@@ -49,12 +52,14 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask
   - id: crm
     title: Where do your accounts and deals come from?
     hint: Accounts and deals feed the customer pages
     options:
       - id: other
         label: Somewhere else, I'll add them to the inbox
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-accounts-hubspot.md'
@@ -65,6 +70,7 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask
   - id: issues
     title: Which issue tracker do you use?
     hint: Issues feed the project and customer pages
@@ -80,6 +86,7 @@ questions:
             - 'digests/*.md'
       - id: other
         label: Something else
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-issues-linear.md'
@@ -90,12 +97,14 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask
   - id: discussions
     title: Where do your chat threads come from?
     hint: Chat threads where decisions get made feed the decision pages
     options:
       - id: other
         label: Somewhere else, I'll add them to the inbox
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-discussions-slack.md'
@@ -104,3 +113,4 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask

@@ -11,6 +11,7 @@ questions:
     options:
       - id: other
         label: Somewhere else, I'll add them to the inbox
+        icon: inbox
         files:
           exclude:
             - 'workflows/ingest-support-intercom.md'
@@ -20,3 +21,4 @@ questions:
             - 'digests/*.md'
       - id: example
         label: Use example data
+        icon: flask

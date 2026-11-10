@@ -18,6 +18,10 @@
 #       # A tool with a plugin in the marketplace. The id is its connection name.
 #       - id: tool
 #         label: Tool
+#         # Optional icon: a Font Awesome name, with an optional color, like { name: list-check, color: purple }.
+#         # Use the brand icon when there is one (github, notion). A tool with no brand icon
+#         # gets none: an empty option reads better than a generic one.
+#         icon: github
 #         files:
 #           # Patterns apply in order. The last match wins, and a leading ! keeps a file.
 #           exclude:
@@ -35,6 +39,7 @@
 #       # your records come from?", with "Somewhere else, I'll add them to the inbox".
 #       - id: other
 #         label: Something else
+#         icon: inbox
 #         files:
 #           exclude:
 #             # Every ingest workflow for this kind.
@@ -44,4 +49,5 @@
 #       # Keeps Acme's example records and pages. Exactly this label, in every question.
 #       - id: example
 #         label: Use example data
+#         icon: flask
 questions: []
