@@ -20,6 +20,13 @@
       "title": "Company brain",
       "description": "One page per customer, project, decision and team, built from meetings, support, CRM, issues and Slack.",
       "icon": "building"
+    },
+    {
+      "name": "personal-brain",
+      "source": "./templates/personal-brain",
+      "title": "Personal brain",
+      "description": "Your notes, meetings and agent conversations compiled into topic, project and person pages, with contradictions listed and every change for you to review.",
+      "icon": "brain"
     }
   ]
 }
