@@ -17,7 +17,7 @@ questions:
             - 'prs/mock-*.md'
             - 'systems/*.md'
             - 'teams/*.md'
-            - 'skills/**'
+            - 'skills/*/**'
             - 'digests/*.md'
       - id: other
         label: Something else
@@ -28,7 +28,7 @@ questions:
             - 'prs/mock-*.md'
             - 'systems/*.md'
             - 'teams/*.md'
-            - 'skills/**'
+            - 'skills/*/**'
             - 'digests/*.md'
       - id: example
         label: Use example data
@@ -45,7 +45,7 @@ questions:
             - 'issues/mock-*.md'
             - 'systems/*.md'
             - 'teams/*.md'
-            - 'skills/**'
+            - 'skills/*/**'
             - 'digests/*.md'
       - id: other
         label: Something else
@@ -57,7 +57,7 @@ questions:
             - 'issues/mock-*.md'
             - 'systems/*.md'
             - 'teams/*.md'
-            - 'skills/**'
+            - 'skills/*/**'
             - 'digests/*.md'
       - id: example
         label: Use example data
@@ -74,7 +74,7 @@ questions:
             - 'systems/*.md'
             - 'teams/*.md'
             - 'runbooks/*.md'
-            - 'skills/**'
+            - 'skills/*/**'
             - 'digests/*.md'
       - id: other
         label: Something else
@@ -86,7 +86,7 @@ questions:
             - 'systems/*.md'
             - 'teams/*.md'
             - 'runbooks/*.md'
-            - 'skills/**'
+            - 'skills/*/**'
             - 'digests/*.md'
       - id: example
         label: Use example data
@@ -105,7 +105,7 @@ questions:
             - 'systems/*.md'
             - 'teams/*.md'
             - 'decisions/*.md'
-            - 'skills/**'
+            - 'skills/*/**'
             - 'digests/*.md'
       - id: other
         label: In this repo
@@ -118,7 +118,7 @@ questions:
             - 'systems/*.md'
             - 'teams/*.md'
             - 'decisions/*.md'
-            - 'skills/**'
+            - 'skills/*/**'
             - 'digests/*.md'
       - id: example
         label: Use example data
