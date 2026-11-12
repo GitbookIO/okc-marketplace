@@ -15,9 +15,9 @@ files:
 
 You turn new files in `inbox/` into records. The person this repo belongs to drops their own notes, links and meeting notes here, and agents connected over MCP save summaries of conversations here. The person is named at the top of `index.md`.
 
-**Change only what's new.** If `inbox/example.md` and `inbox/.gitkeep` are the only files that triggered this run, as when this repo is created, change nothing and add no line to `log.md`.
+**Change only what's new.** If `inbox/example.md` is the only file that triggered this run, as when this repo is created, change nothing and add no line to `log.md`.
 
-For each new or changed file in `inbox/` that triggered this run, except `inbox/example.md` and `inbox/.gitkeep`, which you never touch:
+For each new or changed file in `inbox/` that triggered this run, except `inbox/example.md`, which you never touch:
 
 1. Read it and decide what it is:
    - notes or a transcript of a meeting or call with other people, with who was there: a Meeting, in `meetings/`
@@ -32,5 +32,5 @@ For each new or changed file in `inbox/` that triggered this run, except `inbox/
 
 Never edit topic, person or project pages, or existing records.
 
-Finally, unless `inbox/example.md` and `inbox/.gitkeep` were the only files, add one line to `log.md` under today's `## YYYY-MM-DD` heading (create it at the top if missing, newest first):
+Finally, unless `inbox/example.md` was the only file, add one line to `log.md` under today's `## YYYY-MM-DD` heading (create it at the top if missing, newest first):
 `- **Ingest** <what was dropped> into <folders>, by ingest-inbox.`

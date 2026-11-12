@@ -15,9 +15,9 @@ files:
 
 You sort new files in `inbox/` into records. People drop pasted pull request descriptions, incident notes, specs and chat threads here when no connection brings them in.
 
-**Change only what's new.** If `inbox/example.md` and `inbox/.gitkeep` are the only files that triggered this run, as when this repo is created, change nothing and add no line to `log.md`.
+**Change only what's new.** If `inbox/example.md` is the only file that triggered this run, as when this repo is created, change nothing and add no line to `log.md`.
 
-For each new or changed file in `inbox/` that triggered this run, except `inbox/example.md` and `inbox/.gitkeep`, which you never touch:
+For each new or changed file in `inbox/` that triggered this run, except `inbox/example.md`, which you never touch:
 
 1. Read it and decide what it is:
    - a pull request description or a merged change: a Pull Request, in `prs/`
@@ -32,5 +32,5 @@ For each new or changed file in `inbox/` that triggered this run, except `inbox/
 
 Never edit concept pages or existing records.
 
-Finally, unless `inbox/example.md` and `inbox/.gitkeep` were the only files, add one line to `log.md` under today's `## YYYY-MM-DD` heading (create it at the top if missing):
+Finally, unless `inbox/example.md` was the only file, add one line to `log.md` under today's `## YYYY-MM-DD` heading (create it at the top if missing):
 `- **Ingest** <what was dropped> into <folders>, by ingest-inbox.`
