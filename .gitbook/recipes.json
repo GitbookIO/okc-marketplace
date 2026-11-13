@@ -1,0 +1,172 @@
+{
+  "recipes": [
+    {
+      "name": "architecture-decisions",
+      "path": "./recipes/architecture-decisions.md"
+    },
+    {
+      "name": "call-insight-library",
+      "path": "./recipes/call-insight-library.md"
+    },
+    {
+      "name": "campaign-brief-builder",
+      "path": "./recipes/campaign-brief-builder.md"
+    },
+    {
+      "name": "competitor-signals",
+      "path": "./recipes/competitor-signals.md"
+    },
+    {
+      "name": "component-improvements",
+      "path": "./recipes/component-improvements.md"
+    },
+    {
+      "name": "content-ideas",
+      "path": "./recipes/content-ideas.md"
+    },
+    {
+      "name": "customers",
+      "path": "./recipes/customers.md"
+    },
+    {
+      "name": "deal-risk-radar",
+      "path": "./recipes/deal-risk-radar.md"
+    },
+    {
+      "name": "design-feedback-synthesis",
+      "path": "./recipes/design-feedback-synthesis.md"
+    },
+    {
+      "name": "documentation-drift",
+      "path": "./recipes/documentation-drift.md"
+    },
+    {
+      "name": "feature-request-backlog",
+      "path": "./recipes/feature-request-backlog.md"
+    },
+    {
+      "name": "incident-tracker",
+      "path": "./recipes/incident-tracker.md"
+    },
+    {
+      "name": "learning-log",
+      "path": "./recipes/learning-log.md"
+    },
+    {
+      "name": "meeting-decisions",
+      "path": "./recipes/meeting-decisions.md"
+    },
+    {
+      "name": "messaging-angles",
+      "path": "./recipes/messaging-angles.md"
+    },
+    {
+      "name": "objection-library",
+      "path": "./recipes/objection-library.md"
+    },
+    {
+      "name": "persona-signals",
+      "path": "./recipes/persona-signals.md"
+    },
+    {
+      "name": "personal-task-extractor",
+      "path": "./recipes/personal-task-extractor.md"
+    },
+    {
+      "name": "process-playbooks",
+      "path": "./recipes/process-playbooks.md"
+    },
+    {
+      "name": "product-feedback-synthesis",
+      "path": "./recipes/product-feedback-synthesis.md"
+    },
+    {
+      "name": "product-usage-insights",
+      "path": "./recipes/product-usage-insights.md"
+    },
+    {
+      "name": "relationship-context",
+      "path": "./recipes/relationship-context.md"
+    },
+    {
+      "name": "relationship-follow-ups",
+      "path": "./recipes/relationship-follow-ups.md"
+    },
+    {
+      "name": "release-knowledge",
+      "path": "./recipes/release-knowledge.md"
+    },
+    {
+      "name": "research-insights",
+      "path": "./recipes/research-insights.md"
+    },
+    {
+      "name": "runbook-builder",
+      "path": "./recipes/runbook-builder.md"
+    },
+    {
+      "name": "seo-opportunity-radar",
+      "path": "./recipes/seo-opportunity-radar.md"
+    },
+    {
+      "name": "session-friction-review",
+      "path": "./recipes/session-friction-review.md"
+    },
+    {
+      "name": "stakeholder-map",
+      "path": "./recipes/stakeholder-map.md"
+    },
+    {
+      "name": "support-escalation-triage",
+      "path": "./recipes/support-escalation-triage.md"
+    },
+    {
+      "name": "team-directory",
+      "path": "./recipes/team-directory.md"
+    },
+    {
+      "name": "technical-debt-register",
+      "path": "./recipes/technical-debt-register.md"
+    },
+    {
+      "name": "topic-classification",
+      "path": "./recipes/topic-classification.md"
+    },
+    {
+      "name": "ux-debt-log",
+      "path": "./recipes/ux-debt-log.md"
+    },
+    {
+      "name": "weekly-company-brief",
+      "path": "./recipes/weekly-company-brief.md"
+    },
+    {
+      "name": "weekly-design-brief",
+      "path": "./recipes/weekly-design-brief.md"
+    },
+    {
+      "name": "weekly-engineering-brief",
+      "path": "./recipes/weekly-engineering-brief.md"
+    },
+    {
+      "name": "weekly-marketing-brief",
+      "path": "./recipes/weekly-marketing-brief.md"
+    },
+    {
+      "name": "weekly-personal-review",
+      "path": "./recipes/weekly-personal-review.md"
+    },
+    {
+      "name": "weekly-pipeline-brief",
+      "path": "./recipes/weekly-pipeline-brief.md"
+    },
+    {
+      "name": "weekly-product-brief",
+      "path": "./recipes/weekly-product-brief.md"
+    },
+    {
+      "name": "wins-and-blockers",
+      "path": "./recipes/wins-and-blockers.md"
+    }
+  ]
+}
