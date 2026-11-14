@@ -1,15 +1,18 @@
 # OKC marketplace
 
-Agent plugins and repository templates for OKC.
+Agent plugins, workflow recipes, and repository templates for GitBook Knowledge.
 
 ```text
 .agents/plugins/marketplace.json
 .gitbook/templates.json
+.gitbook/recipes.json
 plugins/
 └── <name>/
     ├── assets/
     ├── plugin.json
     └── mcp.json
+recipes/
+└── <name>.md
 templates/
 ├── base/
 ├── blank/
@@ -28,3 +31,9 @@ Plugin paths in the catalog are relative to the repository root.
 - `.gitbook/templates.json` lists the templates people can create a repo from: name, local source path, title, description and icon.
 - `templates/<name>/` is the template itself, copied as it is into a new repo. Its `template.yaml` holds the questions the app asks, and each answer can leave files out. The app never copies `template.yaml` itself.
 - `templates/base/` is the skeleton new templates start from, with placeholders. `templates/blank/` is base filled in for a general-purpose repo. Neither is listed.
+
+## Workflow recipes
+
+- `.gitbook/recipes.json` lists recipes by stable `name`, discovery `category`, and Markdown `path`, relative to the repository root.
+- `recipes/<name>.md` contains the workflow frontmatter and instructions. The frontmatter supplies its title, trigger, permissions, and optional description and icon.
+- GitBook Knowledge imports the catalog category and workflow source from the same commit, and derives workflow properties from the source. Updating a named recipe preserves its catalog identity; removing it from the manifest removes it from subscribers’ catalogs.
