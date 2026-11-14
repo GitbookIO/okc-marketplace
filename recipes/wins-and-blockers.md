@@ -2,7 +2,6 @@
 icon: seedling
 title: Wins and blockers
 description: Track personal wins, friction, and recurring blockers from source files.
-category: personal
 on: inbox/**/*
 ---
 

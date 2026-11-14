@@ -2,7 +2,6 @@
 icon: puzzle
 title: Component improvements
 description: Maintain component-level design knowledge and improvement opportunities.
-category: design
 on: inbox/**/*
 connectors:
   figma: read

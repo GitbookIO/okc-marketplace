@@ -2,171 +2,213 @@
   "recipes": [
     {
       "name": "architecture-decisions",
-      "path": "./recipes/architecture-decisions.md"
+      "path": "./recipes/architecture-decisions.md",
+      "category": "engineering"
     },
     {
       "name": "call-insight-library",
-      "path": "./recipes/call-insight-library.md"
+      "path": "./recipes/call-insight-library.md",
+      "category": "sales"
     },
     {
       "name": "campaign-brief-builder",
-      "path": "./recipes/campaign-brief-builder.md"
+      "path": "./recipes/campaign-brief-builder.md",
+      "category": "marketing"
     },
     {
       "name": "competitor-signals",
-      "path": "./recipes/competitor-signals.md"
+      "path": "./recipes/competitor-signals.md",
+      "category": "product"
     },
     {
       "name": "component-improvements",
-      "path": "./recipes/component-improvements.md"
+      "path": "./recipes/component-improvements.md",
+      "category": "design"
     },
     {
       "name": "content-ideas",
-      "path": "./recipes/content-ideas.md"
+      "path": "./recipes/content-ideas.md",
+      "category": "marketing"
     },
     {
       "name": "customers",
-      "path": "./recipes/customers.md"
+      "path": "./recipes/customers.md",
+      "category": "sales"
     },
     {
       "name": "deal-risk-radar",
-      "path": "./recipes/deal-risk-radar.md"
+      "path": "./recipes/deal-risk-radar.md",
+      "category": "sales"
     },
     {
       "name": "design-feedback-synthesis",
-      "path": "./recipes/design-feedback-synthesis.md"
+      "path": "./recipes/design-feedback-synthesis.md",
+      "category": "design"
     },
     {
       "name": "documentation-drift",
-      "path": "./recipes/documentation-drift.md"
+      "path": "./recipes/documentation-drift.md",
+      "category": "company"
     },
     {
       "name": "feature-request-backlog",
-      "path": "./recipes/feature-request-backlog.md"
+      "path": "./recipes/feature-request-backlog.md",
+      "category": "product"
     },
     {
       "name": "incident-tracker",
-      "path": "./recipes/incident-tracker.md"
+      "path": "./recipes/incident-tracker.md",
+      "category": "engineering"
     },
     {
       "name": "learning-log",
-      "path": "./recipes/learning-log.md"
+      "path": "./recipes/learning-log.md",
+      "category": "personal"
     },
     {
       "name": "meeting-decisions",
-      "path": "./recipes/meeting-decisions.md"
+      "path": "./recipes/meeting-decisions.md",
+      "category": "company"
     },
     {
       "name": "messaging-angles",
-      "path": "./recipes/messaging-angles.md"
+      "path": "./recipes/messaging-angles.md",
+      "category": "marketing"
     },
     {
       "name": "objection-library",
-      "path": "./recipes/objection-library.md"
+      "path": "./recipes/objection-library.md",
+      "category": "sales"
     },
     {
       "name": "persona-signals",
-      "path": "./recipes/persona-signals.md"
+      "path": "./recipes/persona-signals.md",
+      "category": "marketing"
     },
     {
       "name": "personal-task-extractor",
-      "path": "./recipes/personal-task-extractor.md"
+      "path": "./recipes/personal-task-extractor.md",
+      "category": "personal"
     },
     {
       "name": "process-playbooks",
-      "path": "./recipes/process-playbooks.md"
+      "path": "./recipes/process-playbooks.md",
+      "category": "company"
     },
     {
       "name": "product-feedback-synthesis",
-      "path": "./recipes/product-feedback-synthesis.md"
+      "path": "./recipes/product-feedback-synthesis.md",
+      "category": "product"
     },
     {
       "name": "product-usage-insights",
-      "path": "./recipes/product-usage-insights.md"
+      "path": "./recipes/product-usage-insights.md",
+      "category": "product"
     },
     {
       "name": "relationship-context",
-      "path": "./recipes/relationship-context.md"
+      "path": "./recipes/relationship-context.md",
+      "category": "personal"
     },
     {
       "name": "relationship-follow-ups",
-      "path": "./recipes/relationship-follow-ups.md"
+      "path": "./recipes/relationship-follow-ups.md",
+      "category": "personal"
     },
     {
       "name": "release-knowledge",
-      "path": "./recipes/release-knowledge.md"
+      "path": "./recipes/release-knowledge.md",
+      "category": "product"
     },
     {
       "name": "research-insights",
-      "path": "./recipes/research-insights.md"
+      "path": "./recipes/research-insights.md",
+      "category": "design"
     },
     {
       "name": "runbook-builder",
-      "path": "./recipes/runbook-builder.md"
+      "path": "./recipes/runbook-builder.md",
+      "category": "engineering"
     },
     {
       "name": "seo-opportunity-radar",
-      "path": "./recipes/seo-opportunity-radar.md"
+      "path": "./recipes/seo-opportunity-radar.md",
+      "category": "marketing"
     },
     {
       "name": "session-friction-review",
-      "path": "./recipes/session-friction-review.md"
+      "path": "./recipes/session-friction-review.md",
+      "category": "design"
     },
     {
       "name": "stakeholder-map",
-      "path": "./recipes/stakeholder-map.md"
+      "path": "./recipes/stakeholder-map.md",
+      "category": "sales"
     },
     {
       "name": "support-escalation-triage",
-      "path": "./recipes/support-escalation-triage.md"
+      "path": "./recipes/support-escalation-triage.md",
+      "category": "engineering"
     },
     {
       "name": "team-directory",
-      "path": "./recipes/team-directory.md"
+      "path": "./recipes/team-directory.md",
+      "category": "company"
     },
     {
       "name": "technical-debt-register",
-      "path": "./recipes/technical-debt-register.md"
+      "path": "./recipes/technical-debt-register.md",
+      "category": "engineering"
     },
     {
       "name": "topic-classification",
-      "path": "./recipes/topic-classification.md"
+      "path": "./recipes/topic-classification.md",
+      "category": "company"
     },
     {
       "name": "ux-debt-log",
-      "path": "./recipes/ux-debt-log.md"
+      "path": "./recipes/ux-debt-log.md",
+      "category": "design"
     },
     {
       "name": "weekly-company-brief",
-      "path": "./recipes/weekly-company-brief.md"
+      "path": "./recipes/weekly-company-brief.md",
+      "category": "company"
     },
     {
       "name": "weekly-design-brief",
-      "path": "./recipes/weekly-design-brief.md"
+      "path": "./recipes/weekly-design-brief.md",
+      "category": "design"
     },
     {
       "name": "weekly-engineering-brief",
-      "path": "./recipes/weekly-engineering-brief.md"
+      "path": "./recipes/weekly-engineering-brief.md",
+      "category": "engineering"
     },
     {
       "name": "weekly-marketing-brief",
-      "path": "./recipes/weekly-marketing-brief.md"
+      "path": "./recipes/weekly-marketing-brief.md",
+      "category": "marketing"
     },
     {
       "name": "weekly-personal-review",
-      "path": "./recipes/weekly-personal-review.md"
+      "path": "./recipes/weekly-personal-review.md",
+      "category": "personal"
     },
     {
       "name": "weekly-pipeline-brief",
-      "path": "./recipes/weekly-pipeline-brief.md"
+      "path": "./recipes/weekly-pipeline-brief.md",
+      "category": "sales"
     },
     {
       "name": "weekly-product-brief",
-      "path": "./recipes/weekly-product-brief.md"
+      "path": "./recipes/weekly-product-brief.md",
+      "category": "product"
     },
     {
       "name": "wins-and-blockers",
-      "path": "./recipes/wins-and-blockers.md"
+      "path": "./recipes/wins-and-blockers.md",
+      "category": "personal"
     }
   ]
 }

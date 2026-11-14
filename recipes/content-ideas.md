@@ -2,7 +2,6 @@
 icon: pen-line
 title: Content ideas
 description: Turn recurring source file themes into structured content opportunities.
-category: marketing
 on: inbox/**/*
 ---
 

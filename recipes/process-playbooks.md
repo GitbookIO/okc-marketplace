@@ -2,7 +2,6 @@
 icon: folders
 title: Process playbooks
 description: Convert repeated company processes into reusable playbooks.
-category: company
 on: inbox/**/*
 ---
 

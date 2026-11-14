@@ -2,7 +2,6 @@
 icon: face-thinking
 title: Weekly personal review
 description: Produce a weekly personal review from repository activity, tasks, and available calendar or communication tools.
-category: personal
 on:
   event: schedule
   schedule: 30 16 * * 5

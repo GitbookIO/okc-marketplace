@@ -2,7 +2,6 @@
 icon: gear
 title: Weekly engineering brief
 description: Produce a weekly engineering summary from repository knowledge and available tools.
-category: engineering
 on:
   event: schedule
   schedule: 15 9 * * 1

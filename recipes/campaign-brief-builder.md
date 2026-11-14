@@ -2,7 +2,6 @@
 icon: megaphone
 title: Campaign brief builder
 description: Turn go-to-market source files into structured campaign briefs.
-category: marketing
 on: inbox/**/*
 ---
 

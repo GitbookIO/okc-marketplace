@@ -2,7 +2,6 @@
 icon: chart-line
 title: Product usage insights
 description: Turn usage analytics and product-system context into structured adoption knowledge.
-category: product
 on: inbox/**/*
 connectors:
   posthog: read

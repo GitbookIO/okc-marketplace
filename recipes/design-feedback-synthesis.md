@@ -2,7 +2,6 @@
 icon: palette
 title: Design feedback synthesis
 description: Organize raw design feedback into reusable themes and actions.
-category: design
 on: inbox/**/*
 ---
 

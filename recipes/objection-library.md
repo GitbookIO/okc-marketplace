@@ -2,7 +2,6 @@
 icon: shield
 title: Objection library
 description: Collect recurring sales objections and structured responses from source files.
-category: sales
 on: inbox/**/*
 ---
 

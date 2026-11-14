@@ -2,7 +2,6 @@
 icon: siren
 title: Incident tracker
 description: Turn operational source files into structured incident records.
-category: engineering
 on: inbox/**/*
 ---
 

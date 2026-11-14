@@ -2,7 +2,6 @@
 icon: handshake
 title: Relationship context
 description: Maintain structured context for people mentioned in personal source material.
-category: personal
 on: inbox/**/*
 ---
 

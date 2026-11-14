@@ -2,7 +2,6 @@
 icon: traffic-cone
 title: Deal risk radar
 description: Maintain structured deal risk pages from source files and external CRM context.
-category: sales
 on: inbox/**/*
 connectors:
   hubspot: read

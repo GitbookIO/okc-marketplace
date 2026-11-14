@@ -34,6 +34,6 @@ Plugin paths in the catalog are relative to the repository root.
 
 ## Workflow recipes
 
-- `.gitbook/recipes.json` lists recipes by stable `name` and Markdown `path`, relative to the repository root.
-- `recipes/<name>.md` contains the workflow frontmatter and instructions. The frontmatter supplies its title, category, trigger, permissions, and optional description and icon.
-- GitBook Knowledge imports metadata and source from the same commit. Updating a named recipe preserves its catalog identity; removing it from the manifest removes it from subscribers’ catalogs.
+- `.gitbook/recipes.json` lists recipes by stable `name`, discovery `category`, and Markdown `path`, relative to the repository root.
+- `recipes/<name>.md` contains the workflow frontmatter and instructions. The frontmatter supplies its title, trigger, permissions, and optional description and icon.
+- GitBook Knowledge imports the catalog category and workflow source from the same commit, and derives workflow properties from the source. Updating a named recipe preserves its catalog identity; removing it from the manifest removes it from subscribers’ catalogs.

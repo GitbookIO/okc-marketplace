@@ -2,7 +2,6 @@
 icon: notebook
 title: Meeting decisions
 description: Capture decisions and follow-ups from source files into durable company knowledge.
-category: company
 on: inbox/**/*
 connectors:
   slack: read

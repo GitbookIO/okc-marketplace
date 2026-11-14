@@ -2,7 +2,6 @@
 icon: lightbulb
 title: Product feedback synthesis
 description: Turn raw source files into structured product feedback by area.
-category: product
 on: inbox/**/*
 ---
 

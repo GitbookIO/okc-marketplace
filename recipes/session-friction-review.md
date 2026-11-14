@@ -2,7 +2,6 @@
 icon: computer-mouse
 title: Session friction review
 description: Turn behavioral source files and design-tool context into structured journey friction knowledge.
-category: design
 on: inbox/**/*
 connectors:
   posthog: read

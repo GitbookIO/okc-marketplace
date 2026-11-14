@@ -2,7 +2,6 @@
 icon: ship
 title: Release knowledge
 description: Convert source files about launches and shipped work into structured release pages.
-category: product
 on: inbox/**/*
 connectors:
   github: read

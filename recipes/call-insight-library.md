@@ -2,7 +2,6 @@
 icon: headphones
 title: Call insight library
 description: Turn conversation and call context into reusable sales knowledge.
-category: sales
 on: inbox/**/*
 connectors:
   gong: read

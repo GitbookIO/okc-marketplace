@@ -2,7 +2,6 @@
 icon: magnifying-glass
 title: Research insights
 description: Turn research source files into structured insights and evidence.
-category: design
 on: inbox/**/*
 connectors:
   googledrive: read

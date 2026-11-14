@@ -2,7 +2,6 @@
 icon: inbox
 title: Feature request backlog
 description: Capture concrete feature requests as structured backlog knowledge.
-category: product
 on: inbox/**/*
 ---
 

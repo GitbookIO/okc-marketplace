@@ -2,7 +2,6 @@
 icon: book-open
 title: Documentation drift
 description: Track where internal documentation is falling behind real company knowledge.
-category: company
 on: inbox/**/*
 connectors:
   confluence: read

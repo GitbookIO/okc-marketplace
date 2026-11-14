@@ -2,7 +2,6 @@
 icon: list-check
 title: Personal task extractor
 description: Turn source files into a structured personal task list and follow-up tracker.
-category: personal
 on: inbox/**/*
 ---
 

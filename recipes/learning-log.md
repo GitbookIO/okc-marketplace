@@ -2,7 +2,6 @@
 icon: book-open
 title: Learning log
 description: Organize lessons and insights from source files into a personal learning base.
-category: personal
 on: inbox/**/*
 ---
 

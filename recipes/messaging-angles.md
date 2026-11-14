@@ -2,7 +2,6 @@
 icon: comments
 title: Messaging angles
 description: Organize source file-driven insights into reusable messaging angles.
-category: marketing
 on: inbox/**/*
 ---
 

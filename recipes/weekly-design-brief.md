@@ -2,7 +2,6 @@
 icon: pencil
 title: Weekly design brief
 description: Produce a weekly design summary from repository knowledge and available tools.
-category: design
 on:
   event: schedule
   schedule: 30 9 * * 1

@@ -2,7 +2,6 @@
 icon: address-book
 title: Persona signals
 description: Capture emerging audience and persona knowledge from source files.
-category: marketing
 on: inbox/**/*
 ---
 

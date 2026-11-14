@@ -2,7 +2,6 @@
 icon: users
 title: Team directory
 description: Build structured people and team context from source files.
-category: company
 on: inbox/**/*
 ---
 

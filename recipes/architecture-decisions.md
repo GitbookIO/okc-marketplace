@@ -2,7 +2,6 @@
 icon: cubes
 title: Architecture decisions
 description: Capture notable engineering decisions as structured architecture knowledge.
-category: engineering
 on: inbox/**/*
 ---
 

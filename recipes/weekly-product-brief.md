@@ -2,7 +2,6 @@
 icon: thumbtack
 title: Weekly product brief
 description: Produce a weekly product summary from repository knowledge and available tools.
-category: product
 on:
   event: schedule
   schedule: 0 9 * * 1

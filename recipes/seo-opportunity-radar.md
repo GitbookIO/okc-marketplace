@@ -2,7 +2,6 @@
 icon: magnifying-glass
 title: SEO opportunity radar
 description: Turn search and content signals into structured SEO opportunities.
-category: marketing
 on: inbox/**/*
 connectors:
   google_search_console: read

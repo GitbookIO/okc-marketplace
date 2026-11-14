@@ -2,7 +2,6 @@
 icon: ticket
 title: Support escalation triage
 description: Convert support-driven incidents and bug patterns into structured engineering knowledge.
-category: engineering
 on: inbox/**/*
 connectors:
   zendesk: read

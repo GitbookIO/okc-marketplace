@@ -2,7 +2,6 @@
 icon: envelope
 title: Relationship follow-ups
 description: Turn personal source files and communication context into structured follow-up reminders.
-category: personal
 on: inbox/**/*
 connectors:
   gmail: read

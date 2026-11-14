@@ -2,7 +2,6 @@
 icon: flask
 title: UX debt log
 description: Track recurring UX debt and unresolved interface friction.
-category: design
 on: inbox/**/*
 ---
 

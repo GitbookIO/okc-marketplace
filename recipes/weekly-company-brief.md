@@ -2,7 +2,6 @@
 icon: building
 title: Weekly company brief
 description: Produce a weekly company summary from repository knowledge and available tools.
-category: company
 on:
   event: schedule
   schedule: 15 10 * * 1

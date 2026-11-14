@@ -2,7 +2,6 @@
 icon: swords
 title: Competitor signals
 description: Extract structured competitor intelligence from source files.
-category: product
 on: inbox/**/*
 ---
 

@@ -2,7 +2,6 @@
 icon: chart-column
 title: Weekly pipeline brief
 description: Produce a weekly sales pipeline summary from repository knowledge and available tools.
-category: sales
 on:
   event: schedule
   schedule: 0 10 * * 1

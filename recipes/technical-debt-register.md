@@ -2,7 +2,6 @@
 icon: receipt
 title: Technical debt register
 description: Capture maintainability risks and engineering debt as structured backlog knowledge.
-category: engineering
 on: inbox/**/*
 ---
 

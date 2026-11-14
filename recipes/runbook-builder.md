@@ -2,7 +2,6 @@
 icon: wrench
 title: Runbook builder
 description: Convert operational knowledge into reusable runbooks.
-category: engineering
 on: inbox/**/*
 ---
 

@@ -2,7 +2,6 @@
 icon: compass
 title: Stakeholder map
 description: Build stakeholder maps for customer accounts from source files and communication context.
-category: sales
 on: inbox/**/*
 connectors:
   gmail: read

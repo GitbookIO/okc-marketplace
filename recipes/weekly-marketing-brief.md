@@ -2,7 +2,6 @@
 icon: arrow-trend-up
 title: Weekly marketing brief
 description: Produce a weekly marketing summary from repository knowledge and available tools.
-category: marketing
 on:
   event: schedule
   schedule: 45 9 * * 1

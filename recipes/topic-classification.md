@@ -2,7 +2,6 @@
 icon: tags
 title: Topic classification
 description: Organize recurring source file themes into durable topic pages.
-category: company
 on: inbox/**/*
 ---
 

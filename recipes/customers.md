@@ -2,7 +2,6 @@
 icon: money-bill
 title: Customer profiles
 description: Build structured customer knowledge from source files and conversations.
-category: sales
 on: inbox/**/*
 ---
 
