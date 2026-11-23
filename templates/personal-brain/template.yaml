@@ -10,6 +10,7 @@ questions:
     options:
       - id: granola
         label: Granola
+        icon: granola
         files:
           exclude:
             - 'workflows/ingest-meetings-fireflies.md'
