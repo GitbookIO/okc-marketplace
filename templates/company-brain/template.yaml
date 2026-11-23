@@ -78,6 +78,7 @@ questions:
     options:
       - id: linear
         label: Linear
+        icon: linear
         files:
           exclude:
             - 'issues/mock-*.md'
