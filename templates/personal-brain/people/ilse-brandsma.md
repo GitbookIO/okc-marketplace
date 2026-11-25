@@ -20,13 +20,13 @@ generated:
 stale_after: "2026-12-30T23:40:00Z"
 ---
 
-Ilse Brandsma wrote A Year of Low Tides, about a year on an island off the Frisian coast after quitting a job.[^sources-mock-4] You know the book, not the person.
+Ilse Brandsma wrote A Year of Low Tides, about a year on an island off the Frisian coast after quitting a job. ([A Year of Low Tides, chapters 1 and 2](../sources/mock-4.md)) You know the book, not the person.
 
 ## What you've read
 
-- 31 October, chapters 6 to 8: a storm cuts the island off, and the week's plan falls apart.[^sources-mock-12]
-- 17 October, chapters 3 to 5: learning Frisian by listening at the harbor, and the case against drills.[^sources-mock-8]
-- 3 October, chapters 1 and 2: a tide table, and days planned around low water.[^sources-mock-4]
+- 31 October, chapters 6 to 8: a storm cuts the island off, and the week's plan falls apart. ([A Year of Low Tides, chapters 6 to 8](../sources/mock-12.md))
+- 17 October, chapters 3 to 5: learning Frisian by listening at the harbor, and the case against drills. ([A Year of Low Tides, chapters 3 to 5](../sources/mock-8.md))
+- 3 October, chapters 1 and 2: a tide table, and days planned around low water. ([A Year of Low Tides, chapters 1 and 2](../sources/mock-4.md))
 
 ## Topics
 

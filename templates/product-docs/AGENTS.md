@@ -21,7 +21,7 @@ This repo is Acme's public docs for its shipping API: a reference page per opera
 
    `api/openapi.yaml` is the API spec. People own it. Read it, and never change it unless a person asks you to.
 
-   Concept pages cite their records in `sources`, and footnotes in the body point to them. Follow a footnote to check a claim.
+   Concept pages cite their records in `sources`, and links in the body point to them. Follow a link to check a claim.
 
 3. Check `types/` for the fields a type uses before you read or write its frontmatter.
 4. Read `log.md` for what changed recently, newest first.

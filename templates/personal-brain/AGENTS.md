@@ -13,7 +13,7 @@ Don't edit `sources/` or `meetings/` either. They're records of what was capture
 ## Find your way
 
 1. Read `index.md` first. There is no search, so it's the map. Its Pages section lists every topic, project and person page with one line on each.
-2. Open the page you need. To answer a question, start from the topic page, then follow its footnotes to the sources and meetings behind each claim.
+2. Open the page you need. To answer a question, start from the topic page, then follow its links to the sources and meetings behind each claim.
 3. Folders:
    - `topics/`: one page per subject, with the current understanding, a Contradictions section where notes disagree, and open questions. Concept folder, written by Update topics.
    - `projects/`: one page per piece of work with a goal and an end, at work or not. Concept folder, written by Update projects.

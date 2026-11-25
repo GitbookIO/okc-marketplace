@@ -22,11 +22,11 @@ Every Monday, you write one digest of the week that just ended, Monday to Sunday
 4. Body:
    - One paragraph: the most important thing that happened, with counts of pull requests merged, issues opened and closed, and incidents.
    - A Vega-Lite bar chart in a `vega-lite` code block of pull requests merged per system that week.
-   - `## Shipped`: merged pull requests grouped by system, one line each with a footnote.
-   - `## Incidents`: each incident, its severity and how long it lasted, with a footnote.
-   - `## Decisions`: decisions dated that week, with footnotes.
-   - `## Drift from spec`: open drift findings from the System pages, with footnotes.
-   - `## Needs attention`: urgent or high-priority issues still open, with footnotes.
+   - `## Shipped`: merged pull requests grouped by system, one line each with a link.
+   - `## Incidents`: each incident, its severity and how long it lasted, with a link.
+   - `## Decisions`: decisions dated that week, with links.
+   - `## Drift from spec`: open drift findings from the System pages, with links.
+   - `## Needs attention`: urgent or high-priority issues still open, with links.
 
 Count only what the records show. Leave a section out if it would be empty.
 

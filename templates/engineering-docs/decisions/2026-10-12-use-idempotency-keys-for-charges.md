@@ -24,7 +24,7 @@ verified:
 
 ## Decision
 
-Every charge carries an idempotency key built from the label purchase ID, retries reuse it, and the ledger refuses a second entry for the same key.[^discussions-mock-1][^specs-mock-1]
+Every charge carries an idempotency key built from the label purchase ID, retries reuse it, and the ledger refuses a second entry for the same key. ([How do we stop double charges?](../discussions/mock-1.md), [Idempotent charges](../specs/mock-1.md))
 
 ## Options considered
 
@@ -44,14 +44,14 @@ flowchart TD
 
 ## Reasons
 
-- The processor already supports idempotency keys, while its own dedupe would need a contract change.[^discussions-mock-1]
-- A lock on our side doesn't stop the processor's retry racing ours.[^discussions-mock-1]
-- Keys in the ledger mean it refuses a second entry even if billing slips.[^discussions-mock-1]
+- The processor already supports idempotency keys, while its own dedupe would need a contract change. ([How do we stop double charges?](../discussions/mock-1.md))
+- A lock on our side doesn't stop the processor's retry racing ours. ([How do we stop double charges?](../discussions/mock-1.md))
+- Keys in the ledger mean it refuses a second entry even if billing slips. ([How do we stop double charges?](../discussions/mock-1.md))
 
 ## Consequences
 
 - Retries are safe at the processor and in the ledger.
-- The RFC also caps retries at 5 with exponential backoff.[^specs-mock-1]
+- The RFC also caps retries at 5 with exponential backoff. ([Idempotent charges](../specs/mock-1.md))
 
 ## Who decided
 

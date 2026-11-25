@@ -20,7 +20,7 @@ This repo is Acme's engineering docs: what each system does, who owns it, what c
 
    - `prs/`, `issues/`, `incidents/`, `specs/` and `discussions/`.
 
-   Concept pages cite their records in `sources`, and footnotes in the body point to them. Follow a footnote to check a claim.
+   Concept pages cite their records in `sources`, and links in the body point to them. Follow a link to check a claim.
 
 3. Check `types/` for the fields a type uses before you read or write its frontmatter.
 4. Read `log.md` for what changed recently, newest first.

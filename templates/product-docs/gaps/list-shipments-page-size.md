@@ -24,16 +24,16 @@ generated:
 
 ## Resolved
 
-[List shipments](../docs/reference/list-shipments.md) answers it since 22 October 2026: `limit` takes 1 to 200, and "Cursors don't skip shipments created while you page, which offset pages did."[^reference-list-shipments]
+[List shipments](../docs/reference/list-shipments.md) answers it since 22 October 2026: `limit` takes 1 to 200, and "Cursors don't skip shipments created while you page, which offset pages did." ([List shipments](../docs/reference/list-shipments.md))
 
 ## What customers ask
 
-- A nightly export asked for 500 per page, got a 400, and asked for the largest page size.[^support-mock-2]
-- A team paging with `offset` found shipments skipped during their export, and asked for a safer way and bigger pages.[^support-mock-6]
+- A nightly export asked for 500 per page, got a 400, and asked for the largest page size. ([What's the largest page size for list shipments?](../support/mock-2.md))
+- A team paging with `offset` found shipments skipped during their export, and asked for a safer way and bigger pages. ([Offset pagination skips shipments during our export](../support/mock-6.md))
 
 ## What support answered
 
-The limit was 100 per page with `offset`, and cursor pagination with pages of up to 200 was coming.[^support-mock-2][^support-mock-6]
+The limit was 100 per page with `offset`, and cursor pagination with pages of up to 200 was coming. ([What's the largest page size for list shipments?](../support/mock-2.md), [Offset pagination skips shipments during our export](../support/mock-6.md))
 
 ## What the docs say
 

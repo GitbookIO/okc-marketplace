@@ -24,7 +24,7 @@ generated:
 stale_after: "2026-12-05T16:00:00Z"
 ---
 
-The webhook delivery log shows customers every attempt to deliver a webhook, and lets them resend a failed one. It launched on 30 October with 7 days of history. The work now is what customers asked for around launch: filters, export and a longer history.[^meetings-mock-7][^issues-mock-5]
+The webhook delivery log shows customers every attempt to deliver a webhook, and lets them resend a failed one. It launched on 30 October with 7 days of history. The work now is what customers asked for around launch: filters, export and a longer history. ([Harbor Coffee Roasters check-in](../meetings/mock-7.md), [Delivery log: filter by event type](../issues/mock-5.md))
 
 ## Progress
 
@@ -38,19 +38,19 @@ pie title Issues by state
 
 ## Who it's for
 
-- [Northline Freight](../customers/northline.md): its auditors need 30 days of history, and its renewal depends on it.[^issues-mock-7]
-- [Harbor Coffee Roasters](../customers/harbor.md): wants to export attempts as CSV for its support team.[^issues-mock-6][^meetings-mock-7]
+- [Northline Freight](../customers/northline.md): its auditors need 30 days of history, and its renewal depends on it. ([Delivery log: keep 30 days of attempts](../issues/mock-7.md))
+- [Harbor Coffee Roasters](../customers/harbor.md): wants to export attempts as CSV for its support team. ([Delivery log: export attempts as CSV](../issues/mock-6.md), [Harbor Coffee Roasters check-in](../meetings/mock-7.md))
 
 ## Open work
 
-- ENG-251, Delivery log: keep 30 days of attempts. High, backlog, unassigned.[^issues-mock-7]
-- ENG-249, Delivery log: filter by event type. Medium, in progress, Jonah Park.[^issues-mock-5]
-- ENG-250, Delivery log: export attempts as CSV. Low, backlog, unassigned.[^issues-mock-6]
+- ENG-251, Delivery log: keep 30 days of attempts. High, backlog, unassigned. ([Delivery log: keep 30 days of attempts](../issues/mock-7.md))
+- ENG-249, Delivery log: filter by event type. Medium, in progress, Jonah Park. ([Delivery log: filter by event type](../issues/mock-5.md))
+- ENG-250, Delivery log: export attempts as CSV. Low, backlog, unassigned. ([Delivery log: export attempts as CSV](../issues/mock-6.md))
 
 ## Recent meetings
 
-- 28 October: Harbor's subscription system missed shipped events. The log answers that from launch, and Harbor asked to export it.[^meetings-mock-7]
+- 28 October: Harbor's subscription system missed shipped events. The log answers that from launch, and Harbor asked to export it. ([Harbor Coffee Roasters check-in](../meetings/mock-7.md))
 
 ## Risks
 
-- Keeping 30 days has no owner or date, and Northline's renewal depends on it.[^issues-mock-7]
+- Keeping 30 days has no owner or date, and Northline's renewal depends on it. ([Delivery log: keep 30 days of attempts](../issues/mock-7.md))

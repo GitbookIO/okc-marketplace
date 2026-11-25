@@ -21,7 +21,7 @@ verified:
     at: "2026-11-08T02:00:00Z"
 ---
 
-Returns one shipment with its current status. Every shipment says in `signature_required` whether the carrier gets a signature on delivery.[^prs-mock-6]
+Returns one shipment with its current status. Every shipment says in `signature_required` whether the carrier gets a signature on delivery. ([Add signature_required to create shipment](../../prs/mock-6.md))
 
 ## Request
 

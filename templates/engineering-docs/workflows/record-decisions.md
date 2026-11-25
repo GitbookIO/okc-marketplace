@@ -23,7 +23,7 @@ For each Discussion or Spec record that triggered this run:
 5. Body:
    - `## Decision`: what was decided, in one or two sentences.
    - `## Options considered`: a Mermaid `flowchart TD` from the question to each option, with the chosen one styled, then one line per option.
-   - `## Reasons`: why this option won, in the deciders' own reasoning, with footnotes.
+   - `## Reasons`: why this option won, in the deciders' own reasoning, with links.
    - `## Consequences`: what changes because of it, and what it rules out.
    - `## Who decided`: the deciders and the date.
 

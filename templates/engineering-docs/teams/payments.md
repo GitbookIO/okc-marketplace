@@ -25,16 +25,16 @@ Payments owns how Acme charges customers for labels and the ledger behind every 
 
 ## Systems
 
-- [Billing API](/systems/billing-api.md): production.[^systems-billing-api]
-- [Ledger](/systems/ledger.md): production.[^systems-ledger]
+- [Billing API](/systems/billing-api.md): production. ([Billing API](../systems/billing-api.md))
+- [Ledger](/systems/ledger.md): production. ([Ledger](../systems/ledger.md))
 
 ## What's changing
 
-- Every charge carries an idempotency key, so a retry can't charge twice.[^systems-billing-api]
-- The ledger rejects a second entry for the same key.[^systems-ledger]
-- Failed charges are retried 3 times, 10 seconds apart.[^systems-billing-api]
-- Failed charges keep the processor's response code for support.[^systems-billing-api]
+- Every charge carries an idempotency key, so a retry can't charge twice. ([Billing API](../systems/billing-api.md))
+- The ledger rejects a second entry for the same key. ([Ledger](../systems/ledger.md))
+- Failed charges are retried 3 times, 10 seconds apart. ([Billing API](../systems/billing-api.md))
+- Failed charges keep the processor's response code for support. ([Billing API](../systems/billing-api.md))
 
 ## Needs attention
 
-- Billing API retries drift from Idempotent charges, which requires 5 retries with exponential backoff.[^systems-billing-api]
+- Billing API retries drift from Idempotent charges, which requires 5 retries with exponential backoff. ([Billing API](../systems/billing-api.md))

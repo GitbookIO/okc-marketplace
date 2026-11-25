@@ -24,7 +24,7 @@ verified:
     at: "2026-11-08T02:00:00Z"
 ---
 
-Buys a label from the carrier for one of the shipment's rates, and charges it to your balance. Acme waits up to 8 seconds for the carrier. Retry a request that timed out with the same Idempotency-Key: if the first one went through, you get the same label back and aren't charged twice. Slow carriers used to hold a request for up to 30 seconds and return a 502, which is why it now times out at 8.[^prs-mock-3] `label_format` defaults to `pdf_4x6`, the only format before 1.15.0.[^prs-mock-8]
+Buys a label from the carrier for one of the shipment's rates, and charges it to your balance. Acme waits up to 8 seconds for the carrier. Retry a request that timed out with the same Idempotency-Key: if the first one went through, you get the same label back and aren't charged twice. Slow carriers used to hold a request for up to 30 seconds and return a 502, which is why it now times out at 8. ([Time out carrier label calls after 8 seconds](../../prs/mock-3.md)) `label_format` defaults to `pdf_4x6`, the only format before 1.15.0. ([Let callers choose the label format](../../prs/mock-8.md))
 
 ## Request
 

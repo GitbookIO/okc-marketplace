@@ -32,23 +32,23 @@ generated:
 
 ## What it is
 
-The Billing API charges customers for every label they buy and retries charges that fail. Label Service calls it on each purchase.[^systems-billing-api]
+The Billing API charges customers for every label they buy and retries charges that fail. Label Service calls it on each purchase. ([Billing API](../../systems/billing-api.md))
 
 ## Rules from specs
 
-- Open drift: Idempotent charges requires at most 5 retries with exponential backoff from 2 seconds, but retries now stop after 3, 10 seconds apart. Check with Payments before changing retry timing.[^specs-mock-1][^prs-mock-2]
-- Every charge request carries an idempotency key built from the label purchase ID.[^specs-mock-1]
-- Every retry reuses that key.[^specs-mock-1]
-- The ledger records one entry per key.[^specs-mock-1]
+- Open drift: Idempotent charges requires at most 5 retries with exponential backoff from 2 seconds, but retries now stop after 3, 10 seconds apart. Check with Payments before changing retry timing. ([Idempotent charges](../../specs/mock-1.md), [Retry failed charges with a fixed delay](../../prs/mock-2.md))
+- Every charge request carries an idempotency key built from the label purchase ID. ([Idempotent charges](../../specs/mock-1.md))
+- Every retry reuses that key. ([Idempotent charges](../../specs/mock-1.md))
+- The ledger records one entry per key. ([Idempotent charges](../../specs/mock-1.md))
 
 ## How changes are made here
 
-- Charge logic lives in `src/charges/`, and retry behaviour is tested in `test/charges/retry.test.ts`.[^prs-mock-1][^prs-mock-2]
-- Schema changes are numbered SQL files in `migrations/`.[^prs-mock-16]
-- Pull request descriptions name the issue they fix and the spec they follow.[^prs-mock-1]
+- Charge logic lives in `src/charges/`, and retry behaviour is tested in `test/charges/retry.test.ts`. ([Add idempotency keys to charge requests](../../prs/mock-1.md), [Retry failed charges with a fixed delay](../../prs/mock-2.md))
+- Schema changes are numbered SQL files in `migrations/`. ([Store processor response codes on failed charges](../../prs/mock-16.md))
+- Pull request descriptions name the issue they fix and the spec they follow. ([Add idempotency keys to charge requests](../../prs/mock-1.md))
 
 ## Before you merge
 
-- Run the retry tests with a processor timeout. A timeout is what charged fourteen accounts twice.[^incidents-mock-1]
-- Make sure the change can't write a second ledger entry for one charge.[^runbooks-duplicate-charges]
-- If double charges show up after a deploy, pause the charge retry job first.[^runbooks-duplicate-charges]
+- Run the retry tests with a processor timeout. A timeout is what charged fourteen accounts twice. ([Customers charged twice for one label](../../incidents/mock-1.md))
+- Make sure the change can't write a second ledger entry for one charge. ([Duplicate charges](../../runbooks/duplicate-charges.md))
+- If double charges show up after a deploy, pause the charge retry job first. ([Duplicate charges](../../runbooks/duplicate-charges.md))

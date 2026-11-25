@@ -38,13 +38,13 @@ Frontmatter:
 
 Body, in this order:
 
-1. `## What customers ask`: one line per thread, oldest first, in the customer's words where you can, with a footnote.
-2. `## What support answered`: what the answers had in common, and where they disagreed, with footnotes.
+1. `## What customers ask`: one line per thread, oldest first, in the customer's words where you can, with a link.
+2. `## What support answered`: what the answers had in common, and where they disagreed, with links.
 3. `## What the docs say`: link the pages that come closest and say what they leave out. If nothing comes close, say so.
-4. `## Where the answer is`: pull requests that show the answer, with footnotes. Leave this section out if there are none.
+4. `## Where the answer is`: pull requests that show the answer, with links. Leave this section out if there are none.
 5. If `thread_count` is 3 or more, a Vega-Lite bar chart in a `vega-lite` code block of threads per week, counted from each thread's `opened_at`.
 
-Define no footnotes in the body. The `sources` ids are the labels.
+Link each source with its title as the link text, like `([Label purchase hangs and returns a 502](../support/mock-7.md))`.
 
 ## Index
 

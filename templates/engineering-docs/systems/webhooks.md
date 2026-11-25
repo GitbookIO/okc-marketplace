@@ -53,21 +53,21 @@ flowchart LR
 
 ## Recent changes
 
-- The delivery queue is partitioned by shipment, so events for one shipment arrive in order again while delivery stays parallel across shipments.[^prs-mock-5]
-- Failed deliveries are retried 5 times over about 2 hours, then dropped and shown as failed.[^prs-mock-6]
-- Retries go through a pool of 16 workers instead of one consumer.[^prs-mock-4]
+- The delivery queue is partitioned by shipment, so events for one shipment arrive in order again while delivery stays parallel across shipments. ([Partition the delivery queue by shipment](../prs/mock-5.md))
+- Failed deliveries are retried 5 times over about 2 hours, then dropped and shown as failed. ([Cap delivery retries at 5 attempts](../prs/mock-6.md))
+- Retries go through a pool of 16 workers instead of one consumer. ([Deliver retries from a parallel worker pool](../prs/mock-4.md))
 
 ## Open issues
 
-- Webhook signatures fail for payloads with emoji (ENG-243, medium).[^issues-mock-13]
+- Webhook signatures fail for payloads with emoji (ENG-243, medium). ([Webhook signatures fail for payloads with emoji](../issues/mock-13.md))
 
 ## Incidents
 
-- 14 October: deliveries fell 40 minutes behind during a burst of tracking updates. See [Webhook delivery backlog](/runbooks/webhook-delivery-backlog.md).[^incidents-mock-2]
+- 14 October: deliveries fell 40 minutes behind during a burst of tracking updates. See [Webhook delivery backlog](/runbooks/webhook-delivery-backlog.md). ([Webhook deliveries fell 40 minutes behind](../incidents/mock-2.md))
 
 ## Drift from spec
 
-- Webhook delivery guarantees requires up to 8 retries over 24 hours. Retries now stop after 5 attempts over about 2 hours.[^specs-mock-2][^prs-mock-6]
+- Webhook delivery guarantees requires up to 8 retries over 24 hours. Retries now stop after 5 attempts over about 2 hours. ([Webhook delivery guarantees](../specs/mock-2.md), [Cap delivery retries at 5 attempts](../prs/mock-6.md))
 
 ## Activity
 

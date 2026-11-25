@@ -24,7 +24,7 @@ verified:
     at: "2026-11-08T02:00:00Z"
 ---
 
-Lists your shipments, newest first, one page at a time. Pass the `next_cursor` from a page as `cursor` to get the next one. Filters from the first request apply to every page. `next_cursor` is null on the last page. Cursors don't skip shipments created while you page, which offset pages did.[^prs-mock-2] Every shipment says in `signature_required` whether the carrier gets a signature on delivery.[^prs-mock-6]
+Lists your shipments, newest first, one page at a time. Pass the `next_cursor` from a page as `cursor` to get the next one. Filters from the first request apply to every page. `next_cursor` is null on the last page. Cursors don't skip shipments created while you page, which offset pages did. ([Add cursor pagination to list shipments](../../prs/mock-2.md)) Every shipment says in `signature_required` whether the carrier gets a signature on delivery. ([Add signature_required to create shipment](../../prs/mock-6.md))
 
 ## Request
 

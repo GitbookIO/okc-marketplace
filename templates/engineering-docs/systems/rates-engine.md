@@ -48,9 +48,9 @@ flowchart LR
 
 ## Recent changes
 
-- Carrier rates are cached for 60 minutes instead of 15. Price-change notices still clear the cache right away.[^prs-mock-7]
-- Carrier credentials are no longer written to logs, and the two exposed keys are rotated.[^prs-mock-15]
-- Rates for all parcels in a shipment go to the carrier in one batch, which brought multi-parcel quotes from 1.4 seconds to 280 ms.[^prs-mock-8]
+- Carrier rates are cached for 60 minutes instead of 15. Price-change notices still clear the cache right away. ([Cache carrier rates for an hour](../prs/mock-7.md))
+- Carrier credentials are no longer written to logs, and the two exposed keys are rotated. ([Redact carrier credentials from logs](../prs/mock-15.md))
+- Rates for all parcels in a shipment go to the carrier in one batch, which brought multi-parcel quotes from 1.4 seconds to 280 ms. ([Batch carrier rate requests for multi-parcel shipments](../prs/mock-8.md))
 
 ## Open issues
 
@@ -62,7 +62,7 @@ None in the last 90 days.
 
 ## Drift from spec
 
-- Rate quotes under 300 ms requires cached rates to expire after 15 minutes. Rates are now cached for 60 minutes.[^specs-mock-3][^prs-mock-7]
+- Rate quotes under 300 ms requires cached rates to expire after 15 minutes. Rates are now cached for 60 minutes. ([Rate quotes under 300 ms](../specs/mock-3.md), [Cache carrier rates for an hour](../prs/mock-7.md))
 
 ## Activity
 

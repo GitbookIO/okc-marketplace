@@ -28,12 +28,12 @@ You keep Customer pages in `customers/` current. Each joins what sales, support 
    - `sources`: every record you used, with `resource` as the bundle path and `id` as `<folder>-<filename without .md>`. `generated`: the workflow signature you were given, with `at` now. `stale_after`: 30 days later.
 5. Body:
    - One paragraph: who they are, what they use Acme for, and where the relationship stands now.
-   - `## Health`: the health and the two or three reasons for it, with footnotes.
-   - `## Deals`: a table of deals, newest first, with kind, stage, amount and close date, each with a footnote.
-   - `## What they've asked for`: requests from meetings, support threads and issues, one line each, with the project page linked when one covers it, and footnotes.
-   - `## Open issues`: issues that link the account and aren't `done` or `canceled`, with priority and footnotes.
-   - `## Support`: how many threads in the last 90 days and what about, then the latest three, with footnotes. If there are 4 or more, add a Vega-Lite bar chart in a `vega-lite` code block of threads per week, colored by `area`.
-   - `## Recent conversations`: meetings, newest first, one line each with what was agreed, and footnotes.
+   - `## Health`: the health and the two or three reasons for it, with links.
+   - `## Deals`: a table of deals, newest first, with kind, stage, amount and close date, each with a link.
+   - `## What they've asked for`: requests from meetings, support threads and issues, one line each, with the project page linked when one covers it, and links.
+   - `## Open issues`: issues that link the account and aren't `done` or `canceled`, with priority and links.
+   - `## Support`: how many threads in the last 90 days and what about, then the latest three, with links. If there are 4 or more, add a Vega-Lite bar chart in a `vega-lite` code block of threads per week, colored by `area`.
+   - `## Recent conversations`: meetings, newest first, one line each with what was agreed, and links.
    Leave a section out if it would be empty.
 
 Describe the relationship, not the people. Name customer staff only as a cited record names them, and don't add a contacts section. Keep what people wrote by hand. Never edit records.

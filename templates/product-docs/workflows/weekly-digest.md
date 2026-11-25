@@ -22,9 +22,9 @@ Every Monday, you write one digest of the week that just ended, Monday to Sunday
 4. Body:
    - One paragraph: the most important thing for the docs that week, with counts of support threads, API changes and gaps opened and resolved.
    - A Vega-Lite bar chart in a `vega-lite` code block of support threads per week over the last 6 weeks, stacked by `area`.
-   - `## API changes`: the week's changelog entries, one line each with a footnote.
-   - `## Gaps`: gaps opened and resolved that week, then the three open gaps with the most threads, with footnotes.
-   - `## Shipped but not in the docs`: pull requests merged that week that change what customers see but that no changelog entry cites, with footnotes.
+   - `## API changes`: the week's changelog entries, one line each with a link.
+   - `## Gaps`: gaps opened and resolved that week, then the three open gaps with the most threads, with links.
+   - `## Shipped but not in the docs`: pull requests merged that week that change what customers see but that no changelog entry cites, with links.
    - `## Needs a person`: draft guides waiting for review, and pages past `stale_after`.
 
 Count only what the records and pages show. Leave a section out if it would be empty.

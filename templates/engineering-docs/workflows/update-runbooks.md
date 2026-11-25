@@ -24,7 +24,7 @@ For each Incident record that triggered this run:
    - `## Check`: numbered steps to confirm it's this problem.
    - `## Fix`: numbered steps that fixed it before, citing the incident for each.
    - `## Escalate`: who to tell, from the system's team page, and when.
-   - `## Past incidents`: one line per incident, newest first, with a footnote.
+   - `## Past incidents`: one line per incident, newest first, with a link.
 
 Keep steps that people added by hand. Only add what the incidents show.
 

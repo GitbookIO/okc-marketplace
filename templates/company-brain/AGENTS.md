@@ -21,7 +21,7 @@ This repo is Acme's company brain: what the company knows about its customers, p
 
    - `accounts/`, `deals/`, `meetings/`, `support/`, `issues/` and `discussions/`.
 
-   Concept pages cite their records in `sources`, and footnotes in the body point to them. Follow a footnote to check a claim, or read the meeting or thread itself for the exact words.
+   Concept pages cite their records in `sources`, and links in the body point to them. Follow a link to check a claim, or read the meeting or thread itself for the exact words.
 
    There are no pages about individual people. Names appear only as the records give them.
 

@@ -47,14 +47,14 @@ Body, in this order:
 
 On the page of the operation that creates webhook endpoints, add `## Events` after `## Errors`: a table of every event in the spec's `webhooks` section with its summary, then a table of the event payload's fields.
 
-Use footnotes for anything a pull request explains that the spec doesn't, like why a limit exists: `[^prs-mock-3]`. Define no footnotes in the body. The `sources` ids are the labels.
+Link the pull request for anything it explains that the spec doesn't, like why a limit exists: `([Time out carrier label calls after 8 seconds](../../prs/mock-3.md))`. Use the pull request's title as the link text.
 
 ## Changelog entries
 
 Write one entry per change you found, in `docs/changelog/<YYYY-MM-DD>-<slug>.md`, dated today. Changes that one pull request made together are one entry. Never edit an entry from an earlier run.
 
 - Frontmatter from `types/Changelog Entry.md`: `type: Changelog Entry`, `title` (what changed, in a few words, like "Ask for a signature on delivery"), `description` (one line), `date`, `api_version` (`info.version` from the spec), `change` (`added`, `changed`, `deprecated`, `removed` or `fixed`), `breaking` (true only if an existing integration must change), `endpoints` (bundle paths of the reference pages it touches), `sources` (the spec and the pull request behind it, as above), `generated`.
-- Body: one paragraph on what changed, with a footnote to the pull request when there is one. Then `## What to do`: what an integration needs to change, or "Nothing. The change is backwards compatible." Link each reference page it touches.
+- Body: one paragraph on what changed, with a link to the pull request when there is one. Then `## What to do`: what an integration needs to change, or "Nothing. The change is backwards compatible." Link each reference page it touches.
 
 ## Log
 

@@ -17,12 +17,12 @@ generated:
 stale_after: "2026-12-07T10:00:00Z"
 ---
 
-Shipping Core is shipping carrier failover before Black Friday, mostly for Kestrel Outdoor, and planning Saturday delivery for Tidewater Pharmacy.[^projects-carrier-failover][^projects-saturday-delivery]
+Shipping Core is shipping carrier failover before Black Friday, mostly for Kestrel Outdoor, and planning Saturday delivery for Tidewater Pharmacy. ([Carrier failover](../projects/carrier-failover.md), [Saturday delivery](../projects/saturday-delivery.md))
 
 ## Projects
 
-- [Carrier failover](../projects/carrier-failover.md): active, target 20 November 2026.[^projects-carrier-failover]
-- [Saturday delivery](../projects/saturday-delivery.md): planned, target 1 February 2027.[^projects-saturday-delivery]
+- [Carrier failover](../projects/carrier-failover.md): active, target 20 November 2026. ([Carrier failover](../projects/carrier-failover.md))
+- [Saturday delivery](../projects/saturday-delivery.md): planned, target 1 February 2027. ([Saturday delivery](../projects/saturday-delivery.md))
 
 ## Customers
 
@@ -31,9 +31,9 @@ Shipping Core is shipping carrier failover before Black Friday, mostly for Kestr
 
 ## Risks
 
-- If the failover test on 20 November slips, there's a week left before Black Friday.[^projects-carrier-failover]
-- Nobody is assigned to failover alerting yet.[^projects-carrier-failover]
-- Parcelline covers only two of Tidewater's three regions on Saturdays.[^projects-saturday-delivery]
+- If the failover test on 20 November slips, there's a week left before Black Friday. ([Carrier failover](../projects/carrier-failover.md))
+- Nobody is assigned to failover alerting yet. ([Carrier failover](../projects/carrier-failover.md))
+- Parcelline covers only two of Tidewater's three regions on Saturdays. ([Saturday delivery](../projects/saturday-delivery.md))
 
 ## Needs review
 

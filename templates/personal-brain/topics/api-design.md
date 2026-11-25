@@ -13,18 +13,18 @@ generated:
 stale_after: "2026-10-31T13:10:00Z"
 ---
 
-Your rules of thumb from the first pass at a usage endpoint. Mostly: reuse what Acme's API already does, and write the docs page before the code.[^sources-mock-3]
+Your rules of thumb from the first pass at a usage endpoint. Mostly: reuse what Acme's API already does, and write the docs page before the code. ([Usage API: first design notes](../sources/mock-3.md))
 
 ## Current understanding
 
-- One pagination style: cursor pagination like list shipments, up to 200 a page. Don't invent a second one.[^sources-mock-3]
-- Amounts are integers in minor units, with a currency. Never floats.[^sources-mock-3]
-- New endpoints go behind a beta flag per account.[^sources-mock-3]
-- Docs page first. If you can't explain a field in one sentence, it's the wrong field.[^sources-mock-3]
+- One pagination style: cursor pagination like list shipments, up to 200 a page. Don't invent a second one. ([Usage API: first design notes](../sources/mock-3.md))
+- Amounts are integers in minor units, with a currency. Never floats. ([Usage API: first design notes](../sources/mock-3.md))
+- New endpoints go behind a beta flag per account. ([Usage API: first design notes](../sources/mock-3.md))
+- Docs page first. If you can't explain a field in one sentence, it's the wrong field. ([Usage API: first design notes](../sources/mock-3.md))
 
 ## Open questions
 
-- Does a voided label show up in usage with a negative amount, or just disappear?[^sources-mock-3]
+- Does a voided label show up in usage with a negative amount, or just disappear? ([Usage API: first design notes](../sources/mock-3.md))
 
 ## See also
 

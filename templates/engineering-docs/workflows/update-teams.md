@@ -19,9 +19,9 @@ You keep Team pages in `teams/` current from the System pages. This runs after a
 3. Frontmatter from `types/Team.md`: keep `type`, `title`, `description`, `lead` and `channel`. Set `systems` to every system the team owns, sorted by title. Set `sources` to those System pages (with `resource` as the bundle path and `id` as `systems-<slug>`), `generated` to the workflow signature you were given with `at` now, and `stale_after` to 30 days later.
 4. Body:
    - One paragraph on what the team owns and what it's working on now.
-   - `## Systems`: one line per system with its lifecycle and a footnote.
-   - `## What's changing`: the most important recent changes across its systems, from their Recent changes sections, at most five, with footnotes.
-   - `## Needs attention`: drift findings and open incidents from its System pages, with footnotes. Write `Nothing right now.` if there are none.
+   - `## Systems`: one line per system with its lifecycle and a link.
+   - `## What's changing`: the most important recent changes across its systems, from their Recent changes sections, at most five, with links.
+   - `## Needs attention`: drift findings and open incidents from its System pages, with links. Write `Nothing right now.` if there are none.
 
 Don't write about individual people beyond the lead. Keep what people wrote by hand.
 

@@ -18,7 +18,7 @@ generated:
 stale_after: "2027-02-01T15:30:00Z"
 ---
 
-Cancels a shipment the carrier hasn't picked up yet. If you bought a label, Acme asks the carrier to void it. The cancelled shipment comes back with every field, including `signature_required`.[^prs-mock-6]
+Cancels a shipment the carrier hasn't picked up yet. If you bought a label, Acme asks the carrier to void it. The cancelled shipment comes back with every field, including `signature_required`. ([Add signature_required to create shipment](../../prs/mock-6.md))
 
 ## Request
 

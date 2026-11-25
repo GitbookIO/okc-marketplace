@@ -18,7 +18,7 @@ status: draft
 
 ## Decision
 
-Not decided. Hana Novak proposes sending all of Kestrel Outdoor's labels through Swiftway from 27 to 30 November, failover or not. Lena Ito would rather turn failover on for Kestrel first, and decide after the test on 20 November.[^discussions-mock-6]
+Not decided. Hana Novak proposes sending all of Kestrel Outdoor's labels through Swiftway from 27 to 30 November, failover or not. Lena Ito would rather turn failover on for Kestrel first, and decide after the test on 20 November. ([Route all of Kestrel's Black Friday labels through Swiftway?](../discussions/mock-6.md))
 
 ## Options considered
 
@@ -34,12 +34,12 @@ flowchart TD
 
 ## Reasons
 
-- Kestrel is nervous about Black Friday after labels failed again on 4 November.[^discussions-mock-6]
-- Swiftway costs about 12% more per label, and nobody has said who pays the difference.[^discussions-mock-6]
+- Kestrel is nervous about Black Friday after labels failed again on 4 November. ([Route all of Kestrel's Black Friday labels through Swiftway?](../discussions/mock-6.md))
+- Swiftway costs about 12% more per label, and nobody has said who pays the difference. ([Route all of Kestrel's Black Friday labels through Swiftway?](../discussions/mock-6.md))
 
 ## Consequences
 
-- If it's agreed, someone decides who pays Swiftway's higher price for those four days.[^discussions-mock-6]
+- If it's agreed, someone decides who pays Swiftway's higher price for those four days. ([Route all of Kestrel's Black Friday labels through Swiftway?](../discussions/mock-6.md))
 - [Kestrel Outdoor](../customers/kestrel.md) and [Carrier failover](../projects/carrier-failover.md) depend on the test on 20 November.
 
 ## Who decided

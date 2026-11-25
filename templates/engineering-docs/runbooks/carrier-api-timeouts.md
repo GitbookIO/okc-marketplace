@@ -22,7 +22,7 @@ verified:
 
 ## When to use
 
-Label purchases fail for one carrier's services, or for every service while workers wait on one carrier. Customers can't ship.[^incidents-mock-3][^incidents-mock-4]
+Label purchases fail for one carrier's services, or for every service while workers wait on one carrier. Customers can't ship. ([Label purchases failed during carrier API timeouts](../incidents/mock-3.md), [Label purchases failed during a carrier outage](../incidents/mock-4.md))
 
 ## Check
 
@@ -32,8 +32,8 @@ Label purchases fail for one carrier's services, or for every service while work
 
 ## Fix
 
-1. Set `labels.carrier_override` to route the failing carrier's services to the backup carrier.[^incidents-mock-3][^incidents-mock-4]
-2. If workers are stuck, restart them.[^incidents-mock-3]
+1. Set `labels.carrier_override` to route the failing carrier's services to the backup carrier. ([Label purchases failed during carrier API timeouts](../incidents/mock-3.md), [Label purchases failed during a carrier outage](../incidents/mock-4.md))
+2. If workers are stuck, restart them. ([Label purchases failed during carrier API timeouts](../incidents/mock-3.md))
 3. When the carrier recovers, clear the override.
 
 ## Escalate
@@ -42,5 +42,5 @@ Tell [Shipping Core](/teams/shipping-core.md) in #team-shipping-core as soon as 
 
 ## Past incidents
 
-- 4 November 2026: one carrier's outage failed its purchases for 35 minutes.[^incidents-mock-4]
-- 24 October 2026: a hanging carrier API failed most purchases for 50 minutes.[^incidents-mock-3]
+- 4 November 2026: one carrier's outage failed its purchases for 35 minutes. ([Label purchases failed during a carrier outage](../incidents/mock-4.md))
+- 24 October 2026: a hanging carrier API failed most purchases for 50 minutes. ([Label purchases failed during carrier API timeouts](../incidents/mock-3.md))

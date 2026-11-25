@@ -27,7 +27,7 @@ You only read `gaps/`. Never edit it: Resolve gaps closes gaps once the docs ans
 For each guide that lists a changed reference page in `endpoints`:
 
 - Check every step, code sample, field name, default and error against the reference page. Fix what's wrong. Add a new field or error only where a reader of this task needs it.
-- If an open gap asks something this guide's task runs into, and the reference pages now answer it, add the answer where the reader meets the question, in plain words, with a footnote to the reference page.
+- If an open gap asks something this guide's task runs into, and the reference pages now answer it, add the answer where the reader meets the question, in plain words, with a link to the reference page.
 - If nothing in the guide needs to change, leave the file alone.
 
 ## Draft a guide for a frequent gap
@@ -55,7 +55,7 @@ Body:
 3. A Mermaid `sequenceDiagram` when the task takes three or more calls, from the reader's app to the Acme API.
 4. `## Related`: links to the reference pages in `endpoints`.
 
-Use footnotes for every fact that comes from a reference page or gap. Define no footnotes in the body.
+Link every fact that comes from a reference page or gap to it, with the page's title as the link text, in parentheses after the sentence.
 
 ## Index
 

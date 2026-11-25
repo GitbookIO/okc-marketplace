@@ -14,11 +14,11 @@ generated:
 stale_after: "2026-12-06T10:00:00Z"
 ---
 
-Web is following up the webhook delivery log's launch with filters, export and a longer history, for Northline Freight and Harbor Coffee Roasters.[^projects-webhook-delivery-log]
+Web is following up the webhook delivery log's launch with filters, export and a longer history, for Northline Freight and Harbor Coffee Roasters. ([Webhook delivery log](../projects/webhook-delivery-log.md))
 
 ## Projects
 
-- [Webhook delivery log](../projects/webhook-delivery-log.md): active, no target date.[^projects-webhook-delivery-log]
+- [Webhook delivery log](../projects/webhook-delivery-log.md): active, no target date. ([Webhook delivery log](../projects/webhook-delivery-log.md))
 
 ## Customers
 
@@ -27,7 +27,7 @@ Web is following up the webhook delivery log's launch with filters, export and a
 
 ## Risks
 
-- Keeping 30 days of history has no owner or date, and Northline's renewal depends on it.[^projects-webhook-delivery-log]
+- Keeping 30 days of history has no owner or date, and Northline's renewal depends on it. ([Webhook delivery log](../projects/webhook-delivery-log.md))
 
 ## Needs review
 

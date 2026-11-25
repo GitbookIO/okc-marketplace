@@ -22,7 +22,7 @@ For each gap a page answers:
 
 - Set `state: resolved` and `resolved_by` to that page's bundle path, like `/docs/guides/rates-and-labels.md`.
 - Add the page to `sources`, with `resource` as its bundle path, `title`, and `id` as `<folder>-<filename without .md>`, like `guides-rates-and-labels`. Keep every entry already there.
-- Add a `## Resolved` section at the top of the body: which page answers it, the sentence that does, in quotes, and the date, with a footnote to the page.
+- Add a `## Resolved` section at the top of the body: which page answers it, the sentence that does, in quotes, and the date, with a link to the page.
 - Set `generated` to the workflow signature you were given, with `at` now.
 - Leave the rest of the page, `threads` and `thread_count` as they are.
 
