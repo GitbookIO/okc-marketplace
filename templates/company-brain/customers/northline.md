@@ -40,15 +40,15 @@ verified:
     at: "2026-11-06T17:30:00Z"
 ---
 
-Northline Freight is a regional freight and parcel carrier that buys about 40,000 labels a week through Acme and listens to tracking webhooks for every one. ([Northline Freight](../accounts/northline.md)) It has renewed once, and its two-year renewal now waits on one thing: 30 days of webhook delivery history for its auditors. ([Northline Freight 2027 renewal](../deals/mock-2.md))
+[Northline Freight](../accounts/northline.md) is a regional freight and parcel carrier that buys about 40,000 labels a week through Acme and listens to tracking webhooks for every one. It has renewed once, and its [two-year renewal](../deals/mock-2.md) now waits on one thing: 30 days of webhook delivery history for its auditors.
 
 ## Health
 
 Watch.
 
-- The 186,000 USD renewal closes on 15 December, and Northline won't sign without a date for 30 days of delivery history. ([Northline Freight 2027 renewal](../deals/mock-2.md), [Northline Freight renewal check-in](../meetings/mock-8.md))
-- Its auditors check every missed tracking event against a month of records, and the delivery log keeps 7 days. ([We need more than 7 days of webhook history](../support/mock-11.md))
-- Acme promised a date on a follow-up call on 9 November. ([Northline Freight renewal check-in](../meetings/mock-8.md))
+- The 186,000 USD [renewal](../deals/mock-2.md) closes on 15 December, and Northline won't sign without a date for 30 days of delivery history, as the [renewal check-in](../meetings/mock-8.md) made clear.
+- [We need more than 7 days of webhook history](../support/mock-11.md): its auditors check every missed tracking event against a month of records, and the delivery log keeps 7 days.
+- At the [renewal check-in](../meetings/mock-8.md), Acme promised a date on a follow-up call on 9 November.
 
 ## Deals
 
@@ -59,21 +59,21 @@ Watch.
 
 ## What they've asked for
 
-- 30 days of webhook delivery history, so its auditors can look back a month. Covered by [Webhook delivery log](../projects/webhook-delivery-log.md). ([Delivery log: keep 30 days of attempts](../issues/mock-7.md), [We need more than 7 days of webhook history](../support/mock-11.md), [How far back does the delivery log go?](../support/mock-7.md))
-- Tracking events for one shipment in order. Support suggested sorting by `occurred_at` until delivery was partitioned, which has since shipped. ([Tracking webhooks arrive out of order](../support/mock-3.md), [Northline Freight renewal check-in](../meetings/mock-8.md))
+- [30 days of webhook delivery history](../issues/mock-7.md), so its auditors can look back a month. Asked about in [We need more than 7 days of webhook history](../support/mock-11.md) and [How far back does the delivery log go?](../support/mock-7.md). Covered by [Webhook delivery log](../projects/webhook-delivery-log.md).
+- Tracking events for one shipment [in order](../support/mock-3.md). Support suggested sorting by `occurred_at` until delivery was partitioned, which has [since shipped](../meetings/mock-8.md).
 
 ## Open issues
 
-- ENG-251, Delivery log: keep 30 days of attempts. High priority, in the backlog. ([Delivery log: keep 30 days of attempts](../issues/mock-7.md))
+- ENG-251, [Delivery log: keep 30 days of attempts](../issues/mock-7.md). High priority, in the backlog.
 
 ## Support
 
 3 threads in the last 90 days, all about webhooks.
 
-- 5 November: We need more than 7 days of webhook history. ([We need more than 7 days of webhook history](../support/mock-11.md))
+- 5 November: [We need more than 7 days of webhook history](../support/mock-11.md).
 - 22 October: [How far back does the delivery log go?](../support/mock-7.md)
-- 9 October: Tracking webhooks arrive out of order. ([Tracking webhooks arrive out of order](../support/mock-3.md))
+- 9 October: [Tracking webhooks arrive out of order](../support/mock-3.md).
 
 ## Recent conversations
 
-- 3 November, renewal check-in: Northline needs a date for 30 days of delivery history before it signs. Acme comes back with one on 9 November. ([Northline Freight renewal check-in](../meetings/mock-8.md))
+- 3 November, [renewal check-in](../meetings/mock-8.md): Northline needs a date for 30 days of delivery history before it signs. Acme comes back with one on 9 November.

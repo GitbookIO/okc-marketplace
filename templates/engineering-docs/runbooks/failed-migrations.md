@@ -16,7 +16,7 @@ stale_after: 2026-12-02T15:45:00Z
 
 ## When to use
 
-Errors jump right after a deploy that includes a migration, while old and new instances run side by side. ([Shipments API errors after a deploy](../incidents/mock-6.md))
+Errors jump right after a deploy that includes a migration, while old and new instances run side by side, as in [Shipments API errors after a deploy](../incidents/mock-6.md).
 
 ## Check
 
@@ -25,8 +25,8 @@ Errors jump right after a deploy that includes a migration, while old and new in
 
 ## Fix
 
-1. Roll the deploy back. ([Shipments API errors after a deploy](../incidents/mock-6.md))
-2. Change the migration so new columns have a default or allow nulls, then deploy again. ([Shipments API errors after a deploy](../incidents/mock-6.md))
+1. [Roll the deploy back](../incidents/mock-6.md).
+2. [Change the migration](../incidents/mock-6.md) so new columns have a default or allow nulls, then deploy again.
 
 ## Escalate
 
@@ -34,4 +34,4 @@ Tell [Shipping Core](/teams/shipping-core.md) in #team-shipping-core before roll
 
 ## Past incidents
 
-- 2 November 2026: a third of shipment creates failed for 20 minutes. ([Shipments API errors after a deploy](../incidents/mock-6.md))
+- 2 November 2026: [a third of shipment creates failed](../incidents/mock-6.md) for 20 minutes.

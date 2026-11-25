@@ -38,22 +38,22 @@ generated:
 stale_after: "2027-01-05T17:20:00Z"
 ---
 
-Dev works with you on Payments: dual writes, metering, and since 21 October the ledger migration's backfill. ([Ledger migration plan](../sources/mock-6.md), [Handing the backfill to Dev](../sources/mock-9.md), [Metering: what counts as a label bought](../sources/mock-13.md))
+Dev works with you on Payments: [dual writes](../sources/mock-6.md), [metering](../sources/mock-13.md), and since 21 October the [ledger migration's backfill](../sources/mock-9.md).
 
 ## Recent conversations
 
-- 6 November, your notes: Dev's metering counts a label when it's bought. ([Metering: what counts as a label bought](../sources/mock-13.md))
-- 3 November, migration sync: dual writes are ready in staging, and 397 of 400 accounts matched. Dev still leans backfill first. ([Ledger migration sync](../meetings/mock-8.md))
-- 24 October, your notes: per Dev, billing shipped 3 retries 10 seconds apart, not the RFC's 5. ([Retries: the RFC and what shipped](../sources/mock-10.md))
-- 21 October: you handed Dev the backfill, with a week of pairing and an agreed review. ([Handing the backfill to Dev](../sources/mock-9.md))
-- 20 October, migration sync: the Ledger takes imported entries, and a backfill test over two years took about three hours. ([Ledger migration sync](../meetings/mock-6.md))
-- 12 October, idempotency review: a lock per purchase wouldn't stop a webhook arriving twice, and the Ledger should return the first entry instead of an error. ([Idempotent charges review](../meetings/mock-3.md))
-- 7 October, your notes: Dev's backfill-first order is the opposite of the expand and contract write-up. ([Expand and contract migrations](../sources/mock-5.md))
-- 6 October, kickoff: Dev proposed backfill first, then dual writes, then a catch-up run. ([Ledger migration kickoff](../meetings/mock-2.md))
+- 6 November, your notes on [Metering: what counts as a label bought](../sources/mock-13.md): Dev's metering counts a label when it's bought.
+- 3 November, [Ledger migration sync](../meetings/mock-8.md): dual writes are ready in staging, and 397 of 400 accounts matched. Dev still leans backfill first.
+- 24 October, your notes on [Retries: the RFC and what shipped](../sources/mock-10.md): per Dev, billing shipped 3 retries 10 seconds apart, not the RFC's 5.
+- 21 October, [Handing the backfill to Dev](../sources/mock-9.md): you handed Dev the backfill, with a week of pairing and an agreed review.
+- 20 October, [Ledger migration sync](../meetings/mock-6.md): the Ledger takes imported entries, and a backfill test over two years took about three hours.
+- 12 October, [Idempotent charges review](../meetings/mock-3.md): a lock per purchase wouldn't stop a webhook arriving twice, and the Ledger should return the first entry instead of an error.
+- 7 October, your notes on [Expand and contract migrations](../sources/mock-5.md): Dev's backfill-first order is the opposite of the expand and contract write-up.
+- 6 October, [Ledger migration kickoff](../meetings/mock-2.md): Dev proposed backfill first, then dual writes, then a catch-up run.
 
 ## Open commitments
 
-- You and Dev decide dual writes or backfill first, by 10 November. ([Ledger migration sync](../meetings/mock-8.md))
+- You and Dev decide [dual writes or backfill first](../meetings/mock-8.md), by 10 November.
 
 ## Topics
 

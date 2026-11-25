@@ -25,20 +25,20 @@ verified:
     at: "2026-11-05T08:30:00Z"
 ---
 
-The grammar that matters for a first real conversation: where the verb goes, which article, how separable verbs split, which helper the past tense takes, and when to say u. ([Dutch lesson 1 with Femke](../sources/mock-2.md), [Dutch lesson 3: de, het, u and je](../sources/mock-7.md), [Dutch lesson 5: separable verbs](../sources/mock-11.md), [Dutch lesson 6: ten minutes](../sources/mock-14.md)) The past tense is where you still freeze. ([Dutch lesson 6: ten minutes](../sources/mock-14.md))
+The grammar that matters for a first real conversation: [where the verb goes](../sources/mock-2.md), [which article](../sources/mock-7.md), [how separable verbs split](../sources/mock-11.md), [which helper the past tense takes](../sources/mock-14.md), and when to say u. The past tense is where you still freeze.
 
 ## Current understanding
 
-- Verb second in a main clause: "Morgen ga ik naar Utrecht". ([Dutch lesson 1 with Femke](../sources/mock-2.md))
-- After dat, omdat and als, the verb goes to the end: "Ik denk dat ik morgen kom". ([Dutch lesson 1 with Femke](../sources/mock-2.md))
-- De or het: no rule that works, so learn the article with the noun. Every diminutive is het: het huisje, het meisje. ([Dutch lesson 3: de, het, u and je](../sources/mock-7.md))
-- Separable verbs split in a main clause and come back together at the end of a subclause: "Ik bel je morgen op", "omdat ik je morgen opbel". ([Dutch lesson 5: separable verbs](../sources/mock-11.md))
-- Past tense: zijn when you move somewhere or something changes state, hebben for nearly everything else. "Ik ben naar Utrecht gegaan", "Ik heb gegeten". ([Dutch lesson 6: ten minutes](../sources/mock-14.md))
-- Since 4 November: with Oma, start with u and switch when she says "zeg maar je". ([Dutch lesson 6: ten minutes](../sources/mock-14.md))
+- [Verb second in a main clause](../sources/mock-2.md): "Morgen ga ik naar Utrecht".
+- [After dat, omdat and als, the verb goes to the end](../sources/mock-2.md): "Ik denk dat ik morgen kom".
+- [De or het](../sources/mock-7.md): no rule that works, so learn the article with the noun. Every diminutive is het: het huisje, het meisje.
+- [Separable verbs split in a main clause](../sources/mock-11.md) and come back together at the end of a subclause: "Ik bel je morgen op", "omdat ik je morgen opbel".
+- [Past tense](../sources/mock-14.md): zijn when you move somewhere or something changes state, hebben for nearly everything else. "Ik ben naar Utrecht gegaan", "Ik heb gegeten".
+- Since 4 November: [with Oma, start with u](../sources/mock-14.md) and switch when she says "zeg maar je".
 
 ## Contradictions
 
-- **U or je with strangers.** Your textbook says u with anyone you don't know and anyone older. ([Dutch lesson 3: de, het, u and je](../sources/mock-7.md)) Femke says hardly anyone under 60 says u anymore, and je is the default even with strangers in shops. ([Dutch lesson 3: de, het, u and je](../sources/mock-7.md)) Femke only sides with the textbook for older people. ([Dutch lesson 6: ten minutes](../sources/mock-14.md))
+- **U or je with strangers.** Your textbook says u with anyone you don't know and anyone older. [Femke says hardly anyone under 60 says u anymore](../sources/mock-7.md), and je is the default even with strangers in shops. [Femke only sides with the textbook for older people](../sources/mock-14.md).
 
 ## See also
 

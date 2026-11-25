@@ -46,15 +46,15 @@ generated:
 stale_after: "2026-12-06T16:00:00Z"
 ---
 
-Kestrel Outdoor is an outdoor gear retailer whose label volume triples during its two big sales a year. ([Kestrel Outdoor](../accounts/kestrel.md)) Labels failed during its sale on 24 October and again during a Parcelline outage on 4 November. Its renewal is due 31 January, and it wants failover to a second carrier before Black Friday on 27 November. ([Kestrel Outdoor 2027 renewal](../deals/mock-6.md), [Kestrel Outdoor escalation: labels during the sale](../meetings/mock-5.md))
+[Kestrel Outdoor](../accounts/kestrel.md) is an outdoor gear retailer whose label volume triples during its two big sales a year. Labels failed during its [sale on 24 October](../meetings/mock-5.md) and again during a Parcelline outage on 4 November. Its [renewal](../deals/mock-6.md) is due 31 January, and it wants failover to a second carrier before Black Friday on 27 November.
 
 ## Health
 
 At risk.
 
-- Labels failed in 3 support threads and an escalation call in the last 30 days: during the sale on 24 October, and during the Parcelline outage on 4 November. ([Labels failing during our sale](../support/mock-5.md), [Getting timeout errors on every label](../support/mock-6.md), [Kestrel Outdoor escalation: labels during the sale](../meetings/mock-5.md), [Labels failing again this morning](../support/mock-12.md), [Kestrel labels fail during the Parcelline outage](../issues/mock-4.md))
-- Kestrel said it will look at other shipping APIs if labels fail again in November, and its renewal is due 31 January. ([Kestrel Outdoor 2027 renewal](../deals/mock-6.md))
-- Acme credited 20% of October's label fees, and Kestrel accepted. Failover to Swiftway is in testing, with a target of 20 November. ([Kestrel Outdoor escalation: labels during the sale](../meetings/mock-5.md), [Route label calls to Swiftway when Parcelline times out](../issues/mock-2.md))
+- Labels failed in 3 support threads ([Labels failing during our sale](../support/mock-5.md), [Getting timeout errors on every label](../support/mock-6.md), [Labels failing again this morning](../support/mock-12.md)) and an [escalation call](../meetings/mock-5.md) in the last 30 days: during the sale on 24 October, and during the [Parcelline outage on 4 November](../issues/mock-4.md).
+- Kestrel said it will look at other shipping APIs if labels fail again in November, and its [renewal](../deals/mock-6.md) is due 31 January.
+- Acme credited 20% of October's label fees, and Kestrel accepted it on the [escalation call](../meetings/mock-5.md). Failover to Swiftway is [in testing](../issues/mock-2.md), with a target of 20 November.
 
 ## Deals
 
@@ -65,21 +65,21 @@ At risk.
 
 ## What they've asked for
 
-- A backup carrier when Parcelline slows down, working before Black Friday. Covered by [Carrier failover](../projects/carrier-failover.md). ([Kestrel Outdoor quarterly review](../meetings/mock-1.md), [Kestrel Outdoor escalation: labels during the sale](../meetings/mock-5.md), [Route label calls to Swiftway when Parcelline times out](../issues/mock-2.md))
+- A backup carrier when Parcelline slows down, as asked in the [quarterly review](../meetings/mock-1.md), working before Black Friday, as promised in the [escalation call](../meetings/mock-5.md). Covered by [Carrier failover](../projects/carrier-failover.md), tracked in [Route label calls to Swiftway when Parcelline times out](../issues/mock-2.md).
 
 ## Open issues
 
-- ENG-246, Route label calls to Swiftway when Parcelline times out. Urgent, in progress. ([Route label calls to Swiftway when Parcelline times out](../issues/mock-2.md))
+- ENG-246, [Route label calls to Swiftway when Parcelline times out](../issues/mock-2.md). Urgent, in progress.
 
 ## Support
 
 4 threads in the last 90 days, all about labels.
 
-- 4 November: Labels failing again this morning. ([Labels failing again this morning](../support/mock-12.md))
-- 24 October: Getting timeout errors on every label. ([Getting timeout errors on every label](../support/mock-6.md))
-- 24 October: Labels failing during our sale. ([Labels failing during our sale](../support/mock-5.md))
+- 4 November: [Labels failing again this morning](../support/mock-12.md).
+- 24 October: [Getting timeout errors on every label](../support/mock-6.md).
+- 24 October: [Labels failing during our sale](../support/mock-5.md).
 
-Older: 5 October, Label purchases are taking 6 to 8 seconds. ([Label purchases are taking 6 to 8 seconds](../support/mock-2.md))
+Older: 5 October, [Label purchases are taking 6 to 8 seconds](../support/mock-2.md).
 
 ```vega-lite
 {
@@ -127,5 +127,5 @@ Older: 5 October, Label purchases are taking 6 to 8 seconds. ([Label purchases a
 
 ## Recent conversations
 
-- 27 October, escalation: about 1,200 orders shipped a day late during the sale. Acme credited 20% of October's label fees and promised failover before Black Friday. ([Kestrel Outdoor escalation: labels during the sale](../meetings/mock-5.md))
-- 30 September, quarterly review: Kestrel asked for a backup carrier during sales. Renewal talks start in December. ([Kestrel Outdoor quarterly review](../meetings/mock-1.md))
+- 27 October, [escalation](../meetings/mock-5.md): about 1,200 orders shipped a day late during the sale. Acme credited 20% of October's label fees and promised failover before Black Friday.
+- 30 September, [quarterly review](../meetings/mock-1.md): Kestrel asked for a backup carrier during sales. Renewal talks start in December.

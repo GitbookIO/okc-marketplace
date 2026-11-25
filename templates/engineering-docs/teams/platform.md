@@ -22,16 +22,16 @@ Platform owns how carrier tracking updates come in and how shipment events go ou
 
 ## Systems
 
-- [Tracking Events](/systems/tracking-events.md): production. ([Tracking Events](../systems/tracking-events.md))
-- [Webhooks](/systems/webhooks.md): production. ([Webhooks](../systems/webhooks.md))
+- [Tracking Events](/systems/tracking-events.md): production.
+- [Webhooks](/systems/webhooks.md): production.
 
 ## What's changing
 
-- Webhook events for one shipment arrive in order again, through a queue partitioned by shipment. ([Webhooks](../systems/webhooks.md))
-- Failed webhook deliveries stop after 5 attempts over about 2 hours. ([Webhooks](../systems/webhooks.md))
-- Raw carrier events are kept for 14 days so dropped updates can be replayed. ([Tracking Events](../systems/tracking-events.md))
-- Carrier feed pollers refresh their token and restart on auth errors. ([Tracking Events](../systems/tracking-events.md))
+- [Webhook events for one shipment arrive in order again](../systems/webhooks.md), through a queue partitioned by shipment.
+- [Failed webhook deliveries stop after 5 attempts](../systems/webhooks.md) over about 2 hours.
+- [Raw carrier events are kept for 14 days](../systems/tracking-events.md) so dropped updates can be replayed.
+- [Carrier feed pollers refresh their token](../systems/tracking-events.md) and restart on auth errors.
 
 ## Needs attention
 
-- Webhook retries drift from Webhook delivery guarantees, which requires 8 retries over 24 hours. ([Webhooks](../systems/webhooks.md))
+- [Webhook retries drift](../systems/webhooks.md) from Webhook delivery guarantees, which requires 8 retries over 24 hours.

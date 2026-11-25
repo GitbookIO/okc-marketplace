@@ -22,7 +22,7 @@ status: draft
 
 ## Decision
 
-Not decided. Lena proposes a backup carrier per service, used automatically when the circuit breaker opens. The RFC stays in review until pricing is answered. ([Carrier failover options](../discussions/mock-5.md), [Carrier failover for labels](../specs/mock-4.md))
+Not decided. [Lena proposes a backup carrier per service](../discussions/mock-5.md), used automatically when the circuit breaker opens. The [RFC](../specs/mock-4.md) stays in review until pricing is answered.
 
 ## Options considered
 
@@ -40,12 +40,12 @@ flowchart TD
 
 ## Reasons
 
-- Twice in two weeks someone had to set the carrier override by hand. ([Carrier failover for labels](../specs/mock-4.md))
-- Customers want a label now, not a queued purchase. ([Carrier failover options](../discussions/mock-5.md))
+- Twice in two weeks someone had to [set the carrier override by hand](../specs/mock-4.md).
+- Customers want a label now, [not a queued purchase](../discussions/mock-5.md).
 
 ## Consequences
 
-- Billing needs to know who pays when the backup carrier costs more. ([Carrier failover options](../discussions/mock-5.md))
+- [Billing needs to know](../discussions/mock-5.md) who pays when the backup carrier costs more.
 
 ## Who decided
 

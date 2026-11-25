@@ -18,7 +18,7 @@ stale_after: 2027-04-28T15:00:00Z
 
 ## Decision
 
-The delivery log launches with 7 days of attempts and a status filter. It goes to 30 days, with an event type filter, after webhook delivery is partitioned. ([Delivery log scope for launch](../discussions/mock-6.md))
+The delivery log launches with [7 days of attempts and a status filter](../discussions/mock-6.md). It goes to 30 days, with an event type filter, after webhook delivery is partitioned.
 
 ## Options considered
 
@@ -36,8 +36,8 @@ flowchart TD
 
 ## Reasons
 
-- Querying 30 days takes 9 seconds for big accounts, 7 days under one. ([Delivery log scope for launch](../discussions/mock-6.md))
-- Partitioning lets attempts be indexed by shipment, which should make 30 days fast. ([Delivery log scope for launch](../discussions/mock-6.md))
+- [Querying 30 days takes 9 seconds](../discussions/mock-6.md) for big accounts, 7 days under one.
+- Partitioning lets attempts be indexed by shipment, [which should make 30 days fast](../discussions/mock-6.md).
 
 ## Consequences
 

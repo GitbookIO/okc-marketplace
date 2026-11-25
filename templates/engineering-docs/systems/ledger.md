@@ -32,7 +32,7 @@ flowchart LR
 
 ## Recent changes
 
-- A second entry with the same idempotency key is rejected, and the first entry is returned, so callers can retry safely. ([Reject a second entry for the same idempotency key](../prs/mock-3.md))
+- A second entry with the same idempotency key [is rejected](../prs/mock-3.md), and the first entry is returned, so callers can retry safely.
 
 ## Open issues
 

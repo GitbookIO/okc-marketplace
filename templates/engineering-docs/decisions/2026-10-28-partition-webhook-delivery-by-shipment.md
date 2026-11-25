@@ -18,7 +18,7 @@ stale_after: 2027-04-26T14:00:00Z
 
 ## Decision
 
-The delivery queue is partitioned by shipment ID, and one worker consumes each partition in order. ([Fixing out-of-order webhooks](../discussions/mock-2.md))
+The delivery queue is [partitioned by shipment ID](../discussions/mock-2.md), and one worker consumes each partition in order.
 
 ## Options considered
 
@@ -38,9 +38,9 @@ flowchart TD
 
 ## Reasons
 
-- Sequence numbers push the work onto every customer. ([Fixing out-of-order webhooks](../discussions/mock-2.md))
-- One consumer can't keep up with bursts. ([Fixing out-of-order webhooks](../discussions/mock-2.md))
-- Per-shipment order also makes the dashboard delivery log easier. ([Fixing out-of-order webhooks](../discussions/mock-2.md))
+- [Sequence numbers](../discussions/mock-2.md) push the work onto every customer.
+- [One consumer can't keep up](../discussions/mock-2.md) with bursts.
+- Per-shipment order also [makes the dashboard delivery log easier](../discussions/mock-2.md).
 
 ## Consequences
 

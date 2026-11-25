@@ -19,7 +19,7 @@ generated:
   at: "2026-10-30T12:30:00Z"
 ---
 
-A failed delivery is retried 5 times over about 2 hours, with growing gaps, and then marked as failed. It used to be retried 8 times over 24 hours. ([Cap delivery retries at 5 attempts](../../prs/mock-5.md))
+A failed delivery is [retried 5 times over about 2 hours](../../prs/mock-5.md), with growing gaps, and then marked as failed. It used to be retried 8 times over 24 hours.
 
 ## What to do
 

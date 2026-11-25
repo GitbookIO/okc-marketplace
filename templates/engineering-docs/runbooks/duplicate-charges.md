@@ -16,7 +16,7 @@ stale_after: 2026-11-01T11:00:00Z
 
 ## When to use
 
-Customers write in about two charges for one label, or the ledger shows a balance moving twice for one purchase. It has happened while the card processor was timing out. ([Customers charged twice for one label](../incidents/mock-1.md))
+Customers write in about two charges for one label, or the ledger shows a balance moving twice for one purchase. It has happened while the card processor was timing out, as in [Customers charged twice for one label](../incidents/mock-1.md).
 
 ## Check
 
@@ -26,9 +26,9 @@ Customers write in about two charges for one label, or the ledger shows a balanc
 
 ## Fix
 
-1. Pause the charge retry job. ([Customers charged twice for one label](../incidents/mock-1.md))
-2. Refund the duplicate charges. ([Customers charged twice for one label](../incidents/mock-1.md))
-3. Remove the duplicate ledger entries, keeping the first one. ([Customers charged twice for one label](../incidents/mock-1.md))
+1. [Pause the charge retry job](../incidents/mock-1.md).
+2. [Refund the duplicate charges](../incidents/mock-1.md).
+3. [Remove the duplicate ledger entries](../incidents/mock-1.md), keeping the first one.
 
 ## Escalate
 
@@ -36,4 +36,4 @@ Tell [Payments](/teams/payments.md) in #team-payments right away. Any double cha
 
 ## Past incidents
 
-- 2 October 2026: fourteen accounts charged twice after processor timeouts. ([Customers charged twice for one label](../incidents/mock-1.md))
+- 2 October 2026: [fourteen accounts charged twice](../incidents/mock-1.md) after processor timeouts.

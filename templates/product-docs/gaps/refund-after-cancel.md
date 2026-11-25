@@ -23,13 +23,13 @@ generated:
 
 ## What customers ask
 
-- A team that cancelled after buying a label asked whether the fee comes back, and when. ([Do we get the label fee back when we cancel?](../support/mock-5.md))
-- A customer saw the label charge still on their balance a day after cancelling. ([Cancelled shipment still shows the label charge](../support/mock-12.md))
-- A team building cancellation into their app asked what happens to the fee and whether there's a deadline. ([What happens to the label fee when we cancel?](../support/mock-15.md))
+- [Do we get the label fee back when we cancel?](../support/mock-5.md): a team that cancelled after buying a label asked whether the fee comes back, and when.
+- [Cancelled shipment still shows the label charge](../support/mock-12.md): a customer saw the label charge still on their balance a day after cancelling.
+- [What happens to the label fee when we cancel?](../support/mock-15.md): a team building cancellation into their app asked what happens to the fee and whether there's a deadline.
 
 ## What support answered
 
-Every answer says the fee goes back to the balance once the carrier confirms the void. They differ on timing: "a few days, and up to 14" in one, "up to 14 days" and "within 14 days" in the others. ([Do we get the label fee back when we cancel?](../support/mock-5.md), [Cancelled shipment still shows the label charge](../support/mock-12.md), [What happens to the label fee when we cancel?](../support/mock-15.md)) Two answers add a rule about scans: labels the carrier already scanned can't be voided, and you can cancel until the carrier scans the parcel. ([Cancelled shipment still shows the label charge](../support/mock-12.md), [What happens to the label fee when we cancel?](../support/mock-15.md))
+Every answer says the fee goes back to the balance once the carrier confirms the void. They differ on timing: "a few days, and up to 14" in [the first thread](../support/mock-5.md), "up to 14 days" and "within 14 days" in the others. Two answers, to the [lingering charge](../support/mock-12.md) and the [deadline question](../support/mock-15.md), add a rule about scans: labels the carrier already scanned can't be voided, and you can cancel until the carrier scans the parcel.
 
 ## What the docs say
 

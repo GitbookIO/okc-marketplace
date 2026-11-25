@@ -25,7 +25,7 @@ stale_after: "2026-12-06T14:30:00Z"
 
 Once a shipment exists, you choose how to send it. This guide gets the rates for a shipment, buys a label with one of them, and picks the label's file format. It's for developers who buy labels from their own app, like a checkout or a warehouse tool.
 
-1. **Get rates.** Send the shipment's id. The quote lists every service that can take the shipment, cheapest first, with `carrier`, `service`, `amount`, `currency` and `estimated_days`. ([Get rates](../reference/create-rate-quote.md))
+1. **[Get rates](../reference/create-rate-quote.md).** Send the shipment's id. The quote lists every service that can take the shipment, cheapest first, with `carrier`, `service`, `amount`, `currency` and `estimated_days`.
 
    ```bash
    curl -X POST https://api.acme.example/v1/rates \
@@ -34,8 +34,8 @@ Once a shipment exists, you choose how to send it. This guide gets the rates for
      -d '{"shipment_id":"shp_8Kd2"}'
    ```
 
-2. **Pick a rate** and keep its `id`, like `rate_71Pq`. Show customers `amount` with `currency`. `amount` is a decimal string, so don't read it as a floating-point number. ([Get rates](../reference/create-rate-quote.md))
-3. **Buy the label** with that rate's id. Send an `Idempotency-Key`, so a retry can never buy a second label. ([Buy a label](../reference/buy-label.md))
+2. **Pick a rate** and keep its `id`, like `rate_71Pq`. Show customers `amount` with `currency`. `amount` is [a decimal string](../reference/create-rate-quote.md), so don't read it as a floating-point number.
+3. **[Buy the label](../reference/buy-label.md)** with that rate's id. Send an `Idempotency-Key`, so a retry can never buy a second label.
 
    ```bash
    curl -X POST https://api.acme.example/v1/shipments/shp_8Kd2/label \
@@ -45,10 +45,10 @@ Once a shipment exists, you choose how to send it. This guide gets the rates for
      -d '{"rate_id":"rate_71Pq","label_format":"zpl"}'
    ```
 
-4. **Choose a format.** `label_format` is `pdf_4x6` unless you say otherwise. Use `pdf_a4` for office printers or `zpl` for thermal printers. ([Choose the label format](../changelog/2026-11-06-label-format.md))
-5. **Download the label** from `label_url`. The response also has the `tracking_number`, and says which `label_format` the file is in. ([Buy a label](../reference/buy-label.md))
+4. **Choose a format.** `label_format` is `pdf_4x6` [unless you say otherwise](../changelog/2026-11-06-label-format.md). Use `pdf_a4` for office printers or `zpl` for thermal printers.
+5. **Download the label** from `label_url`. The [response](../reference/buy-label.md) also has the `tracking_number`, and says which `label_format` the file is in.
 
-If buying returns `rate_expired`, the rate is too old. Get rates again and buy with a new one. ([Buy a label](../reference/buy-label.md)) If it returns `carrier_timeout`, the carrier didn't answer within 8 seconds. Retry with the same `Idempotency-Key`. ([Label purchases time out after 8 seconds](../changelog/2026-10-26-label-timeout.md))
+If [buying](../reference/buy-label.md) returns `rate_expired`, the rate is too old. Get rates again and buy with a new one. If it returns `carrier_timeout`, the carrier [didn't answer within 8 seconds](../changelog/2026-10-26-label-timeout.md). Retry with the same `Idempotency-Key`.
 
 ## Related
 

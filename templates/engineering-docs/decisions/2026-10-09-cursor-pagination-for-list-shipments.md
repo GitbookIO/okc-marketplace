@@ -18,7 +18,7 @@ stale_after: 2027-04-07T15:00:00Z
 
 ## Decision
 
-GET /v1/shipments pages with an opaque cursor. The default page size is 50, the maximum is 200, and filters from the first request apply to every page. ([Cursor pagination for list shipments](../specs/mock-6.md))
+GET /v1/shipments pages with an [opaque cursor](../specs/mock-6.md). The default page size is 50, the maximum is 200, and filters from the first request apply to every page.
 
 ## Options considered
 
@@ -36,11 +36,11 @@ flowchart TD
 
 ## Reasons
 
-- The design gives no reasons beyond the requirements themselves. ([Cursor pagination for list shipments](../specs/mock-6.md))
+- The [design gives no reasons](../specs/mock-6.md) beyond the requirements themselves.
 
 ## Consequences
 
-- Offset pagination stays until v1 is retired. ([Cursor pagination for list shipments](../specs/mock-6.md))
+- [Offset pagination stays](../specs/mock-6.md) until v1 is retired.
 
 ## Who decided
 

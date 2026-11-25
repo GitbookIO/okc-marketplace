@@ -29,14 +29,14 @@ generated:
 
 ## What customers ask
 
-- A checkout that buys labels up to a day after showing rates got `rate_expired` and asked how long a rate is good for. ([How long can we hold a rate before buying the label?](../support/mock-1.md))
-- A warehouse that buys labels in two batches a day asked for a documented validity period. ([We keep getting rate_expired on batch label runs](../support/mock-4.md))
-- A team asked how long they can keep a quote for a checkout session. ([How long can we cache a rate quote?](../support/mock-10.md))
-- A team asked whether the rates response could say when a quote expires, since their checkout shows prices it can't buy. ([Could the rate quote say when it expires?](../support/mock-13.md))
+- [How long can we hold a rate before buying the label?](../support/mock-1.md): a checkout that buys labels up to a day after showing rates got `rate_expired` and asked how long a rate is good for.
+- [We keep getting rate_expired on batch label runs](../support/mock-4.md): a warehouse that buys labels in two batches a day asked for a documented validity period.
+- [How long can we cache a rate quote?](../support/mock-10.md): a team asked how long they can keep a quote for a checkout session.
+- [Could the rate quote say when it expires?](../support/mock-13.md): a team asked whether the rates response could say when a quote expires, since their checkout shows prices it can't buy.
 
 ## What support answered
 
-The first answer said rates change and to get new ones right before buying, without a number. ([How long can we hold a rate before buying the label?](../support/mock-1.md)) Later answers gave one: about an hour, then exactly one hour from the quote's `created_at`. ([We keep getting rate_expired on batch label runs](../support/mock-4.md), [How long can we cache a rate quote?](../support/mock-10.md), [Could the rate quote say when it expires?](../support/mock-13.md))
+The [first answer](../support/mock-1.md) said rates change and to get new ones right before buying, without a number. Later answers, to the [batch runs](../support/mock-4.md), [caching](../support/mock-10.md) and [expiry](../support/mock-13.md) threads, gave one: about an hour, then exactly one hour from the quote's `created_at`.
 
 ## What the docs say
 
@@ -44,7 +44,7 @@ The first answer said rates change and to get new ones right before buying, with
 
 ## Where the answer is
 
-Since 29 October, a quote's rates can be bought for one hour after its `created_at`. The pull request also suggests adding an expiry time to the quote. ([Cache carrier rates for an hour](../prs/mock-4.md))
+Since 29 October, [a quote's rates can be bought for one hour](../prs/mock-4.md) after its `created_at`. The pull request also suggests adding an expiry time to the quote.
 
 ```vega-lite
 {

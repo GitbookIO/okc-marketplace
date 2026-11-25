@@ -34,14 +34,14 @@ generated:
 stale_after: "2026-12-02T16:00:00Z"
 ---
 
-Harbor Coffee Roasters is a coffee roaster with a subscription service that marks orders shipped when Acme's tracking webhook arrives. ([Harbor Coffee Roasters](../accounts/harbor.md)) It was charged twice for labels on 2 October and refunded, and now uses the webhook delivery log to find and resend missed events. ([We were charged twice for the same label](../support/mock-1.md), [Webhook for shipped orders never arrived](../support/mock-9.md))
+[Harbor Coffee Roasters](../accounts/harbor.md) is a coffee roaster with a subscription service that marks orders shipped when Acme's tracking webhook arrives. It was [charged twice for labels](../support/mock-1.md) on 2 October and refunded, and now uses the webhook delivery log to find and resend [missed events](../support/mock-9.md).
 
 ## Health
 
 Healthy.
 
-- The refunds for the duplicate charges all arrived. ([Refund duplicate label charges](../issues/mock-1.md), [Harbor Coffee Roasters check-in](../meetings/mock-7.md))
-- When three shipped events went missing on 2 November, the delivery log showed why, and Harbor resent them itself. ([Webhook for shipped orders never arrived](../support/mock-9.md))
+- The [refunds for the duplicate charges](../issues/mock-1.md) all arrived, as noted at the [check-in](../meetings/mock-7.md).
+- When [three shipped events went missing on 2 November](../support/mock-9.md), the delivery log showed why, and Harbor resent them itself.
 
 ## Deals
 
@@ -51,20 +51,20 @@ Healthy.
 
 ## What they've asked for
 
-- A history of webhook deliveries, to tell whether Acme sent an event. Covered by [Webhook delivery log](../projects/webhook-delivery-log.md). ([Harbor Coffee Roasters check-in](../meetings/mock-7.md))
-- Exporting delivery attempts as CSV, since its support team works from spreadsheets. ([Delivery log: export attempts as CSV](../issues/mock-6.md), [Harbor Coffee Roasters check-in](../meetings/mock-7.md))
+- A history of webhook deliveries, to tell whether Acme sent an event, as Harbor asked at its [check-in](../meetings/mock-7.md). Covered by [Webhook delivery log](../projects/webhook-delivery-log.md).
+- [Exporting delivery attempts as CSV](../issues/mock-6.md), since its support team works from spreadsheets, as Harbor asked at its [check-in](../meetings/mock-7.md).
 
 ## Open issues
 
-- ENG-250, Delivery log: export attempts as CSV. Low priority, in the backlog. ([Delivery log: export attempts as CSV](../issues/mock-6.md))
+- ENG-250, [Delivery log: export attempts as CSV](../issues/mock-6.md). Low priority, in the backlog.
 
 ## Support
 
 2 threads in the last 90 days.
 
-- 2 November: Webhook for shipped orders never arrived. ([Webhook for shipped orders never arrived](../support/mock-9.md))
-- 2 October: We were charged twice for the same label. ([We were charged twice for the same label](../support/mock-1.md))
+- 2 November: [Webhook for shipped orders never arrived](../support/mock-9.md).
+- 2 October: [We were charged twice for the same label](../support/mock-1.md).
 
 ## Recent conversations
 
-- 28 October, check-in: refunds arrived. Harbor asked to export the delivery log, which launched with 7 days of history on 30 October. ([Harbor Coffee Roasters check-in](../meetings/mock-7.md))
+- 28 October, [check-in](../meetings/mock-7.md): refunds arrived. Harbor asked to export the delivery log, which launched with 7 days of history on 30 October.

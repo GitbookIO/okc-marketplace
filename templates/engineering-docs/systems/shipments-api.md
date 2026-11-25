@@ -53,20 +53,20 @@ flowchart LR
 
 ## Recent changes
 
-- List shipments pages with an opaque cursor, 50 per page by default and 200 at most. ([Add cursor pagination to list shipments](../prs/mock-14.md))
-- Addresses without a postal code are accepted where countries don't use them, and a missing required one returns a 422 naming the field. ([Validate postal codes before creating shipments](../prs/mock-13.md))
+- List shipments [pages with an opaque cursor](../prs/mock-14.md), 50 per page by default and 200 at most.
+- [Addresses without a postal code](../prs/mock-13.md) are accepted where countries don't use them, and a missing required one returns a 422 naming the field.
 
 ## Open issues
 
-- List shipments ignores the status filter after the first page (ENG-238, medium). ([List shipments ignores the status filter after the first page](../issues/mock-11.md))
+- [List shipments ignores the status filter after the first page](../issues/mock-11.md) (ENG-238, medium).
 
 ## Incidents
 
-- 2 November: a third of shipment creates failed for 20 minutes after a migration added a required column with no default. See [Failed migrations](/runbooks/failed-migrations.md). ([Shipments API errors after a deploy](../incidents/mock-6.md))
+- 2 November, [Shipments API errors after a deploy](../incidents/mock-6.md): a third of shipment creates failed for 20 minutes after a migration added a required column with no default. See [Failed migrations](/runbooks/failed-migrations.md).
 
 ## Drift from spec
 
-- No drift found against Cursor pagination for list shipments. ([Cursor pagination for list shipments](../specs/mock-6.md))
+- No drift found against [Cursor pagination for list shipments](../specs/mock-6.md).
 
 ## Activity
 

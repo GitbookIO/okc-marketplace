@@ -17,7 +17,7 @@ stale_after: "2027-04-06T16:00:00Z"
 
 ## Decision
 
-Every label charged twice on 2 October is refunded without waiting for the customer to ask, and each affected account gets an email. ([Do we wait for tickets before refunding duplicate charges?](../discussions/mock-1.md))
+Every label charged twice on 2 October is refunded [without waiting for the customer to ask](../discussions/mock-1.md), and each affected account gets an email.
 
 ## Options considered
 
@@ -34,12 +34,12 @@ flowchart TD
 
 ## Reasons
 
-- Acme knows exactly which charges were duplicates, and waiting for tickets means most people never get their money back. ([Do we wait for tickets before refunding duplicate charges?](../discussions/mock-1.md))
-- It's about 3,100 dollars across 41 accounts. ([Do we wait for tickets before refunding duplicate charges?](../discussions/mock-1.md))
+- Acme knows exactly which charges were duplicates, and [waiting for tickets](../discussions/mock-1.md) means most people never get their money back.
+- It's [about 3,100 dollars across 41 accounts](../discussions/mock-1.md).
 
 ## Consequences
 
-- Payments refunds all 41 accounts and emails each one. Support doesn't need a ticket to start a refund. ([Do we wait for tickets before refunding duplicate charges?](../discussions/mock-1.md))
+- Payments refunds all 41 accounts and emails each one. Support [doesn't need a ticket](../discussions/mock-1.md) to start a refund.
 
 ## Who decided
 

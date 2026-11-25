@@ -17,7 +17,7 @@ stale_after: "2027-04-21T16:00:00Z"
 
 ## Decision
 
-Saturday delivery is built on Parcelline first, with Swiftway later. Lena Ito leads it, with a target of 1 February 2027. ([Roadmap review: Saturday delivery](../meetings/mock-6.md))
+Saturday delivery is built on [Parcelline first](../meetings/mock-6.md), with Swiftway later. Lena Ito leads it, with a target of 1 February 2027.
 
 ## Options considered
 
@@ -36,14 +36,14 @@ flowchart TD
 
 ## Reasons
 
-- Parcelline covers two of Tidewater's three regions on Saturdays. ([Roadmap review: Saturday delivery](../meetings/mock-6.md))
-- Swiftway's Saturday service costs about twice as much, which is hard to pass on. ([Roadmap review: Saturday delivery](../meetings/mock-6.md))
-- Both at once is too much for the first quarter. ([Roadmap review: Saturday delivery](../meetings/mock-6.md))
+- Parcelline covers [two of Tidewater's three regions](../meetings/mock-6.md) on Saturdays.
+- Swiftway's Saturday service [costs about twice as much](../meetings/mock-6.md), which is hard to pass on.
+- Both at once is [too much for the first quarter](../meetings/mock-6.md).
 
 ## Consequences
 
-- [Tidewater Pharmacy](../customers/tidewater.md)'s third region waits for Swiftway. ([Roadmap review: Saturday delivery](../meetings/mock-6.md))
-- [Saturday delivery](../projects/saturday-delivery.md) targets 1 February 2027. ([Roadmap review: Saturday delivery](../meetings/mock-6.md))
+- [Tidewater Pharmacy](../customers/tidewater.md)'s third region [waits for Swiftway](../meetings/mock-6.md).
+- [Saturday delivery](../projects/saturday-delivery.md) targets [1 February 2027](../meetings/mock-6.md).
 
 ## Who decided
 
