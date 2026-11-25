@@ -55,7 +55,7 @@ Body:
 3. A Mermaid `sequenceDiagram` when the task takes three or more calls, from the reader's app to the Acme API.
 4. `## Related`: links to the reference pages in `endpoints`.
 
-Link every fact that comes from a reference page or gap to it, with the page's title as the link text, in parentheses after the sentence.
+Link every fact that comes from a reference page or gap, on the words it supports, like ``[Buy a label](../reference/buy-label.md) accepts an `Idempotency-Key` ``. Never add a trailing parenthetical of links.
 
 ## Index
 

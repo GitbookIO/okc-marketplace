@@ -21,27 +21,27 @@ generated:
 stale_after: "2026-12-06T14:30:00Z"
 ---
 
-Customers change their minds. This guide cancels a shipment before the carrier picks it up, and says what happens to a label you already bought. It's for developers who let their customers cancel orders. It's a draft, written because three customers asked what happens to the label fee. ([Do I get the label fee back when I cancel a shipment?](../../gaps/refund-after-cancel.md))
+Customers change their minds. This guide cancels a shipment before the carrier picks it up, and says what happens to a label you already bought. It's for developers who let their customers cancel orders. It's a draft, written because [three customers asked what happens to the label fee](../../gaps/refund-after-cancel.md).
 
-1. **Check the status.** Get the shipment first. You can cancel it until the carrier has the parcel. ([Get a shipment](../reference/get-shipment.md), [Cancel a shipment](../reference/cancel-shipment.md))
+1. **Check the status.** [Get the shipment](../reference/get-shipment.md) first. You can [cancel it](../reference/cancel-shipment.md) until the carrier has the parcel.
 
    ```bash
    curl https://api.acme.example/v1/shipments/shp_8Kd2 \
      -H "Authorization: Bearer $ACME_API_KEY"
    ```
 
-2. **Cancel it.** The response is the shipment with `status: cancelled`. If the carrier already picked it up, or it's already cancelled, you get a 409 with `cannot_cancel`. ([Cancel a shipment](../reference/cancel-shipment.md))
+2. **Cancel it.** [Cancel a shipment](../reference/cancel-shipment.md) returns the shipment with `status: cancelled`. If the carrier already picked it up, or it's already cancelled, you get a 409 with `cannot_cancel`.
 
    ```bash
    curl -X POST https://api.acme.example/v1/shipments/shp_8Kd2/cancel \
      -H "Authorization: Bearer $ACME_API_KEY"
    ```
 
-3. **The label.** If you bought a label, Acme asks the carrier to void it. ([Cancel a shipment](../reference/cancel-shipment.md))
+3. **The label.** If you bought a label, Acme [asks the carrier to void it](../reference/cancel-shipment.md).
 
-To confirm: whether the label fee always comes back, and how long it takes. The reference doesn't say. Support has told customers it takes up to 14 days. ([Do I get the label fee back when I cancel a shipment?](../../gaps/refund-after-cancel.md))
+To confirm: whether [the label fee always comes back](../../gaps/refund-after-cancel.md), and how long it takes. The reference doesn't say. Support has told customers it takes up to 14 days.
 
-To confirm: whether a label the carrier already scanned can be voided, and what customers should do about its fee. ([Do I get the label fee back when I cancel a shipment?](../../gaps/refund-after-cancel.md))
+To confirm: whether [a label the carrier already scanned can be voided](../../gaps/refund-after-cancel.md), and what customers should do about its fee.
 
 ## Related
 

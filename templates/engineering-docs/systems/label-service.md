@@ -43,20 +43,20 @@ flowchart LR
 
 ## Recent changes
 
-- Carrier label calls time out after 8 seconds and return a retryable error, so one slow carrier can't hold every worker. ([Time out carrier label calls after 8 seconds](../prs/mock-9.md))
+- Carrier label calls [time out after 8 seconds](../prs/mock-9.md) and return a retryable error, so one slow carrier can't hold every worker.
 
 ## Open issues
 
-- Add a circuit breaker for carrier label calls (ENG-233, high). ([Add a circuit breaker for carrier label calls](../issues/mock-6.md))
+- [Add a circuit breaker for carrier label calls](../issues/mock-6.md) (ENG-233, high).
 
 ## Incidents
 
-- 4 November: purchases for one carrier failed for 35 minutes during its outage, until someone set the carrier override. ([Label purchases failed during a carrier outage](../incidents/mock-4.md))
-- 24 October: most purchases failed for 50 minutes while a carrier's label API hung. See [Carrier API timeouts](/runbooks/carrier-api-timeouts.md). ([Label purchases failed during carrier API timeouts](../incidents/mock-3.md))
+- 4 November, [Label purchases failed during a carrier outage](../incidents/mock-4.md): purchases for one carrier failed for 35 minutes until someone set the carrier override.
+- 24 October, [Label purchases failed during carrier API timeouts](../incidents/mock-3.md): most purchases failed for 50 minutes while a carrier's label API hung. See [Carrier API timeouts](/runbooks/carrier-api-timeouts.md).
 
 ## Drift from spec
 
-- No approved spec lists this system. Carrier failover for labels is still in review. ([Carrier failover for labels](../specs/mock-4.md))
+- No approved spec lists this system. [Carrier failover for labels](../specs/mock-4.md) is still in review.
 
 ## Activity
 

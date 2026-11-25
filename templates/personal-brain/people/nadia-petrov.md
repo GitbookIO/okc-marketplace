@@ -27,14 +27,14 @@ verified:
     at: "2026-11-02T05:00:00Z"
 ---
 
-Nadia is your manager. You have a one-on-one every other Thursday, and the ledger migration, and who does what on it, has come up every time. ([One-on-one: Maya and Nadia](../meetings/mock-1.md), [One-on-one: Maya and Nadia](../meetings/mock-5.md), [One-on-one: Maya and Nadia](../meetings/mock-7.md))
+Nadia is your manager. You have a one-on-one every other Thursday, and the ledger migration, and who does what on it, has come up every time, for example on [1 October](../meetings/mock-1.md), [15 October](../meetings/mock-5.md) and [29 October](../meetings/mock-7.md).
 
 ## Recent conversations
 
-- 29 October: nobody can join Payments before January, so the beta's first invoices come with a CSV and line items follow in January. On the backfill, Nadia's advice: review what you and Dev agreed, and let the rest be Dev's. ([One-on-one: Maya and Nadia](../meetings/mock-7.md))
-- 21 October, your notes: after Nadia's push, you handed the backfill to Dev. ([Handing the backfill to Dev](../sources/mock-9.md))
-- 15 October: Nadia approved your migration plan, and asked you to hand the backfill to Dev and pair for the first week. You said you'd try. Nadia would check whether anyone could join Payments. ([One-on-one: Maya and Nadia](../meetings/mock-5.md))
-- 1 October: you walked through the migration's scope. Nadia asked who'd watch the whole migration if you were heads down in the backfill. ([One-on-one: Maya and Nadia](../meetings/mock-1.md))
+- 29 October, [One-on-one: Maya and Nadia](../meetings/mock-7.md): nobody can join Payments before January, so the beta's first invoices come with a CSV and line items follow in January. On the backfill, Nadia's advice: review what you and Dev agreed, and let the rest be Dev's.
+- 21 October, your notes on [Handing the backfill to Dev](../sources/mock-9.md): after Nadia's push, you handed the backfill to Dev.
+- 15 October, [One-on-one: Maya and Nadia](../meetings/mock-5.md): Nadia approved your migration plan, and asked you to hand the backfill to Dev and pair for the first week. You said you'd try. Nadia would check whether anyone could join Payments.
+- 1 October, [One-on-one: Maya and Nadia](../meetings/mock-1.md): you walked through the migration's scope. Nadia asked who'd watch the whole migration if you were heads down in the backfill.
 
 ## Topics
 

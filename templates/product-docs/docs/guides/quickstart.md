@@ -42,7 +42,7 @@ sequenceDiagram
   Acme-->>App: tracking events
 ```
 
-1. **Create a shipment** with where the parcel ships from, where it's going, and its weight in grams. The response has the shipment's `id` and `status: created`. ([Create a shipment](../reference/create-shipment.md))
+1. **[Create a shipment](../reference/create-shipment.md)** with where the parcel ships from, where it's going, and its weight in grams. The response has the shipment's `id` and `status: created`.
 
    ```bash
    curl -X POST https://api.acme.example/v1/shipments \
@@ -51,7 +51,7 @@ sequenceDiagram
      -d '{"from":{"name":"Acme Warehouse","street1":"1 Dock Road","city":"Rotterdam","postal_code":"3011 AA","country":"NL"},"to":{"name":"Sam Lee","street1":"20 Canal Street","city":"Utrecht","postal_code":"3511 LB","country":"NL"},"parcels":[{"weight_grams":1200}]}'
    ```
 
-2. **Get rates** for the shipment. They come back cheapest first, each with an `id`, a carrier, a service, a price and the days delivery should take. ([Get rates](../reference/create-rate-quote.md))
+2. **[Get rates](../reference/create-rate-quote.md)** for the shipment. They come back cheapest first, each with an `id`, a carrier, a service, a price and the days delivery should take.
 
    ```bash
    curl -X POST https://api.acme.example/v1/rates \
@@ -60,7 +60,7 @@ sequenceDiagram
      -d '{"shipment_id":"shp_8Kd2"}'
    ```
 
-3. **Buy a label** with the `id` of the rate you want. The response has a `label_url` to download and print, and the `tracking_number`. ([Buy a label](../reference/buy-label.md))
+3. **[Buy a label](../reference/buy-label.md)** with the `id` of the rate you want. The response has a `label_url` to download and print, and the `tracking_number`.
 
    ```bash
    curl -X POST https://api.acme.example/v1/shipments/shp_8Kd2/label \
@@ -69,7 +69,7 @@ sequenceDiagram
      -d '{"rate_id":"rate_71Pq"}'
    ```
 
-4. **Track the parcel.** Once the carrier scans it, tracking lists each event, oldest first, with an estimated delivery date. ([Get tracking](../reference/get-tracking.md))
+4. **Track the parcel.** Once the carrier scans it, [tracking lists each event](../reference/get-tracking.md), oldest first, with an estimated delivery date.
 
    ```bash
    curl https://api.acme.example/v1/shipments/shp_8Kd2/tracking \

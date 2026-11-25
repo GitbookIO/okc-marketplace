@@ -33,14 +33,14 @@ verified:
     at: "2026-11-04T08:00:00Z"
 ---
 
-You're moving credits, refunds and two years of invoices from the old billing tables into the Ledger, so usage invoices come from one place before the beta on 1 December. ([Why I'm leading the ledger migration](../sources/mock-1.md)) Expand is done and dual writes are ready in staging. The date that matters now is 10 November, when shadow invoices have to start in production. ([Ledger migration sync](../meetings/mock-6.md), [Ledger migration sync](../meetings/mock-8.md))
+You're [moving credits, refunds and two years of invoices](../sources/mock-1.md) from the old billing tables into the Ledger, so usage invoices come from one place before the beta on 1 December. [Expand is done](../meetings/mock-6.md) and [dual writes are ready in staging](../meetings/mock-8.md). The date that matters now is 10 November, when shadow invoices have to start in production.
 
 ## Where it stands
 
-- Expand: done. Imported entries are marked `origin: legacy`. ([Ledger migration sync](../meetings/mock-6.md))
-- Dual writes: ready in staging. ([Ledger migration sync](../meetings/mock-8.md))
-- Backfill: Dev's. Two years took about three hours on the staging copy. ([Ledger migration sync](../meetings/mock-6.md), [Handing the backfill to Dev](../sources/mock-9.md))
-- First shadow invoices on staging: 397 of 400 accounts match. ([Ledger migration sync](../meetings/mock-8.md))
+- [Expand](../meetings/mock-6.md): done. Imported entries are marked `origin: legacy`.
+- [Dual writes](../meetings/mock-8.md): ready in staging.
+- [Backfill](../sources/mock-9.md): Dev's. [Two years took about three hours](../meetings/mock-6.md) on the staging copy.
+- First shadow invoices on staging: [397 of 400 accounts match](../meetings/mock-8.md).
 
 ```mermaid
 flowchart LR
@@ -54,17 +54,17 @@ flowchart LR
 
 ## Next steps
 
-- Decide with Dev: dual writes or backfill first. By 10 November. ([Ledger migration sync](../meetings/mock-8.md))
-- Work out with Owen how shadow invoices compare rounding. ([Ledger migration sync](../meetings/mock-8.md))
-- Start shadow invoices in production by 10 November. ([Ledger migration plan](../sources/mock-6.md), [Ledger migration sync](../meetings/mock-8.md))
+- Decide with Dev: [dual writes or backfill first](../meetings/mock-8.md). By 10 November.
+- Work out with Owen how [shadow invoices compare rounding](../meetings/mock-8.md).
+- Start [shadow invoices](../sources/mock-6.md) in production by [10 November](../meetings/mock-8.md).
 
 ## Decisions
 
-- 21 October: Dev owns the backfill. You pair with Dev for the first week and review the dry run, row counts per month and totals per account. ([Handing the backfill to Dev](../sources/mock-9.md))
-- 9 October: six steps, expand to contract, with the old tables dropped in January. ([Ledger migration plan](../sources/mock-6.md))
-- 6 October: cutover on 24 November. Owen signs off after two weeks of every account matching. ([Ledger migration kickoff](../meetings/mock-2.md))
+- 21 October: [Dev owns the backfill](../sources/mock-9.md). You pair with Dev for the first week and review the dry run, row counts per month and totals per account.
+- 9 October: [six steps, expand to contract](../sources/mock-6.md), with the old tables dropped in January.
+- 6 October: [cutover on 24 November](../meetings/mock-2.md). Owen signs off after two weeks of every account matching.
 
 ## Risks
 
-- The order is still undecided, and shadow invoices have to start by 10 November or the 24th slips. ([Ledger migration sync](../meetings/mock-8.md))
-- 3 of 400 accounts were a cent off on staging, because the old tables and the Ledger round differently. ([Ledger migration sync](../meetings/mock-8.md))
+- The order is still undecided, and [shadow invoices have to start by 10 November](../meetings/mock-8.md) or the 24th slips.
+- [3 of 400 accounts were a cent off](../meetings/mock-8.md) on staging, because the old tables and the Ledger round differently.

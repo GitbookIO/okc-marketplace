@@ -26,14 +26,14 @@ verified:
     at: "2026-11-05T08:30:00Z"
 ---
 
-Femke teaches you Dutch, an hour on video every Wednesday evening since 30 September. ([Dutch lesson 1 with Femke](../sources/mock-2.md))
+Femke [teaches you Dutch](../sources/mock-2.md), an hour on video every Wednesday evening since 30 September.
 
 ## Recent conversations
 
-- 4 November, lesson 6: ten minutes all in Dutch. Femke's rule for the past tense: zijn for moving somewhere and changes of state, hebben for nearly everything else. On Oma: start with u. ([Dutch lesson 6: ten minutes](../sources/mock-14.md))
-- 28 October, lesson 5: separable verbs, and your first three minutes without English. Listening is good, Femke says, but it doesn't replace the flashcards. ([Dutch lesson 5: separable verbs](../sources/mock-11.md))
-- 14 October, lesson 3: de and het, and je as the default, even with strangers. ([Dutch lesson 3: de, het, u and je](../sources/mock-7.md))
-- 30 September, lesson 1: word order, and 20 flashcards a day. ([Dutch lesson 1 with Femke](../sources/mock-2.md))
+- 4 November, [Dutch lesson 6: ten minutes](../sources/mock-14.md): ten minutes all in Dutch. Femke's rule for the past tense: zijn for moving somewhere and changes of state, hebben for nearly everything else. On Oma: start with u.
+- 28 October, [Dutch lesson 5: separable verbs](../sources/mock-11.md): separable verbs, and your first three minutes without English. Listening is good, Femke says, but it doesn't replace the flashcards.
+- 14 October, [Dutch lesson 3: de, het, u and je](../sources/mock-7.md): de and het, and je as the default, even with strangers.
+- 30 September, [Dutch lesson 1 with Femke](../sources/mock-2.md): word order, and 20 flashcards a day.
 
 ## Topics
 

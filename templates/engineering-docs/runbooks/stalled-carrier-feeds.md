@@ -16,7 +16,7 @@ stale_after: 2026-11-29T07:30:00Z
 
 ## When to use
 
-Parcels from one carrier look stuck in customers' timelines while they're moving. Support hears it first, since nothing alerts yet. ([Tracking updates delayed by two hours](../incidents/mock-5.md))
+Parcels from one carrier look stuck in customers' timelines while they're moving. Support hears it first, since [nothing alerts yet](../incidents/mock-5.md).
 
 ## Check
 
@@ -25,7 +25,7 @@ Parcels from one carrier look stuck in customers' timelines while they're moving
 
 ## Fix
 
-1. Restart the poller with a fresh token. ([Tracking updates delayed by two hours](../incidents/mock-5.md))
+1. [Restart the poller](../incidents/mock-5.md) with a fresh token.
 2. Check that the backlog of updates is processed and timelines catch up.
 
 ## Escalate
@@ -34,4 +34,4 @@ Tell [Platform](/teams/platform.md) in #team-platform if a feed is silent for mo
 
 ## Past incidents
 
-- 30 October 2026: one carrier's updates were two hours late. ([Tracking updates delayed by two hours](../incidents/mock-5.md))
+- 30 October 2026: one carrier's [updates were two hours late](../incidents/mock-5.md).

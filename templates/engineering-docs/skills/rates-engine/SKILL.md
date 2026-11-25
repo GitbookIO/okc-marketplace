@@ -30,21 +30,21 @@ generated:
 
 ## What it is
 
-The Rates Engine quotes carrier rates for a shipment in under 300 ms at p95, by caching carrier rates and batching carrier calls. Customers' checkout pages call it on every change to an address form. ([Rates Engine](../../systems/rates-engine.md))
+The [Rates Engine](../../systems/rates-engine.md) quotes carrier rates for a shipment in under 300 ms at p95, by caching carrier rates and batching carrier calls. Customers' checkout pages call it on every change to an address form.
 
 ## Rules from specs
 
-- Open drift: Rate quotes under 300 ms requires cached rates to expire after 15 minutes, but they're cached for 60, as Shipping Core decided on 27 October. Don't shorten or lengthen the cache without Ana Kovac. ([Rate quotes under 300 ms](../../specs/mock-3.md), [Cache carrier rates for an hour](../../prs/mock-7.md), [Cache carrier rates for an hour](../../decisions/2026-10-27-cache-carrier-rates-for-an-hour.md))
-- p95 quote latency stays under 300 ms, including multi-parcel shipments. ([Rate quotes under 300 ms](../../specs/mock-3.md))
-- Never quote a cached rate after a carrier announces a price change. Price-change notices must keep clearing the cache. ([Rate quotes under 300 ms](../../specs/mock-3.md), [Cache carrier rates for an hour](../../prs/mock-7.md))
+- Open drift: [Rate quotes under 300 ms](../../specs/mock-3.md) requires cached rates to expire after 15 minutes, but [they're cached for 60](../../prs/mock-7.md), as Shipping Core [decided on 27 October](../../decisions/2026-10-27-cache-carrier-rates-for-an-hour.md). Don't shorten or lengthen the cache without Ana Kovac.
+- p95 quote latency [stays under 300 ms](../../specs/mock-3.md), including multi-parcel shipments.
+- [Never quote a cached rate](../../specs/mock-3.md) after a carrier announces a price change. [Price-change notices must keep clearing the cache](../../prs/mock-7.md).
 
 ## How changes are made here
 
-- Cache times live in `config/cache.yaml`. ([Cache carrier rates for an hour](../../prs/mock-7.md))
-- Carrier calls for one shipment go out as one batch, from `src/carriers/batch.ts`. ([Batch carrier rate requests for multi-parcel shipments](../../prs/mock-8.md))
-- Carrier request logging goes through `src/carriers/logging.ts`, which strips credentials and has its own tests. ([Redact carrier credentials from logs](../../prs/mock-15.md))
+- [Cache times live](../../prs/mock-7.md) in `config/cache.yaml`.
+- Carrier calls for one shipment [go out as one batch](../../prs/mock-8.md), from `src/carriers/batch.ts`.
+- [Carrier request logging](../../prs/mock-15.md) goes through `src/carriers/logging.ts`, which strips credentials and has its own tests.
 
 ## Before you merge
 
-- Measure p95 for shipments with five or more parcels. They were at 1.4 seconds before batching. ([Batch carrier rate requests for multi-parcel shipments](../../prs/mock-8.md))
-- Never log a carrier request without going through the redacting logger. Carrier keys leaked into logs on 18 October. ([Redact carrier credentials from logs](../../prs/mock-15.md))
+- Measure p95 for shipments with five or more parcels. They were at 1.4 seconds [before batching](../../prs/mock-8.md).
+- Never log a carrier request without going through the redacting logger. [Carrier keys leaked into logs on 18 October](../../prs/mock-15.md).

@@ -44,7 +44,7 @@ Body, in this order:
 4. `## Where the answer is`: pull requests that show the answer, with links. Leave this section out if there are none.
 5. If `thread_count` is 3 or more, a Vega-Lite bar chart in a `vega-lite` code block of threads per week, counted from each thread's `opened_at`.
 
-Link each source with its title as the link text, like `([Label purchase hangs and returns a 502](../support/mock-7.md))`.
+Link each source where the sentence mentions it, like `- [Label purchase hangs and returns a 502](../support/mock-7.md): the team asked whether a retry could buy two labels.` Never add a trailing parenthetical of links.
 
 ## Index
 

@@ -18,7 +18,7 @@ stale_after: 2027-04-18T10:00:00Z
 
 ## Decision
 
-The dashboard shows every delivery attempt from the last 30 days, filters them by status and event type, and resends a failed event with one click. ([Webhook delivery log in the dashboard](../specs/mock-5.md))
+The dashboard shows [every delivery attempt from the last 30 days](../specs/mock-5.md), filters them by status and event type, and resends a failed event with one click.
 
 ## Options considered
 
@@ -34,7 +34,7 @@ flowchart TD
 
 ## Reasons
 
-- Customers should fix their own endpoints without writing to support. ([Webhook delivery log in the dashboard](../specs/mock-5.md))
+- Customers should [fix their own endpoints](../specs/mock-5.md) without writing to support.
 
 ## Consequences
 

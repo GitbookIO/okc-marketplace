@@ -25,17 +25,17 @@ Shipping Core owns the path from a quote to a label: the public Shipments API, t
 
 ## Systems
 
-- [Label Service](/systems/label-service.md): production. ([Label Service](../systems/label-service.md))
-- [Rates Engine](/systems/rates-engine.md): production. ([Rates Engine](../systems/rates-engine.md))
-- [Shipments API](/systems/shipments-api.md): production. ([Shipments API](../systems/shipments-api.md))
+- [Label Service](/systems/label-service.md): production.
+- [Rates Engine](/systems/rates-engine.md): production.
+- [Shipments API](/systems/shipments-api.md): production.
 
 ## What's changing
 
-- Carrier label calls time out after 8 seconds, so one slow carrier can't hold every worker. ([Label Service](../systems/label-service.md))
-- Carrier rates are cached for 60 minutes instead of 15. ([Rates Engine](../systems/rates-engine.md))
-- Multi-parcel quotes are batched, down from 1.4 seconds to 280 ms. ([Rates Engine](../systems/rates-engine.md))
-- List shipments pages with a cursor. ([Shipments API](../systems/shipments-api.md))
+- Carrier label calls [time out after 8 seconds](../systems/label-service.md), so one slow carrier can't hold every worker.
+- Carrier rates are [cached for 60 minutes instead of 15](../systems/rates-engine.md).
+- [Multi-parcel quotes are batched](../systems/rates-engine.md), down from 1.4 seconds to 280 ms.
+- [List shipments pages with a cursor](../systems/shipments-api.md).
 
 ## Needs attention
 
-- The rate cache drifts from Rate quotes under 300 ms, which requires rates to expire after 15 minutes. ([Rates Engine](../systems/rates-engine.md))
+- The [rate cache drifts](../systems/rates-engine.md) from Rate quotes under 300 ms, which requires rates to expire after 15 minutes.

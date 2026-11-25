@@ -21,7 +21,7 @@ stale_after: 2027-04-25T16:00:00Z
 
 ## Decision
 
-Carrier rates are cached for 60 minutes. Price-change notices still clear the cache right away. ([Rate cache TTL](../discussions/mock-3.md))
+Carrier rates are [cached for 60 minutes](../discussions/mock-3.md). Price-change notices still clear the cache right away.
 
 ## Options considered
 
@@ -35,16 +35,16 @@ flowchart TD
 ```
 
 - **60 minutes** (chosen): about 70 percent fewer carrier calls. Watch quote accuracy for two weeks.
-- **15 minutes**: what Rate quotes under 300 ms requires. ([Rate quotes under 300 ms](../specs/mock-3.md))
+- **15 minutes**: what [Rate quotes under 300 ms](../specs/mock-3.md) requires.
 
 ## Reasons
 
-- Carrier rate calls are the team's second largest infra cost, and an hour cuts them by about 70 percent. ([Rate cache TTL](../discussions/mock-3.md))
-- Price-change notices still clear the cache, so the risk is only rate updates carriers don't announce. ([Rate cache TTL](../discussions/mock-3.md))
+- Carrier rate calls are the team's second largest infra cost, and [an hour cuts them by about 70 percent](../discussions/mock-3.md).
+- Price-change notices still clear the cache, so the risk is [only rate updates carriers don't announce](../discussions/mock-3.md).
 
 ## Consequences
 
-- This contradicts Rate quotes under 300 ms, which still says 15 minutes. Ana will update it after two weeks of numbers. ([Rate cache TTL](../discussions/mock-3.md), [Rate quotes under 300 ms](../specs/mock-3.md))
+- This contradicts [Rate quotes under 300 ms](../specs/mock-3.md), which still says 15 minutes. [Ana will update it](../discussions/mock-3.md) after two weeks of numbers.
 
 ## Who decided
 

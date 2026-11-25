@@ -19,7 +19,7 @@ generated:
   at: "2026-10-22T17:30:00Z"
 ---
 
-List shipments takes `cursor` and returns `next_cursor`. Pages go up to 200 shipments, and the default stays at 50. Offset pages could skip shipments created during an export, and cursors don't. ([Add cursor pagination to list shipments](../../prs/mock-2.md))
+List shipments has [cursor pagination](../../prs/mock-2.md): it takes `cursor` and returns `next_cursor`. Pages go up to 200 shipments, and the default stays at 50. Offset pages could skip shipments created during an export, and cursors don't.
 
 ## What to do
 

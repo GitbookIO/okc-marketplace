@@ -27,25 +27,25 @@ verified:
     at: "2026-11-07T06:00:00Z"
 ---
 
-You're leading the switch to charging per label bought instead of a flat volume tier, with rate quotes free. ([Usage billing pricing review](../meetings/mock-4.md)) The beta starts on 1 December, and Bramble & Co is in. ([Bramble & Co usage billing beta call](../meetings/mock-9.md)) The first invoices come with a CSV of labels bought. ([Metering: what counts as a label bought](../sources/mock-13.md))
+You're leading the switch to [charging per label bought](../meetings/mock-4.md) instead of a flat volume tier, with rate quotes free. The beta starts on 1 December, and [Bramble & Co is in](../meetings/mock-9.md). The first invoices come with [a CSV of labels bought](../sources/mock-13.md).
 
 ## Where it stands
 
-- Pricing is agreed: per label bought, quotes free. ([Usage billing pricing review](../meetings/mock-4.md))
-- Metering counts a label when it's bought, minus voids within 24 hours. ([Metering: what counts as a label bought](../sources/mock-13.md))
-- The usage endpoint is designed, behind a beta flag per account. ([Usage API: first design notes](../sources/mock-3.md))
-- Bramble joins if the beta starts on 1 December. Its volume is up about 30% since the Rotterdam warehouse opened. ([Bramble & Co usage billing beta call](../meetings/mock-9.md))
+- [Pricing is agreed](../meetings/mock-4.md): per label bought, quotes free.
+- [Metering counts a label when it's bought](../sources/mock-13.md), minus voids within 24 hours.
+- The [usage endpoint is designed](../sources/mock-3.md), behind a beta flag per account.
+- [Bramble joins if the beta starts on 1 December](../meetings/mock-9.md). Its volume is up about 30% since the Rotterdam warehouse opened.
 
 ## Next steps
 
-- Ada checks how invoices handle a customer whose month closes on Amsterdam time, before the beta. ([Bramble & Co usage billing beta call](../meetings/mock-9.md))
-- Add invoice lines per warehouse to your list for after the first version. ([Bramble & Co usage billing beta call](../meetings/mock-9.md))
+- Ada checks how invoices handle [a customer whose month closes on Amsterdam time](../meetings/mock-9.md), before the beta.
+- Add [invoice lines per warehouse](../meetings/mock-9.md) to your list for after the first version.
 
 ## Decisions
 
-- By 6 November: the beta's first invoices come with a CSV of every label bought. ([Metering: what counts as a label bought](../sources/mock-13.md))
-- 14 October: per label bought, quotes stay free. A free tier gets its own meeting. ([Usage billing pricing review](../meetings/mock-4.md))
+- By 6 November: the beta's first invoices come with [a CSV of every label bought](../sources/mock-13.md).
+- 14 October, [Usage billing pricing review](../meetings/mock-4.md): per label bought, quotes stay free. A free tier gets its own meeting.
 
 ## Risks
 
-- Invoices close at midnight UTC, but Bramble closes its month on Amsterdam time. ([Bramble & Co usage billing beta call](../meetings/mock-9.md), [Metering: what counts as a label bought](../sources/mock-13.md))
+- [Invoices close at midnight UTC](../sources/mock-13.md), but [Bramble closes its month on Amsterdam time](../meetings/mock-9.md).

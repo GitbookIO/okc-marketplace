@@ -24,7 +24,7 @@ stale_after: "2026-11-07T16:00:00Z"
 status: draft
 ---
 
-Tidewater Pharmacy is a pharmacy chain that sends prescriptions by post in three regions, and is evaluating Acme to replace its own carrier contracts. ([Tidewater Pharmacy](../accounts/tidewater.md)) It's a prospect. Its deal depends on Saturday delivery, since patients who order on a Friday can't wait until Monday. ([Tidewater Pharmacy](../deals/mock-7.md), [Tidewater Pharmacy discovery call](../meetings/mock-2.md))
+[Tidewater Pharmacy](../accounts/tidewater.md) is a pharmacy chain that sends prescriptions by post in three regions, and is evaluating Acme to replace its own carrier contracts. It's a prospect. Its [deal](../deals/mock-7.md) depends on Saturday delivery, since patients who order on a Friday can't wait until Monday, as the [discovery call](../meetings/mock-2.md) made clear.
 
 ## Deals
 
@@ -34,12 +34,12 @@ Tidewater Pharmacy is a pharmacy chain that sends prescriptions by post in three
 
 ## What they've asked for
 
-- Saturday delivery in all three regions, live in the first quarter, so it can sign by year end. Covered by [Saturday delivery](../projects/saturday-delivery.md). ([Tidewater Pharmacy discovery call](../meetings/mock-2.md), [Saturday delivery: Parcelline weekend service levels in rates](../issues/mock-8.md))
+- Saturday delivery in all three regions, live in the first quarter, so it can sign by year end, as it said on the [discovery call](../meetings/mock-2.md). Covered by [Saturday delivery](../projects/saturday-delivery.md); see [Saturday delivery: Parcelline weekend service levels in rates](../issues/mock-8.md).
 
 ## Open issues
 
-- ENG-252, Saturday delivery: Parcelline weekend service levels in rates. High priority, to do. ([Saturday delivery: Parcelline weekend service levels in rates](../issues/mock-8.md))
+- ENG-252, [Saturday delivery: Parcelline weekend service levels in rates](../issues/mock-8.md). High priority, to do.
 
 ## Recent conversations
 
-- 7 October, discovery call: about 9,000 prescriptions a week across three regions. It would sign by year end if Saturday delivery is live in the first quarter, and doesn't need cold chain. ([Tidewater Pharmacy discovery call](../meetings/mock-2.md))
+- 7 October, [discovery call](../meetings/mock-2.md): about 9,000 prescriptions a week across three regions. It would sign by year end if Saturday delivery is live in the first quarter, and doesn't need cold chain.

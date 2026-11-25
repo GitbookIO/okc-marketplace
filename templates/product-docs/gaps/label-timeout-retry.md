@@ -24,16 +24,16 @@ generated:
 
 ## Resolved
 
-[Buy a label](../docs/reference/buy-label.md) answers it since 26 October 2026: "Retry a request that timed out with the same Idempotency-Key: if the first one went through, you get the same label back and aren't charged twice." ([Buy a label](../docs/reference/buy-label.md))
+[Buy a label](../docs/reference/buy-label.md) answers it since 26 October 2026: "Retry a request that timed out with the same Idempotency-Key: if the first one went through, you get the same label back and aren't charged twice."
 
 ## What customers ask
 
-- A label purchase hung for 30 seconds and returned a 502, and the team asked whether a retry could buy two labels. ([Label purchase hangs and returns a 502](../support/mock-7.md))
-- A team that couldn't tell whether a timed-out request bought a label asked how to retry safely, since the docs only showed `Idempotency-Key` on create shipment. ([Is it safe to retry a label purchase after a timeout?](../support/mock-9.md))
+- [Label purchase hangs and returns a 502](../support/mock-7.md): a label purchase hung for 30 seconds and returned a 502, and the team asked whether a retry could buy two labels.
+- [Is it safe to retry a label purchase after a timeout?](../support/mock-9.md): a team that couldn't tell whether a timed-out request bought a label asked how to retry safely, since the docs only showed `Idempotency-Key` on create shipment.
 
 ## What support answered
 
-Both answers said to retry with the same `Idempotency-Key`, and that label purchases accept it even though the reference didn't show it. ([Label purchase hangs and returns a 502](../support/mock-7.md), [Is it safe to retry a label purchase after a timeout?](../support/mock-9.md))
+The answers to the [502 report](../support/mock-7.md) and the [timeout question](../support/mock-9.md) both said to retry with the same `Idempotency-Key`, and that label purchases accept it even though the reference didn't show it.
 
 ## What the docs say
 
