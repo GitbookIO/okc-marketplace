@@ -25,23 +25,23 @@ verified:
 
 Exports and syncs need every shipment exactly once. This guide pages through your shipments with a cursor, so shipments created while you page are never skipped. It's for developers who sync shipments into another system.
 
-1. **Ask for the first page.** Use the largest page, `limit=200`, to make as few requests as you can, and add any filters now. ([List shipments](../reference/list-shipments.md))
+1. **Ask for the first page.** Call [list shipments](../reference/list-shipments.md) with the largest page, `limit=200`, to make as few requests as you can, and add any filters now.
 
    ```bash
    curl https://api.acme.example/v1/shipments?limit=200&created_after=2026-10-01T00:00:00Z \
      -H "Authorization: Bearer $ACME_API_KEY"
    ```
 
-2. **Follow the cursor.** Each page has `data` and `next_cursor`. Send `next_cursor` as `cursor` to get the next page, with the same filters. ([List shipments](../reference/list-shipments.md))
+2. **Follow the cursor.** Each page from [list shipments](../reference/list-shipments.md) has `data` and `next_cursor`. Send `next_cursor` as `cursor` to get the next page, with the same filters.
 
    ```bash
    curl https://api.acme.example/v1/shipments?limit=200&created_after=2026-10-01T00:00:00Z&cursor=c2hwXzhLZDI \
      -H "Authorization: Bearer $ACME_API_KEY"
    ```
 
-3. **Stop at the end.** `next_cursor` is null on the last page. ([List shipments](../reference/list-shipments.md))
+3. **Stop at the end.** `next_cursor` is null on the last page of [list shipments](../reference/list-shipments.md).
 
-Don't change the filters halfway: a cursor sent with other filters returns `invalid_cursor`. ([List shipments](../reference/list-shipments.md)) If you still page with `offset`, move to cursors. Offset pages stop at 100 shipments and can skip shipments created while an export runs, which is what customers ran into. ([Page through shipments with a cursor](../changelog/2026-10-22-cursor-pagination.md), [What's the largest page size for list shipments?](../../gaps/list-shipments-page-size.md))
+Don't change the filters halfway: [list shipments](../reference/list-shipments.md) returns `invalid_cursor` for a cursor sent with other filters. If you still page with `offset`, [move to cursors](../changelog/2026-10-22-cursor-pagination.md). Offset pages stop at 100 shipments and can skip shipments created while an export runs, which is [what customers ran into](../../gaps/list-shipments-page-size.md).
 
 ## Related
 

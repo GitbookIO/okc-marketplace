@@ -18,7 +18,7 @@ generated:
 stale_after: "2027-01-28T12:30:00Z"
 ---
 
-Registers a URL that Acme sends events to. The response has the endpoint's signing secret, which is shown only once. Every delivery has an Acme-Signature header: the hex HMAC SHA-256 of the raw request body, keyed with that secret. Check it before you trust the body. A delivery fails when your server doesn't answer with a 2xx status within 10 seconds. Failed deliveries are retried 5 times over about 2 hours, with growing gaps, and then marked as failed. Retries stop after about 2 hours so that endpoints that are down for a day no longer fill the delivery queue. ([Cap delivery retries at 5 attempts](../../prs/mock-5.md))
+Registers a URL that Acme sends events to. The response has the endpoint's signing secret, which is shown only once. Every delivery has an Acme-Signature header: the hex HMAC SHA-256 of the raw request body, keyed with that secret. Check it before you trust the body. A delivery fails when your server doesn't answer with a 2xx status within 10 seconds. Failed deliveries are [retried 5 times over about 2 hours](../../prs/mock-5.md), with growing gaps, and then marked as failed. Retries stop after about 2 hours so that endpoints that are down for a day no longer fill the delivery queue.
 
 ## Request
 

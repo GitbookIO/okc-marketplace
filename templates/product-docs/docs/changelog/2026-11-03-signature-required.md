@@ -19,7 +19,7 @@ generated:
   at: "2026-11-03T15:30:00Z"
 ---
 
-Create a shipment takes `signature_required`, false by default. When it's true, the carrier gets a signature on delivery. Every shipment now returns the field, and services that charge for signatures quote the higher price in rates. ([Add signature_required to create shipment](../../prs/mock-6.md))
+Create a shipment can [require a signature](../../prs/mock-6.md) with `signature_required`, false by default. When it's true, the carrier gets a signature on delivery. Every shipment now returns the field, and services that charge for signatures quote the higher price in rates.
 
 ## What to do
 

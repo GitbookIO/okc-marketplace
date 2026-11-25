@@ -18,7 +18,7 @@ stale_after: 2027-04-22T15:00:00Z
 
 ## Decision
 
-Carrier label calls time out after 8 seconds and return a retryable error. A circuit breaker follows. ([Carrier timeouts](../discussions/mock-8.md))
+Carrier label calls [time out after 8 seconds](../discussions/mock-8.md) and return a retryable error. A circuit breaker follows.
 
 ## Options considered
 
@@ -36,8 +36,8 @@ flowchart TD
 
 ## Reasons
 
-- Label calls had no timeout, so every worker was stuck on one carrier. ([Carrier timeouts](../discussions/mock-8.md))
-- Carrier p99 is about 3 seconds, so 8 seconds leaves room. ([Carrier timeouts](../discussions/mock-8.md))
+- Label calls had no timeout, so [every worker was stuck on one carrier](../discussions/mock-8.md).
+- [Carrier p99 is about 3 seconds](../discussions/mock-8.md), so 8 seconds leaves room.
 
 ## Consequences
 

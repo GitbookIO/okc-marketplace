@@ -17,7 +17,7 @@ stale_after: "2027-05-05T16:00:00Z"
 
 ## Decision
 
-Pinecrest Books and Bramble & Co try usage-based billing from 1 December, free during the beta. ([Who goes first in the usage billing beta?](../discussions/mock-8.md))
+Pinecrest Books and Bramble & Co try [usage-based billing from 1 December](../discussions/mock-8.md), free during the beta.
 
 ## Options considered
 
@@ -34,13 +34,13 @@ flowchart TD
 
 ## Reasons
 
-- Pinecrest asked in September and Bramble the day before. Both have volume that swings a lot. ([Who goes first in the usage billing beta?](../discussions/mock-8.md))
-- They're small enough that a billing mistake won't hurt much. ([Who goes first in the usage billing beta?](../discussions/mock-8.md))
+- Pinecrest asked in September and Bramble the day before. [Both have volume that swings a lot](../discussions/mock-8.md).
+- They're [small enough that a billing mistake won't hurt much](../discussions/mock-8.md).
 
 ## Consequences
 
 - [Usage-based billing](../projects/usage-based-billing.md) needs metering ready by 1 December.
-- Ada Mensah tells [Pinecrest Books](../customers/pinecrest.md) and [Bramble & Co](../customers/bramble.md). ([Who goes first in the usage billing beta?](../discussions/mock-8.md))
+- Ada Mensah tells [Pinecrest Books](../customers/pinecrest.md) and [Bramble & Co](../customers/bramble.md), as agreed in [Who goes first in the usage billing beta?](../discussions/mock-8.md).
 
 ## Who decided
 

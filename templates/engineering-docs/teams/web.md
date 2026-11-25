@@ -19,12 +19,12 @@ Web owns the Customer Dashboard, where customers manage shipments, billing and w
 
 ## Systems
 
-- [Customer Dashboard](/systems/customer-dashboard.md): production. ([Customer Dashboard](../systems/customer-dashboard.md))
+- [Customer Dashboard](/systems/customer-dashboard.md): production.
 
 ## What's changing
 
-- The webhook settings page lists delivery attempts from the last 7 days and resends failed events. ([Customer Dashboard](../systems/customer-dashboard.md))
+- The [webhook settings page](../systems/customer-dashboard.md) lists delivery attempts from the last 7 days and resends failed events.
 
 ## Needs attention
 
-- The delivery log drifts from its PRD: it shows 7 days instead of 30, and has no event type filter. ([Customer Dashboard](../systems/customer-dashboard.md))
+- The [delivery log drifts from its PRD](../systems/customer-dashboard.md): it shows 7 days instead of 30, and has no event type filter.

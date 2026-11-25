@@ -47,7 +47,7 @@ Body, in this order:
 
 On the page of the operation that creates webhook endpoints, add `## Events` after `## Errors`: a table of every event in the spec's `webhooks` section with its summary, then a table of the event payload's fields.
 
-Link the pull request for anything it explains that the spec doesn't, like why a limit exists: `([Time out carrier label calls after 8 seconds](../../prs/mock-3.md))`. Use the pull request's title as the link text.
+Link the pull request for anything it explains that the spec doesn't, like why a limit exists. Put the link on the words it supports, like `Slow carriers [used to hold a request for up to 30 seconds](../../prs/mock-3.md)`. Never add a trailing parenthetical of links.
 
 ## Changelog entries
 

@@ -42,16 +42,16 @@ flowchart LR
 
 ## Recent changes
 
-- Raw carrier events are stored for 14 days before parsing, so dropped updates can be replayed. ([Store raw carrier events for replay](../prs/mock-11.md))
-- A poller that hits an auth error refreshes its token and restarts instead of retrying forever. ([Restart stalled carrier feed pollers](../prs/mock-10.md))
+- [Raw carrier events are stored for 14 days](../prs/mock-11.md) before parsing, so dropped updates can be replayed.
+- A poller that hits an auth error [refreshes its token and restarts](../prs/mock-10.md) instead of retrying forever.
 
 ## Open issues
 
-- Alert when a carrier feed stops sending updates (ENG-235, medium). ([Alert when a carrier feed stops sending updates](../issues/mock-7.md))
+- [Alert when a carrier feed stops sending updates](../issues/mock-7.md) (ENG-235, medium).
 
 ## Incidents
 
-- 30 October: one carrier's updates were two hours late because its poller kept retrying an expired token. See [Stalled carrier feeds](/runbooks/stalled-carrier-feeds.md). ([Tracking updates delayed by two hours](../incidents/mock-5.md))
+- 30 October, [Tracking updates delayed by two hours](../incidents/mock-5.md): one carrier's updates were late because its poller kept retrying an expired token. See [Stalled carrier feeds](/runbooks/stalled-carrier-feeds.md).
 
 ## Drift from spec
 

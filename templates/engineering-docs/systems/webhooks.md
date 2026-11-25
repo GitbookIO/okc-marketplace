@@ -53,21 +53,21 @@ flowchart LR
 
 ## Recent changes
 
-- The delivery queue is partitioned by shipment, so events for one shipment arrive in order again while delivery stays parallel across shipments. ([Partition the delivery queue by shipment](../prs/mock-5.md))
-- Failed deliveries are retried 5 times over about 2 hours, then dropped and shown as failed. ([Cap delivery retries at 5 attempts](../prs/mock-6.md))
-- Retries go through a pool of 16 workers instead of one consumer. ([Deliver retries from a parallel worker pool](../prs/mock-4.md))
+- The delivery queue is [partitioned by shipment](../prs/mock-5.md), so events for one shipment arrive in order again while delivery stays parallel across shipments.
+- Failed deliveries are [retried 5 times over about 2 hours](../prs/mock-6.md), then dropped and shown as failed.
+- Retries go through a [pool of 16 workers](../prs/mock-4.md) instead of one consumer.
 
 ## Open issues
 
-- Webhook signatures fail for payloads with emoji (ENG-243, medium). ([Webhook signatures fail for payloads with emoji](../issues/mock-13.md))
+- [Webhook signatures fail for payloads with emoji](../issues/mock-13.md) (ENG-243, medium).
 
 ## Incidents
 
-- 14 October: deliveries fell 40 minutes behind during a burst of tracking updates. See [Webhook delivery backlog](/runbooks/webhook-delivery-backlog.md). ([Webhook deliveries fell 40 minutes behind](../incidents/mock-2.md))
+- 14 October, [Webhook deliveries fell 40 minutes behind](../incidents/mock-2.md): deliveries fell behind during a burst of tracking updates. See [Webhook delivery backlog](/runbooks/webhook-delivery-backlog.md).
 
 ## Drift from spec
 
-- Webhook delivery guarantees requires up to 8 retries over 24 hours. Retries now stop after 5 attempts over about 2 hours. ([Webhook delivery guarantees](../specs/mock-2.md), [Cap delivery retries at 5 attempts](../prs/mock-6.md))
+- [Webhook delivery guarantees](../specs/mock-2.md) requires up to 8 retries over 24 hours. [Retries now stop after 5 attempts](../prs/mock-6.md) over about 2 hours.
 
 ## Activity
 

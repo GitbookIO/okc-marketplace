@@ -45,20 +45,20 @@ flowchart LR
 
 ## Recent changes
 
-- The webhook settings page lists delivery attempts from the last 7 days, filters them by status, and resends a failed event. ([Show delivery attempts on the webhook settings page](../prs/mock-12.md))
+- The [webhook settings page lists delivery attempts](../prs/mock-12.md) from the last 7 days, filters them by status, and resends a failed event.
 
 ## Open issues
 
-- Billing page times out for accounts with many labels (ENG-240, high). ([Billing page times out for accounts with many labels](../issues/mock-9.md))
+- [Billing page times out for accounts with many labels](../issues/mock-9.md) (ENG-240, high).
 
 ## Incidents
 
-- 7 October: some customers were sent back to the login page after signing in, for 40 minutes. The cause is unknown. ([Dashboard login loop for some accounts](../incidents/mock-7.md))
+- 7 October, [Dashboard login loop for some accounts](../incidents/mock-7.md): some customers were sent back to the login page after signing in, for 40 minutes. The cause is unknown.
 
 ## Drift from spec
 
-- Webhook delivery log in the dashboard requires 30 days of delivery attempts. The settings page shows the last 7 days. ([Webhook delivery log in the dashboard](../specs/mock-5.md), [Show delivery attempts on the webhook settings page](../prs/mock-12.md))
-- It also requires a filter by event type. The page filters by status only. ([Webhook delivery log in the dashboard](../specs/mock-5.md), [Show delivery attempts on the webhook settings page](../prs/mock-12.md))
+- [Webhook delivery log in the dashboard](../specs/mock-5.md) requires 30 days of delivery attempts. The settings page [shows the last 7 days](../prs/mock-12.md).
+- It also [requires a filter by event type](../specs/mock-5.md). The page [filters by status only](../prs/mock-12.md).
 
 ## Activity
 

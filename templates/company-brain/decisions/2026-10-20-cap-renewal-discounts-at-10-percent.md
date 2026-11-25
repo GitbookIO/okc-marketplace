@@ -17,7 +17,7 @@ stale_after: "2027-04-18T16:00:00Z"
 
 ## Decision
 
-Sales can give up to 10% off a renewal without asking finance. Anything above that needs Owen Brandt's approval, with the account's usage. ([How far can we go on renewal discounts?](../discussions/mock-4.md))
+Sales can give up to [10% off a renewal](../discussions/mock-4.md) without asking finance. Anything above that needs Owen Brandt's approval, with the account's usage.
 
 ## Options considered
 
@@ -34,13 +34,13 @@ flowchart TD
 
 ## Reasons
 
-- Case by case let some renewals go to 25%, which is too far. ([How far can we go on renewal discounts?](../discussions/mock-4.md))
-- A clear limit helps account managers say no faster. ([How far can we go on renewal discounts?](../discussions/mock-4.md))
+- Case by case let some renewals [go to 25%](../discussions/mock-4.md), which is too far.
+- [A clear limit](../discussions/mock-4.md) helps account managers say no faster.
 
 ## Consequences
 
-- The renewals for [Northline Freight](../customers/northline.md) and [Kestrel Outdoor](../customers/kestrel.md) follow the limit. ([How far can we go on renewal discounts?](../discussions/mock-4.md))
-- Discounts above 10% go to Owen with the account's usage. ([How far can we go on renewal discounts?](../discussions/mock-4.md))
+- The renewals for [Northline Freight](../customers/northline.md) and [Kestrel Outdoor](../customers/kestrel.md) [follow the limit](../discussions/mock-4.md).
+- Discounts [above 10% go to Owen](../discussions/mock-4.md) with the account's usage.
 
 ## Who decided
 

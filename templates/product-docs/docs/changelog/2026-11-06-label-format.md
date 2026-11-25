@@ -19,7 +19,7 @@ generated:
   at: "2026-11-06T12:45:00Z"
 ---
 
-Buy a label takes `label_format`: `pdf_4x6`, the default and the only format until now, `pdf_a4`, or `zpl` for thermal printers. The label says which format its file is in. ([Let callers choose the label format](../../prs/mock-8.md))
+Buy a label lets you [choose the label format](../../prs/mock-8.md) with `label_format`: `pdf_4x6`, the default and the only format until now, `pdf_a4`, or `zpl` for thermal printers. The label says which format its file is in.
 
 ## What to do
 

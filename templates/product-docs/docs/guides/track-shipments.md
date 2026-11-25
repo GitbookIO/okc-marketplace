@@ -19,21 +19,21 @@ stale_after: "2026-11-01T09:00:00Z"
 
 Customers want to know where their parcel is. This guide reads a shipment's status and the carrier's tracking events, so you can show both in your app. It's for developers who show delivery status to their customers.
 
-1. **Get the shipment** for its `status`: `created`, `label_purchased`, `in_transit`, `delivered`, `returned` or `cancelled`. ([Get a shipment](../reference/get-shipment.md))
+1. **[Get the shipment](../reference/get-shipment.md)** for its `status`: `created`, `label_purchased`, `in_transit`, `delivered`, `returned` or `cancelled`.
 
    ```bash
    curl https://api.acme.example/v1/shipments/shp_8Kd2 \
      -H "Authorization: Bearer $ACME_API_KEY"
    ```
 
-2. **Get tracking** once the shipment has a label. Events appear after the carrier first scans the parcel, oldest first, each with a time, a status, a description in the carrier's words and, if the carrier says, a location. ([Get tracking](../reference/get-tracking.md))
+2. **[Get tracking](../reference/get-tracking.md)** once the shipment has a label. Events appear after the carrier first scans the parcel, oldest first, each with a time, a status, a description in the carrier's words and, if the carrier says, a location.
 
    ```bash
    curl https://api.acme.example/v1/shipments/shp_8Kd2/tracking \
      -H "Authorization: Bearer $ACME_API_KEY"
    ```
 
-3. **Show the estimate.** `estimated_delivery_date` is the carrier's guess, and is null when the carrier gives none. ([Get tracking](../reference/get-tracking.md))
+3. **Show the estimate.** `estimated_delivery_date` is [the carrier's guess](../reference/get-tracking.md), and is null when the carrier gives none.
 
 To avoid asking over and over, register a webhook endpoint for `tracking.updated` and `shipment.delivered` events. See [Receive webhooks](receive-webhooks.md).
 

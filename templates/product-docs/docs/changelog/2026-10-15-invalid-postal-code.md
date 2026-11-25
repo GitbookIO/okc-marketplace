@@ -19,7 +19,7 @@ generated:
   at: "2026-10-15T10:30:00Z"
 ---
 
-Create a shipment now checks the destination postal code against the destination country, and returns a 422 with `invalid_postal_code` if it doesn't exist. Until now a bad postal code only failed when the carrier rejected the label. ([Validate postal codes before creating shipments](../../prs/mock-1.md))
+Create a shipment now [checks the destination postal code against the destination country](../../prs/mock-1.md), and returns a 422 with `invalid_postal_code` if it doesn't exist. Until now a bad postal code only failed when the carrier rejected the label.
 
 ## What to do
 

@@ -28,14 +28,14 @@ generated:
 stale_after: "2026-10-30T16:00:00Z"
 ---
 
-Pinecrest Books is an independent bookseller with an online shop, shipping a few hundred parcels a week. ([Pinecrest Books](../accounts/pinecrest.md)) It wants to move from the starter plan to usage-based billing, since its volume swings with the school year. ([Pinecrest Books usage billing](../deals/mock-10.md))
+[Pinecrest Books](../accounts/pinecrest.md) is an independent bookseller with an online shop, shipping a few hundred parcels a week. It wants to move from the starter plan to [usage-based billing](../deals/mock-10.md), since its volume swings with the school year.
 
 ## Health
 
 Healthy.
 
-- On the starter plan since June, with one support question, answered within the hour. ([Pinecrest Books first contract](../deals/mock-8.md), [How long is a rate quote good for?](../support/mock-8.md))
-- Its usage billing deal is qualified and waits for the product. ([Pinecrest Books usage billing](../deals/mock-10.md))
+- On the starter plan since June, under its [first contract](../deals/mock-8.md), with [one support question](../support/mock-8.md) answered within the hour.
+- Its [usage billing deal](../deals/mock-10.md) is qualified and waits for the product.
 
 ## Deals
 
@@ -46,12 +46,12 @@ Healthy.
 
 ## What they've asked for
 
-- Usage-based billing. Covered by [Usage-based billing](../projects/usage-based-billing.md). ([Pinecrest Books usage billing](../deals/mock-10.md))
-- Invoices that show what each label cost. ([Invoice line items per label](../issues/mock-11.md))
+- Usage-based billing, in its [usage billing deal](../deals/mock-10.md). Covered by [Usage-based billing](../projects/usage-based-billing.md).
+- [Invoices that show what each label cost](../issues/mock-11.md).
 
 ## Open issues
 
-- ENG-255, Invoice line items per label. Medium priority, to do. ([Invoice line items per label](../issues/mock-11.md))
+- ENG-255, [Invoice line items per label](../issues/mock-11.md). Medium priority, to do.
 
 ## Support
 
