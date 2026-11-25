@@ -23,13 +23,13 @@ generated:
 
 ## What customers ask
 
-- A team that cancelled after buying a label asked whether the fee comes back, and when.[^support-mock-5]
-- A customer saw the label charge still on their balance a day after cancelling.[^support-mock-12]
-- A team building cancellation into their app asked what happens to the fee and whether there's a deadline.[^support-mock-15]
+- A team that cancelled after buying a label asked whether the fee comes back, and when. ([Do we get the label fee back when we cancel?](../support/mock-5.md))
+- A customer saw the label charge still on their balance a day after cancelling. ([Cancelled shipment still shows the label charge](../support/mock-12.md))
+- A team building cancellation into their app asked what happens to the fee and whether there's a deadline. ([What happens to the label fee when we cancel?](../support/mock-15.md))
 
 ## What support answered
 
-Every answer says the fee goes back to the balance once the carrier confirms the void. They differ on timing: "a few days, and up to 14" in one, "up to 14 days" and "within 14 days" in the others.[^support-mock-5][^support-mock-12][^support-mock-15] Two answers add a rule about scans: labels the carrier already scanned can't be voided, and you can cancel until the carrier scans the parcel.[^support-mock-12][^support-mock-15]
+Every answer says the fee goes back to the balance once the carrier confirms the void. They differ on timing: "a few days, and up to 14" in one, "up to 14 days" and "within 14 days" in the others. ([Do we get the label fee back when we cancel?](../support/mock-5.md), [Cancelled shipment still shows the label charge](../support/mock-12.md), [What happens to the label fee when we cancel?](../support/mock-15.md)) Two answers add a rule about scans: labels the carrier already scanned can't be voided, and you can cancel until the carrier scans the parcel. ([Cancelled shipment still shows the label charge](../support/mock-12.md), [What happens to the label fee when we cancel?](../support/mock-15.md))
 
 ## What the docs say
 

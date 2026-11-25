@@ -19,22 +19,22 @@ generated:
 stale_after: "2026-11-30T23:40:00Z"
 ---
 
-Ilse Brandsma's year on an island off the Frisian coast, not far from where Oma grew up, after quitting a job she only calls too many meetings.[^sources-mock-4] It keeps coming back to two things: living by the tide instead of a plan, and learning Frisian by listening. You're up to chapter 8.[^sources-mock-12]
+Ilse Brandsma's year on an island off the Frisian coast, not far from where Oma grew up, after quitting a job she only calls too many meetings. ([A Year of Low Tides, chapters 1 and 2](../sources/mock-4.md)) It keeps coming back to two things: living by the tide instead of a plan, and learning Frisian by listening. You're up to chapter 8. ([A Year of Low Tides, chapters 6 to 8](../sources/mock-12.md))
 
 ## What you're taking from it
 
-- Chapters 1 and 2: the first thing she buys is a tide table, and she plans her days around low water. The neighbors won't switch to Dutch for her.[^sources-mock-4]
-- Chapters 3 to 5: she learns Frisian at the harbor, by listening for months, and deletes her word app. The ferry runs by the tide, not the clock.[^sources-mock-8]
-- Chapters 6 to 8: a storm cuts the island off for three days and her plan for the week is gone by Monday. The neighbors only ever plan the next tide.[^sources-mock-12]
+- Chapters 1 and 2: the first thing she buys is a tide table, and she plans her days around low water. The neighbors won't switch to Dutch for her. ([A Year of Low Tides, chapters 1 and 2](../sources/mock-4.md))
+- Chapters 3 to 5: she learns Frisian at the harbor, by listening for months, and deletes her word app. The ferry runs by the tide, not the clock. ([A Year of Low Tides, chapters 3 to 5](../sources/mock-8.md))
+- Chapters 6 to 8: a storm cuts the island off for three days and her plan for the week is gone by Monday. The neighbors only ever plan the next tide. ([A Year of Low Tides, chapters 6 to 8](../sources/mock-12.md))
 
 ## Lines you kept
 
-- "You can't hurry a tide, you can only be there when it turns."[^sources-mock-4]
-- "Drills teach you the words, the harbor teaches you when to say them."[^sources-mock-8]
+- "You can't hurry a tide, you can only be there when it turns." ([A Year of Low Tides, chapters 1 and 2](../sources/mock-4.md))
+- "Drills teach you the words, the harbor teaches you when to say them." ([A Year of Low Tides, chapters 3 to 5](../sources/mock-8.md))
 
 ## Open questions
 
-- What does planning by the tide mean for a fixed cutover date?[^sources-mock-12]
+- What does planning by the tide mean for a fixed cutover date? ([A Year of Low Tides, chapters 6 to 8](../sources/mock-12.md))
 
 ## See also
 

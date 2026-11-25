@@ -19,7 +19,7 @@ generated:
   at: "2026-10-26T11:45:00Z"
 ---
 
-Buy a label waits up to 8 seconds for the carrier, then returns a 504 with `carrier_timeout`. Slow carriers used to hold the request for up to 30 seconds and return a 502. Buy a label also accepts the `Idempotency-Key` header now.[^prs-mock-3]
+Buy a label waits up to 8 seconds for the carrier, then returns a 504 with `carrier_timeout`. Slow carriers used to hold the request for up to 30 seconds and return a 502. Buy a label also accepts the `Idempotency-Key` header now. ([Time out carrier label calls after 8 seconds](../../prs/mock-3.md))
 
 ## What to do
 

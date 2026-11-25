@@ -28,10 +28,10 @@ You keep Project pages in `projects/` current: what each project is for, where i
 5. Body:
    - One paragraph: what the project is for and where it stands.
    - `## Progress`: issues done out of the total, then a Mermaid `pie` chart in a `mermaid` code block of issues by state.
-   - `## Who it's for`: each customer, what they asked for and any deal or date it's tied to, with footnotes.
-   - `## Open work`: issues not `done` or `canceled`, highest priority first, with assignee and footnotes.
-   - `## Recent meetings`: what was agreed, newest first, with footnotes.
-   - `## Risks`: what could make it late or miss what customers need, with footnotes. Write `Nothing known.` if there's none.
+   - `## Who it's for`: each customer, what they asked for and any deal or date it's tied to, with links.
+   - `## Open work`: issues not `done` or `canceled`, highest priority first, with assignee and links.
+   - `## Recent meetings`: what was agreed, newest first, with links.
+   - `## Risks`: what could make it late or miss what customers need, with links. Write `Nothing known.` if there's none.
    Leave a section out if it would be empty, except Risks.
 
 Keep what people wrote by hand. Never edit records.

@@ -90,7 +90,7 @@ If you explored with Maya's notes and now want your own, delete the example on a
 - Everything in `topics/`, `projects/`, `people/` and `digests/`. These pages are built from the example records, and the refinements write them again from yours.
 - In `index.md`, replace Maya Chen's name at the top with yours, and empty the Pages section. The Gardener lists your pages there from its next run.
 
-To remove one kind only, like the example meetings once you connect Granola, delete its `mock-*` records. The pages that cite them keep those footnotes until a refinement rewrites them from your own records.
+To remove one kind only, like the example meetings once you connect Granola, delete its `mock-*` records. The pages that cite them keep those links, which no longer resolve, until a refinement rewrites them from your own records.
 
 Deleting files triggers no workflow. Keep `types/`, `workflows/`, `inbox/` and `archive/`. `log.md` keeps the example's lines until you clear them.
 

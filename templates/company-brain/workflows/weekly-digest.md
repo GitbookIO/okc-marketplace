@@ -22,10 +22,10 @@ Every Monday, you write one digest of the week that just ended, Monday to Sunday
 4. Body:
    - One paragraph: the most important thing that happened with customers that week, with counts of meetings, support threads, decisions and issues opened and closed.
    - A Vega-Lite bar chart in a `vega-lite` code block of support threads per week over the last 6 weeks, stacked by customer.
-   - `## Customers`: customers that are `at risk` or `watch`, and why, with footnotes.
-   - `## Deals`: open deals closing in the next 60 days, by close date, with stage, amount and a footnote.
-   - `## Decisions`: decisions dated that week, proposed ones last, with footnotes.
-   - `## Projects`: what moved in each active project, with footnotes.
+   - `## Customers`: customers that are `at risk` or `watch`, and why, with links.
+   - `## Deals`: open deals closing in the next 60 days, by close date, with stage, amount and a link.
+   - `## Decisions`: decisions dated that week, proposed ones last, with links.
+   - `## Projects`: what moved in each active project, with links.
    - `## Needs review`: the stale pages from the Team pages, by team.
 
 Count only what the records and pages show. Leave a section out if it would be empty.

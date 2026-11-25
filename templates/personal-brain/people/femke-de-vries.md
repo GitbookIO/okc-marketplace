@@ -26,14 +26,14 @@ verified:
     at: "2026-11-05T08:30:00Z"
 ---
 
-Femke teaches you Dutch, an hour on video every Wednesday evening since 30 September.[^sources-mock-2]
+Femke teaches you Dutch, an hour on video every Wednesday evening since 30 September. ([Dutch lesson 1 with Femke](../sources/mock-2.md))
 
 ## Recent conversations
 
-- 4 November, lesson 6: ten minutes all in Dutch. Femke's rule for the past tense: zijn for moving somewhere and changes of state, hebben for nearly everything else. On Oma: start with u.[^sources-mock-14]
-- 28 October, lesson 5: separable verbs, and your first three minutes without English. Listening is good, Femke says, but it doesn't replace the flashcards.[^sources-mock-11]
-- 14 October, lesson 3: de and het, and je as the default, even with strangers.[^sources-mock-7]
-- 30 September, lesson 1: word order, and 20 flashcards a day.[^sources-mock-2]
+- 4 November, lesson 6: ten minutes all in Dutch. Femke's rule for the past tense: zijn for moving somewhere and changes of state, hebben for nearly everything else. On Oma: start with u. ([Dutch lesson 6: ten minutes](../sources/mock-14.md))
+- 28 October, lesson 5: separable verbs, and your first three minutes without English. Listening is good, Femke says, but it doesn't replace the flashcards. ([Dutch lesson 5: separable verbs](../sources/mock-11.md))
+- 14 October, lesson 3: de and het, and je as the default, even with strangers. ([Dutch lesson 3: de, het, u and je](../sources/mock-7.md))
+- 30 September, lesson 1: word order, and 20 flashcards a day. ([Dutch lesson 1 with Femke](../sources/mock-2.md))
 
 ## Topics
 

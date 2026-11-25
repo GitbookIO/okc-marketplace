@@ -17,7 +17,7 @@ stale_after: "2027-04-12T16:00:00Z"
 
 ## Decision
 
-Usage-based billing charges per label bought, not per API call or by volume tier. Rate quotes stay free.[^meetings-mock-3]
+Usage-based billing charges per label bought, not per API call or by volume tier. Rate quotes stay free. ([Usage billing pricing review](../meetings/mock-3.md))
 
 ## Options considered
 
@@ -36,14 +36,14 @@ flowchart TD
 
 ## Reasons
 
-- Customers think in labels. Nobody knows how many API calls they make.[^meetings-mock-3]
-- Per call makes revenue hard to predict, since a checkout page can quote rates a hundred times for one order.[^meetings-mock-3]
-- With tiers, customers pay for a tier they only fill in December.[^meetings-mock-3]
+- Customers think in labels. Nobody knows how many API calls they make. ([Usage billing pricing review](../meetings/mock-3.md))
+- Per call makes revenue hard to predict, since a checkout page can quote rates a hundred times for one order. ([Usage billing pricing review](../meetings/mock-3.md))
+- With tiers, customers pay for a tier they only fill in December. ([Usage billing pricing review](../meetings/mock-3.md))
 
 ## Consequences
 
-- Customers who show rates at checkout aren't charged for browsing. Only buying a label costs money.[^meetings-mock-3]
-- A free tier is still open, and discussed separately.[^meetings-mock-3]
+- Customers who show rates at checkout aren't charged for browsing. Only buying a label costs money. ([Usage billing pricing review](../meetings/mock-3.md))
+- A free tier is still open, and discussed separately. ([Usage billing pricing review](../meetings/mock-3.md))
 - [Usage-based billing](../projects/usage-based-billing.md) meters labels bought per account.
 
 ## Who decided

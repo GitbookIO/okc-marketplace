@@ -109,7 +109,7 @@ If you explored with Acme's example data and now want your own, delete the examp
 - Every `mock-*` record, in `meetings/`, `support/`, `deals/`, `issues/` and `discussions/`, and the six example accounts in `accounts/`: `bramble.md`, `harbor.md`, `kestrel.md`, `northline.md`, `pinecrest.md` and `tidewater.md`.
 - Everything in `customers/`, `projects/`, `decisions/`, `teams/` and `digests/`. These pages are built from the example records, and the refinements write them again from yours.
 
-To remove one kind only, like the example meetings once you connect your notes tool, delete its `mock-*` records. The pages that cite them keep those footnotes until a refinement rewrites them from your own records.
+To remove one kind only, like the example meetings once you connect your notes tool, delete its `mock-*` records. The pages that cite them keep those links, which no longer resolve, until a refinement rewrites them from your own records.
 
 Deleting files triggers no workflow. Keep `types/`, `workflows/`, `inbox/`, `archive/` and `index.md`. `log.md` keeps the example's lines until you clear them.
 

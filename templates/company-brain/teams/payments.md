@@ -14,11 +14,11 @@ generated:
 stale_after: "2026-12-06T10:00:00Z"
 ---
 
-Payments is building usage-based billing, with a beta for Bramble & Co and Pinecrest Books from 1 December.[^projects-usage-based-billing]
+Payments is building usage-based billing, with a beta for Bramble & Co and Pinecrest Books from 1 December. ([Usage-based billing](../projects/usage-based-billing.md))
 
 ## Projects
 
-- [Usage-based billing](../projects/usage-based-billing.md): active, target 1 December 2026.[^projects-usage-based-billing]
+- [Usage-based billing](../projects/usage-based-billing.md): active, target 1 December 2026. ([Usage-based billing](../projects/usage-based-billing.md))
 
 ## Customers
 
@@ -27,7 +27,7 @@ Payments is building usage-based billing, with a beta for Bramble & Co and Pinec
 
 ## Risks
 
-- Nobody is assigned to invoices or the usage page yet, and the beta starts on 1 December.[^projects-usage-based-billing]
+- Nobody is assigned to invoices or the usage page yet, and the beta starts on 1 December. ([Usage-based billing](../projects/usage-based-billing.md))
 
 ## Needs review
 

@@ -23,7 +23,7 @@ verified:
 
 ## Decision
 
-Kestrel Outdoor gets a credit of 20% of its October label fees for the labels that failed during its sale on 24 October. Hana Novak offered it on 27 October, and Kestrel accepted.[^discussions-mock-3][^meetings-mock-5]
+Kestrel Outdoor gets a credit of 20% of its October label fees for the labels that failed during its sale on 24 October. Hana Novak offered it on 27 October, and Kestrel accepted. ([What do we offer Kestrel after the sale outage?](../discussions/mock-3.md), [Kestrel Outdoor escalation: labels during the sale](../meetings/mock-5.md))
 
 ## Options considered
 
@@ -42,14 +42,14 @@ flowchart TD
 
 ## Reasons
 
-- A free month is more than the sale cost Kestrel. 20% of October's label fees covers the late orders.[^discussions-mock-3]
-- Offering nothing until failover ships would feel like hiding.[^discussions-mock-3]
-- Kestrel's renewal is in January, and it asked about other carriers in September.[^discussions-mock-3]
+- A free month is more than the sale cost Kestrel. 20% of October's label fees covers the late orders. ([What do we offer Kestrel after the sale outage?](../discussions/mock-3.md))
+- Offering nothing until failover ships would feel like hiding. ([What do we offer Kestrel after the sale outage?](../discussions/mock-3.md))
+- Kestrel's renewal is in January, and it asked about other carriers in September. ([What do we offer Kestrel after the sale outage?](../discussions/mock-3.md))
 
 ## Consequences
 
-- Acme promised failover before Black Friday on 27 November, which [Carrier failover](../projects/carrier-failover.md) is building.[^meetings-mock-5]
-- [Kestrel Outdoor](../customers/kestrel.md) took the credit, and still wants failover before Black Friday.[^meetings-mock-5]
+- Acme promised failover before Black Friday on 27 November, which [Carrier failover](../projects/carrier-failover.md) is building. ([Kestrel Outdoor escalation: labels during the sale](../meetings/mock-5.md))
+- [Kestrel Outdoor](../customers/kestrel.md) took the credit, and still wants failover before Black Friday. ([Kestrel Outdoor escalation: labels during the sale](../meetings/mock-5.md))
 
 ## Who decided
 

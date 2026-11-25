@@ -26,13 +26,13 @@ generated:
 
 ## What customers ask
 
-- A team got `shipment.delivered` before the `tracking.updated` event that said the parcel was in transit, and their order status went backwards.[^support-mock-3]
-- A team asked whether a retried delivery can arrive after a newer event for the same shipment.[^support-mock-8]
-- A team asked for any guarantee about the order of events, since the webhook docs don't say.[^support-mock-14]
+- A team got `shipment.delivered` before the `tracking.updated` event that said the parcel was in transit, and their order status went backwards. ([shipment.delivered arrived before tracking.updated](../support/mock-3.md))
+- A team asked whether a retried delivery can arrive after a newer event for the same shipment. ([Can a retried webhook arrive after a newer event?](../support/mock-8.md))
+- A team asked for any guarantee about the order of events, since the webhook docs don't say. ([Is the order of webhook events guaranteed now?](../support/mock-14.md))
 
 ## What support answered
 
-Until November, support said events can arrive out of order when a delivery is retried, and to compare each event's `created_at` with the last one stored.[^support-mock-3][^support-mock-8] The latest answer says events for one shipment now arrive in order, but that it isn't documented yet.[^support-mock-14]
+Until November, support said events can arrive out of order when a delivery is retried, and to compare each event's `created_at` with the last one stored. ([shipment.delivered arrived before tracking.updated](../support/mock-3.md), [Can a retried webhook arrive after a newer event?](../support/mock-8.md)) The latest answer says events for one shipment now arrive in order, but that it isn't documented yet. ([Is the order of webhook events guaranteed now?](../support/mock-14.md))
 
 ## What the docs say
 
@@ -40,7 +40,7 @@ Until November, support said events can arrive out of order when a delivery is r
 
 ## Where the answer is
 
-Since 5 November, events for one shipment, retries included, arrive in the order they happened. Delivery across shipments stays parallel.[^prs-mock-7]
+Since 5 November, events for one shipment, retries included, arrive in the order they happened. Delivery across shipments stays parallel. ([Partition the delivery queue by shipment](../prs/mock-7.md))
 
 ```vega-lite
 {

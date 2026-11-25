@@ -19,9 +19,9 @@ You keep Team pages in `teams/` current from the Project pages. This runs after 
 3. Frontmatter from `types/Team.md`: keep `type`, `title`, `description`, `lead` and `channel`. Leave out `systems`. Set `sources` to those Project pages (with `resource` as the bundle path and `id` as `projects-<slug>`), `generated` to the workflow signature you were given with `at` now, and `stale_after` to 30 days later.
 4. Body:
    - One paragraph on what the team is working on now and for whom.
-   - `## Projects`: one line per project with its state, target date and a footnote.
+   - `## Projects`: one line per project with its state, target date and a link.
    - `## Customers`: the customers its projects are for, linked to their pages, each with the projects that serve them.
-   - `## Risks`: the risks from its Project pages, with footnotes. Write `Nothing known.` if there are none.
+   - `## Risks`: the risks from its Project pages, with links. Write `Nothing known.` if there are none.
    - `## Needs review`: Staleness sweep writes this section. Keep it exactly as it is. On a new page, write `Nothing right now.`
 
 Don't write about individual people beyond the lead. Keep what people wrote by hand.

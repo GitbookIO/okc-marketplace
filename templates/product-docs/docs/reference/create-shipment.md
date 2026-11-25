@@ -24,7 +24,7 @@ verified:
     at: "2026-11-08T02:00:00Z"
 ---
 
-Creates a shipment from an origin, a destination and one or more parcels. A new shipment has no label yet. Get rates for it, then buy a label with one of them. Destination postal codes are checked against the destination country. A destination postal code that doesn't exist fails here with `invalid_postal_code`, instead of later when the carrier rejects the label.[^prs-mock-1] With `signature_required`, services that charge for signatures quote the higher price in rates.[^prs-mock-6]
+Creates a shipment from an origin, a destination and one or more parcels. A new shipment has no label yet. Get rates for it, then buy a label with one of them. Destination postal codes are checked against the destination country. A destination postal code that doesn't exist fails here with `invalid_postal_code`, instead of later when the carrier rejects the label. ([Validate postal codes before creating shipments](../../prs/mock-1.md)) With `signature_required`, services that charge for signatures quote the higher price in rates. ([Add signature_required to create shipment](../../prs/mock-6.md))
 
 ## Request
 

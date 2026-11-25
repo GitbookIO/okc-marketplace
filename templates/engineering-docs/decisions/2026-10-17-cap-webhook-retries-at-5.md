@@ -21,7 +21,7 @@ stale_after: 2027-04-15T12:00:00Z
 
 ## Decision
 
-A failed delivery is retried 5 times over about 2 hours, then shown as failed.[^discussions-mock-4]
+A failed delivery is retried 5 times over about 2 hours, then shown as failed. ([Retry cap for webhooks](../discussions/mock-4.md))
 
 ## Options considered
 
@@ -35,15 +35,15 @@ flowchart TD
 ```
 
 - **5 attempts over about 2 hours** (chosen): then the delivery shows as failed.
-- **8 attempts over 24 hours**: what the delivery guarantees spec requires.[^specs-mock-2]
+- **8 attempts over 24 hours**: what the delivery guarantees spec requires. ([Webhook delivery guarantees](../specs/mock-2.md))
 
 ## Reasons
 
-- Endpoints that are down for a day keep 8 retries each in the queue and fill it.[^discussions-mock-4]
+- Endpoints that are down for a day keep 8 retries each in the queue and fill it. ([Retry cap for webhooks](../discussions/mock-4.md))
 
 ## Consequences
 
-- This contradicts Webhook delivery guarantees, which still says 8 retries over 24 hours. Tomás said he would update it.[^discussions-mock-4][^specs-mock-2]
+- This contradicts Webhook delivery guarantees, which still says 8 retries over 24 hours. Tomás said he would update it. ([Retry cap for webhooks](../discussions/mock-4.md), [Webhook delivery guarantees](../specs/mock-2.md))
 - Customers whose endpoint is down for more than 2 hours lose those events unless they resend them.
 
 ## Who decided

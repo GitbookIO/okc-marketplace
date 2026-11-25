@@ -53,21 +53,21 @@ flowchart LR
 
 ## Recent changes
 
-- Failed charges keep the processor's response code and message, so support can tell a declined card from a processor error.[^prs-mock-16]
-- Failed charges are retried 3 times, 10 seconds apart, then marked failed.[^prs-mock-2]
-- Every charge carries an idempotency key built from the label purchase ID, so a retry can't charge twice.[^prs-mock-1]
+- Failed charges keep the processor's response code and message, so support can tell a declined card from a processor error. ([Store processor response codes on failed charges](../prs/mock-16.md))
+- Failed charges are retried 3 times, 10 seconds apart, then marked failed. ([Retry failed charges with a fixed delay](../prs/mock-2.md))
+- Every charge carries an idempotency key built from the label purchase ID, so a retry can't charge twice. ([Add idempotency keys to charge requests](../prs/mock-1.md))
 
 ## Open issues
 
-- Invoice PDFs show charge times in UTC (ENG-231, low).[^issues-mock-3]
+- Invoice PDFs show charge times in UTC (ENG-231, low). ([Invoice PDFs show charge times in UTC](../issues/mock-3.md))
 
 ## Incidents
 
-- 2 October: fourteen accounts were charged twice for one label after processor timeouts. See [Duplicate charges](/runbooks/duplicate-charges.md).[^incidents-mock-1]
+- 2 October: fourteen accounts were charged twice for one label after processor timeouts. See [Duplicate charges](/runbooks/duplicate-charges.md). ([Customers charged twice for one label](../incidents/mock-1.md))
 
 ## Drift from spec
 
-- Idempotent charges requires at most 5 retries with exponential backoff starting at 2 seconds. Retries now stop after 3 attempts, 10 seconds apart.[^specs-mock-1][^prs-mock-2]
+- Idempotent charges requires at most 5 retries with exponential backoff starting at 2 seconds. Retries now stop after 3 attempts, 10 seconds apart. ([Idempotent charges](../specs/mock-1.md), [Retry failed charges with a fixed delay](../prs/mock-2.md))
 
 ## Activity
 

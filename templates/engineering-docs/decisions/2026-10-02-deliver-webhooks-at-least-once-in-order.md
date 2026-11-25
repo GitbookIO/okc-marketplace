@@ -18,7 +18,7 @@ stale_after: 2027-03-31T13:00:00Z
 
 ## Decision
 
-Webhooks are delivered at least once, events for one shipment arrive in the order they happened, failed deliveries are retried up to 8 times over 24 hours, and every payload is signed.[^specs-mock-2]
+Webhooks are delivered at least once, events for one shipment arrive in the order they happened, failed deliveries are retried up to 8 times over 24 hours, and every payload is signed. ([Webhook delivery guarantees](../specs/mock-2.md))
 
 ## Options considered
 
@@ -38,7 +38,7 @@ flowchart TD
 
 ## Reasons
 
-- Customers build shipment timelines from these events and verify every payload, and both break if delivery reorders or re-encodes.[^specs-mock-2]
+- Customers build shipment timelines from these events and verify every payload, and both break if delivery reorders or re-encodes. ([Webhook delivery guarantees](../specs/mock-2.md))
 
 ## Consequences
 

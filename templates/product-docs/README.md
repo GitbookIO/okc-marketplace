@@ -90,7 +90,7 @@ There's no connection for pull requests. Paste the description of a pull request
 
 ## Starting with your own data
 
-When you create a repo from this template, the app asks where your support conversations come from. Neither Intercom nor Pylon is a marketplace plugin yet, so the answers are Somewhere else, where you add support threads to `inbox/`, and Use example data. Somewhere else leaves out Acme's example support threads, and the docs gaps and digest built from them. Use example data, or skipping the question, keeps them. The reference, guides and changelog always stay, built from the example spec, `api/openapi.yaml`, and pull requests, until you replace them. Guides that cite a left-out gap keep that footnote until Update guides next rewrites them.
+When you create a repo from this template, the app asks where your support conversations come from. Neither Intercom nor Pylon is a marketplace plugin yet, so the answers are Somewhere else, where you add support threads to `inbox/`, and Use example data. Somewhere else leaves out Acme's example support threads, and the docs gaps and digest built from them. Use example data, or skipping the question, keeps them. The reference, guides and changelog always stay, built from the example spec, `api/openapi.yaml`, and pull requests, until you replace them. Guides that cite a left-out gap keep that link until Update guides next rewrites them.
 
 If you start with no example data at all, add your own OpenAPI spec at `api/openapi.yaml` and merge it. Sync reference writes one reference page per operation. Write your first guides in `docs/guides/` with `type: Guide` and the reference pages they use in `endpoints`, or let Update guides draft one when a docs gap reaches three threads. Gaps fill in as support conversations close.
 
@@ -102,7 +102,7 @@ If you explored with Acme's example data and now want your own, delete the examp
 - `api/openapi.yaml`, Acme's spec. Add your own in its place, and Sync reference writes your reference from it.
 - Everything in `docs/reference/`, `docs/guides/`, `docs/changelog/`, `gaps/` and `digests/`. These pages are built from the example spec and records.
 
-To remove the example support threads only, once you connect your support tool, delete `support/mock-*.md`. The gaps that cite them keep those footnotes until Update docs gaps rewrites them from your own threads.
+To remove the example support threads only, once you connect your support tool, delete `support/mock-*.md`. The gaps that cite them keep those links, which no longer resolve, until Update docs gaps rewrites them from your own threads.
 
 Deleting files triggers no workflow. Keep `types/`, `workflows/`, `inbox/`, `archive/` and `index.md`. `log.md` keeps the example's lines until you clear them.
 

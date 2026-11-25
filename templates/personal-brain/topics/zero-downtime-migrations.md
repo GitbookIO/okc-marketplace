@@ -29,25 +29,25 @@ generated:
 stale_after: "2026-12-03T17:40:00Z"
 ---
 
-You're running the ledger migration the expand and contract way: let the Ledger take the old data, write to both, copy the history, compare, switch, and only then drop the old tables.[^sources-mock-1][^sources-mock-5] Expand is done and dual writes are ready in staging.[^meetings-mock-6][^meetings-mock-8] What you still haven't settled is whether dual writes or the backfill comes first, and you've given yourself until 10 November.[^meetings-mock-8]
+You're running the ledger migration the expand and contract way: let the Ledger take the old data, write to both, copy the history, compare, switch, and only then drop the old tables. ([Why I'm leading the ledger migration](../sources/mock-1.md), [Expand and contract migrations](../sources/mock-5.md)) Expand is done and dual writes are ready in staging. ([Ledger migration sync](../meetings/mock-6.md), [Ledger migration sync](../meetings/mock-8.md)) What you still haven't settled is whether dual writes or the backfill comes first, and you've given yourself until 10 November. ([Ledger migration sync](../meetings/mock-8.md))
 
 ## Current understanding
 
-- The steps: expand, dual writes, backfill, compare, cutover, contract. Contract goes last, after a quiet period.[^sources-mock-5][^sources-mock-6]
-- Comparing means building every invoice both ways each night. Owen signs off only after two weeks of every account matching.[^meetings-mock-2][^sources-mock-6]
-- Backfill in batches you can re-run.[^sources-mock-5]
-- Expand is done: imported entries are marked `origin: legacy`, so finance can tell them apart.[^meetings-mock-6]
-- Backfilling two years took Dev about three hours on the staging copy.[^meetings-mock-6]
-- First comparison on staging: 397 of 400 accounts matched. The other 3 were a cent off, because the old tables round once per invoice and the Ledger rounds every label.[^meetings-mock-8]
-- Working back from cutover on 24 November, shadow invoices have to start by 10 November.[^meetings-mock-2][^sources-mock-6][^meetings-mock-8]
+- The steps: expand, dual writes, backfill, compare, cutover, contract. Contract goes last, after a quiet period. ([Expand and contract migrations](../sources/mock-5.md), [Ledger migration plan](../sources/mock-6.md))
+- Comparing means building every invoice both ways each night. Owen signs off only after two weeks of every account matching. ([Ledger migration kickoff](../meetings/mock-2.md), [Ledger migration plan](../sources/mock-6.md))
+- Backfill in batches you can re-run. ([Expand and contract migrations](../sources/mock-5.md))
+- Expand is done: imported entries are marked `origin: legacy`, so finance can tell them apart. ([Ledger migration sync](../meetings/mock-6.md))
+- Backfilling two years took Dev about three hours on the staging copy. ([Ledger migration sync](../meetings/mock-6.md))
+- First comparison on staging: 397 of 400 accounts matched. The other 3 were a cent off, because the old tables round once per invoice and the Ledger rounds every label. ([Ledger migration sync](../meetings/mock-8.md))
+- Working back from cutover on 24 November, shadow invoices have to start by 10 November. ([Ledger migration kickoff](../meetings/mock-2.md), [Ledger migration plan](../sources/mock-6.md), [Ledger migration sync](../meetings/mock-8.md))
 
 ## Contradictions
 
-- **Dual writes or backfill first.** The expand and contract write-up says dual writes first, so nothing written mid-backfill slips through.[^sources-mock-5] Dev wants to backfill first while the Ledger is quiet, then turn on dual writes and run a catch-up, so the backfill doesn't fight live writes.[^meetings-mock-2] On 3 November Dev still leaned that way.[^meetings-mock-8] Nothing you've written settles it yet.
+- **Dual writes or backfill first.** The expand and contract write-up says dual writes first, so nothing written mid-backfill slips through. ([Expand and contract migrations](../sources/mock-5.md)) Dev wants to backfill first while the Ledger is quiet, then turn on dual writes and run a catch-up, so the backfill doesn't fight live writes. ([Ledger migration kickoff](../meetings/mock-2.md)) On 3 November Dev still leaned that way. ([Ledger migration sync](../meetings/mock-8.md)) Nothing you've written settles it yet.
 
 ## Open questions
 
-- Should shadow invoices allow a cent of rounding, or should old invoices be rounded the old way?[^meetings-mock-8]
+- Should shadow invoices allow a cent of rounding, or should old invoices be rounded the old way? ([Ledger migration sync](../meetings/mock-8.md))
 
 ## See also
 

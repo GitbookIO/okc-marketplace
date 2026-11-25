@@ -14,11 +14,11 @@ generated:
 stale_after: "2026-12-04T10:00:00Z"
 ---
 
-Sales is working on the renewals due in December and January. Northline Freight's waits on a date for 30 days of webhook delivery history.[^projects-winter-renewals]
+Sales is working on the renewals due in December and January. Northline Freight's waits on a date for 30 days of webhook delivery history. ([Winter renewals](../projects/winter-renewals.md))
 
 ## Projects
 
-- [Winter renewals](../projects/winter-renewals.md): active, no target date.[^projects-winter-renewals]
+- [Winter renewals](../projects/winter-renewals.md): active, no target date. ([Winter renewals](../projects/winter-renewals.md))
 
 ## Customers
 
@@ -27,8 +27,8 @@ Sales is working on the renewals due in December and January. Northline Freight'
 
 ## Risks
 
-- Northline's renewal waits on a date nobody has given yet.[^projects-winter-renewals]
-- Kestrel asked what happens when Parcelline slows during a sale, and the answer was only retries.[^projects-winter-renewals]
+- Northline's renewal waits on a date nobody has given yet. ([Winter renewals](../projects/winter-renewals.md))
+- Kestrel asked what happens when Parcelline slows during a sale, and the answer was only retries. ([Winter renewals](../projects/winter-renewals.md))
 
 ## Needs review
 

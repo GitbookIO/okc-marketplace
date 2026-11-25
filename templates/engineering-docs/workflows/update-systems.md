@@ -42,13 +42,13 @@ Body, in this order:
 
 1. One paragraph on what the system does and who relies on it.
 2. `## Owner and dependencies`: the owning team, then a Mermaid `flowchart LR` from this system to each system in `depends_on`.
-3. `## Recent changes`: merged pull requests from the last 30 days, newest first, one line each with a footnote, like `- Charge retries are idempotent.[^prs-mock-3]`.
-4. `## Open issues`: issues whose `state` isn't done or canceled, highest priority first, with footnotes.
-5. `## Incidents`: incidents from the last 90 days, newest first, with what happened in one line and a footnote.
-6. `## Drift from spec`: for each approved spec in `specs`, compare what it requires with what pull requests merged since its `approved_at` actually did. List each disagreement as one line that says what the spec requires and what shipped, citing both, like `- The spec requires 5 retries. Retries now stop after 3.[^specs-mock-2][^prs-mock-7]`. If a spec has no drift, write `No drift found against <spec title>.` with its footnote. Only list disagreements the text of both records shows. Don't guess.
+3. `## Recent changes`: merged pull requests from the last 30 days, newest first, one line each with a link, like `- Charge retries are idempotent. ([Reject a second entry for the same idempotency key](../prs/mock-3.md))`.
+4. `## Open issues`: issues whose `state` isn't done or canceled, highest priority first, with links.
+5. `## Incidents`: incidents from the last 90 days, newest first, with what happened in one line and a link.
+6. `## Drift from spec`: for each approved spec in `specs`, compare what it requires with what pull requests merged since its `approved_at` actually did. List each disagreement as one line that says what the spec requires and what shipped, citing both, like `- The spec requires 5 retries. Retries now stop after 3. ([Webhook delivery guarantees](../specs/mock-2.md), [Cap delivery retries at 5 attempts](../prs/mock-6.md))`. If a spec has no drift, write `No drift found against <spec title>.` with a link to it. Only list disagreements the text of both records shows. Don't guess.
 7. `## Activity`: a Vega-Lite bar chart in a `vega-lite` code block of issues opened per week over the last 6 weeks, counted from the `created_at` of this system's issues.
 
-Use footnotes for every claim that comes from a record. Define no footnotes in the body: the `sources` ids are the footnote labels.
+Link every claim that comes from a record to it, with the record's title as the link text, in parentheses after the sentence.
 
 ## Index
 

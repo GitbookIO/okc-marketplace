@@ -18,7 +18,7 @@ stale_after: 2027-04-04T11:00:00Z
 
 ## Decision
 
-Quotes stay under 300 ms at p95, including multi-parcel shipments. Cached carrier rates expire after 15 minutes, and a cached rate is never quoted after a carrier announces a price change.[^specs-mock-3]
+Quotes stay under 300 ms at p95, including multi-parcel shipments. Cached carrier rates expire after 15 minutes, and a cached rate is never quoted after a carrier announces a price change. ([Rate quotes under 300 ms](../specs/mock-3.md))
 
 ## Options considered
 
@@ -34,7 +34,7 @@ flowchart TD
 
 ## Reasons
 
-- Checkout pages call for rates on every keystroke in the address form, and slow quotes cost customers sales.[^specs-mock-3]
+- Checkout pages call for rates on every keystroke in the address form, and slow quotes cost customers sales. ([Rate quotes under 300 ms](../specs/mock-3.md))
 
 ## Consequences
 
